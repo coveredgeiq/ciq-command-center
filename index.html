@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-15 14:30 CDT",
+ "generated": "2026-09-15 15:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -276,7 +276,7 @@
   "note": "goal sessions $2.34 from THROTTLE/logs/COST.log plus content lane $5.02 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "14:30:05",
+  "last_row": "15:00:04",
   "alive": true,
   "repair_stop": true
  },
@@ -367,18 +367,18 @@
   }
  ],
  "rows": [
-  "14:00:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "14:00:04  NO-WORK [clock]",
-  "14:00:04 ciq-command-center.html DASHBOARD generated=2026-09-15 14:00 CDT bytes=18780 [clock]",
-  "14:00:04 ciq-command-center.html PAGES-FAILED rc=128 ssh: Could not resolve hostname http://github.com: nodename nor servname provided,  [clock]",
-  "14:01:38 MERGE-SKIPPED x5",
   "14:12:18 RELAY HEARTBEAT hb-fresh-59s",
   "14:15:34 ciq-command-center.html DASHBOARD generated=2026-09-15 14:15 CDT bytes=18788 [clock]",
   "14:15:37 ciq-command-center.html PAGES pushed bf419fe to coveredgeiq/ciq-command-center [clock]",
   "14:27:32 .env ENV-CLEANUP lines_before=495 lines_after=492 removed=3 snapshot=BUILDS/snapshots/.env.20260915-1430-pr [buildroom4]",
   "14:30:05 MERGE-SKIPPED x10",
   "14:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "14:30:05  NO-WORK [clock]"
+  "14:30:05  NO-WORK [clock]",
+  "14:30:05 ciq-command-center.html DASHBOARD generated=2026-09-15 14:30 CDT bytes=18991 [clock]",
+  "14:30:07 ciq-command-center.html PAGES pushed b055d4f to coveredgeiq/ciq-command-center [clock]",
+  "15:00:04 MERGE-SKIPPED x10",
+  "15:00:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "15:00:04  NO-WORK [clock]"
  ],
  "agents": [
   {
@@ -387,7 +387,7 @@
    "last_action": "HEARTBEAT",
    "spend_today": 5.0244,
    "rows": 314,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "build-room-4",
@@ -403,14 +403,14 @@
    "last_action": "ENV-CLEANUP",
    "spend_today": 0.0,
    "rows": 1,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "clock",
-   "last_seen": "14:30:05",
+   "last_seen": "15:00:04",
    "last_action": "NO-WORK",
    "spend_today": 0.0,
-   "rows": 43,
+   "rows": 47,
    "state": "ACTIVE"
   },
   {
@@ -423,10 +423,10 @@
   },
   {
    "agent": "queue-gate",
-   "last_seen": "14:30:05",
+   "last_seen": "15:00:04",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 115,
+   "rows": 125,
    "state": "ACTIVE"
   },
   {
