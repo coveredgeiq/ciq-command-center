@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-15 11:00 CDT",
+ "generated": "2026-09-15 12:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -276,7 +276,7 @@
   "note": "goal sessions $2.34 from THROTTLE/logs/COST.log plus content lane $5.02 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "11:00:03",
+  "last_row": "12:30:00",
   "alive": true,
   "repair_stop": true
  },
@@ -367,51 +367,67 @@
   }
  ],
  "rows": [
-  "10:00:03 ciq-command-center.html DASHBOARD generated=2026-09-15 10:00 CDT bytes=18258 [clock]",
-  "10:00:41 MERGE-SKIPPED x5",
-  "10:07:18 RELAY HEARTBEAT hb-fresh-13s",
-  "10:24:01 ciq-command-center.html DASHBOARD generated=2026-09-15 10:24 CDT bytes=18175 [clock]",
-  "10:30:01 MERGE-SKIPPED x10",
-  "10:30:01  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "10:30:01  NO-WORK [clock]",
-  "10:30:01 ciq-command-center.html DASHBOARD generated=2026-09-15 10:30 CDT bytes=18165 [clock]",
-  "10:51:32  STOPPED QUEUE/STOP.txt present, A29, writer=daily-build trigger=a29-proof [daily-build]",
-  "11:00:03 MERGE-SKIPPED x10",
-  "11:00:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "11:00:03  NO-WORK [clock]"
+  "11:30:01 MERGE-SKIPPED x5",
+  "11:30:01  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "11:30:01  NO-WORK [clock]",
+  "11:30:01 ciq-command-center.html DASHBOARD generated=2026-09-15 11:30 CDT bytes=18782 [clock]",
+  "12:00:01 MERGE-SKIPPED x10",
+  "12:00:01  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "12:00:01  NO-WORK [clock]",
+  "12:00:01 ciq-command-center.html DASHBOARD generated=2026-09-15 12:00 CDT bytes=18707 [clock]",
+  "12:07:18 RELAY HEARTBEAT hb-fresh-3s",
+  "12:30:00 MERGE-SKIPPED x10",
+  "12:30:00  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "12:30:00  NO-WORK [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "10:07:18",
+   "last_seen": "12:07:18",
    "last_action": "HEARTBEAT",
    "spend_today": 5.0244,
-   "rows": 309,
+   "rows": 312,
+   "state": "IDLE"
+  },
+  {
+   "agent": "build-room-4",
+   "last_seen": "11:08:03",
+   "last_action": "RETIRED",
+   "spend_today": 0.0,
+   "rows": 1,
    "state": "IDLE"
   },
   {
    "agent": "clock",
-   "last_seen": "11:00:03",
+   "last_seen": "12:30:00",
    "last_action": "NO-WORK",
    "spend_today": 0.0,
-   "rows": 15,
+   "rows": 24,
    "state": "ACTIVE"
   },
   {
    "agent": "daily-build",
-   "last_seen": "10:51:32",
+   "last_seen": "11:05:51",
    "last_action": "STOPPED",
    "spend_today": 0.0,
-   "rows": 1,
-   "state": "ACTIVE"
+   "rows": 2,
+   "state": "IDLE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "11:00:03",
+   "last_seen": "12:30:00",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 40,
+   "rows": 70,
    "state": "ACTIVE"
+  },
+  {
+   "agent": "relay",
+   "last_seen": "11:28:15",
+   "last_action": "SCRUB-LIVE",
+   "spend_today": 0.0,
+   "rows": 1,
+   "state": "IDLE"
   }
  ]
 }
