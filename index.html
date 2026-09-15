@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CIQ Command Center</title>
+<style>
+  :root{
+    --bg:#070E18; --panel:#0E1928; --panel2:#121F31; --line:#1D3047;
+    --ink:#E6EEF8; --dim:#7E94AD; --faint:#54677E;
+    --cyan:#48C6E8; --gold:#D9A736; --green:#3FB27A; --red:#CF4B45;
+    --violet:#8B7BE8;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:
+      radial-gradient(1200px 600px at 70% -10%, #0F2138 0%, transparent 60%), var(--bg);
+      color:var(--ink);
+      font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+  .shell{max-width:1240px;margin:0 auto;padding:16px 14px 56px}
+
+  .topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
+    background:linear-gradient(90deg,var(--panel2),transparent);border:1px solid var(--line);
+    border-radius:12px;padding:12px 16px;margin-bottom:14px}
+  .brand{font-size:16px;font-weight:700;letter-spacing:2.5px;color:var(--cyan)}
+  .brand small{display:block;font-size:9.5px;letter-spacing:2.6px;color:var(--faint);
+    font-weight:600;margin-top:2px}
+  .when{text-align:center;flex:1;min-width:190px}
+  .when .d{font-size:11px;letter-spacing:1.6px;color:var(--dim);text-transform:uppercase}
+  .when .t{font-size:24px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
+  .status{display:flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:20px;
+    padding:6px 13px;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:var(--dim)}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--green);
+    box-shadow:0 0 9px var(--green)}
+  .dot.warn{background:var(--gold);box-shadow:0 0 9px var(--gold)}
+
+  .grid{display:grid;gap:12px;grid-template-columns:repeat(12,1fr)}
+  .p{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:13px 15px}
+  .span4{grid-column:span 4} .span6{grid-column:span 6}
+  .span3{grid-column:span 3} .span8{grid-column:span 8} .span12{grid-column:span 12}
+  @media(max-width:860px){
+    .span4,.span6,.span3,.span8{grid-column:span 12}
+  }
+  .ph{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;
+    border-bottom:1px solid var(--line);padding-bottom:7px}
+  .ph h3{margin:0;font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--cyan);
+    font-weight:700}
+  .ph .own{font-size:9.5px;letter-spacing:1.4px;text-transform:uppercase;color:var(--faint)}
+
+  .metric{font-size:34px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+  .msub{color:var(--dim);font-size:11.5px;margin-top:6px}
+  .pips{display:flex;gap:7px;margin-top:9px}
+  .pip{flex:1;height:8px;border-radius:4px;background:#17273B;border:1px solid var(--line)}
+  .pip.on{background:var(--green);border-color:var(--green)}
+  .bar{height:7px;border-radius:4px;background:#17273B;margin-top:9px;overflow:hidden}
+  .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--cyan),var(--gold))}
+
+  .kv{display:flex;justify-content:space-between;padding:4px 0;font-size:13px;
+    border-bottom:1px solid rgba(29,48,71,.6)}
+  .kv:last-child{border-bottom:0}
+  .kv b{font-variant-numeric:tabular-nums}
+
+  ul.list{list-style:none;margin:0;padding:0}
+  ul.list li{display:flex;gap:10px;padding:7px 0;border-bottom:1px solid rgba(29,48,71,.6);
+    font-size:13px;align-items:flex-start}
+  ul.list li:last-child{border-bottom:0}
+  .tm{color:var(--cyan);font-variant-numeric:tabular-nums;min-width:62px;font-size:12px;
+    font-weight:600;padding-top:1px}
+  .tm.now{color:var(--gold)}
+  .li-t{flex:1}
+  .li-t span{display:block;color:var(--faint);font-size:11.5px;margin-top:2px}
+  .box{width:14px;height:14px;border:1.5px solid var(--dim);border-radius:3px;margin-top:2px;
+    flex:0 0 auto}
+  .box.done{background:var(--green);border-color:var(--green)}
+  li.done .li-t{color:var(--faint);text-decoration:line-through}
+  li.done .li-t span{text-decoration:none}
+
+  .tag{font-size:9.5px;letter-spacing:1px;text-transform:uppercase;padding:2px 7px;border-radius:4px;
+    border:1px solid var(--line);color:var(--dim);white-space:nowrap;margin-left:auto}
+  .tag.run{color:var(--gold);border-color:var(--gold)}
+  .tag.done{color:var(--green);border-color:var(--green)}
+  .tag.blk{color:var(--red);border-color:var(--red)}
+  .tag.hot{color:var(--red);border-color:var(--red)}
+
+  ul.def{list-style:none;margin:0;padding:0}
+  ul.def li{border-left:3px solid var(--red);padding:2px 0 2px 10px;margin:10px 0;font-size:12.5px}
+  ul.def li span{display:block;color:var(--faint);font-size:11.5px;margin-top:2px}
+
+  pre{margin:0;background:#0A1320;border:1px solid var(--line);border-radius:8px;padding:10px;
+    overflow-x:auto;font:11px/1.65 ui-monospace,SFMono-Regular,Menlo,monospace;color:#AEC3DA}
+  a{color:var(--ink);text-decoration:none;border-bottom:1px dotted var(--dim)}
+  a:hover{color:var(--cyan);border-bottom-color:var(--cyan)}
+  a.doc{color:var(--gold);border-bottom:0;font-weight:600;margin-left:6px}
+  footer{color:var(--faint);font-size:11px;margin-top:20px;border-top:1px solid var(--line);
+    padding-top:10px}
+</style>
+</head>
+<body>
+<div class="shell">
+
+  <div class="topbar">
+    <div class="brand">COVEREDGEIQ<small>COMMAND CENTER</small></div>
+    <div class="when"><div class="d" id="date"></div><div class="t" id="time"></div></div>
+    <div class="status"><span class="dot" id="sysdot"></span><span id="sysword"></span></div>
+  </div>
+
+  <div class="grid">
+
+    <div class="p span4">
+      <div class="ph"><h3>Today</h3><span class="own">Calendar</span></div>
+      <ul class="list" id="cal"></ul>
+    </div>
+
+    <div class="p span4">
+      <div class="ph"><h3>Your to-do</h3><span class="own">Jason</span></div>
+      <ul class="list" id="todo"></ul>
+    </div>
+
+    <div class="p span4">
+      <div class="ph"><h3>Next up</h3><span class="own">Mothership</span></div>
+      <ul class="list" id="next"></ul>
+    </div>
+
+    <div class="p span3">
+      <div class="ph"><h3>Rung 2</h3><span class="own">Exit test</span></div>
+      <div class="metric" id="rung"></div>
+      <div class="pips" id="pips"></div>
+      <div class="msub">Three consecutive signatures, untouched between release and verdict.</div>
+    </div>
+
+    <div class="p span3">
+      <div class="ph"><h3>Spend today</h3><span class="own">Gate</span></div>
+      <div class="metric" id="spend"></div>
+      <div class="bar"><i id="spendbar"></i></div>
+      <div class="msub" id="spendsub"></div>
+    </div>
+
+    <div class="p span3">
+      <div class="ph"><h3>Clock</h3><span class="own">Machine</span></div>
+      <div class="metric" id="clock"></div>
+      <div class="msub" id="clocksub"></div>
+    </div>
+
+    <div class="p span3">
+      <div class="ph"><h3>Queue</h3><span class="own">Machine</span></div>
+      <div class="kv"><span>Ready</span><b id="q_ready"></b></div>
+      <div class="kv"><span>Running</span><b id="q_running"></b></div>
+      <div class="kv"><span>Held</span><b id="q_held"></b></div>
+      <div class="kv"><span>Proposed</span><b id="q_proposed"></b></div>
+      <div class="kv"><span>Hold list</span><b id="q_hold"></b></div>
+    </div>
+
+    <div class="p span8">
+      <div class="ph"><h3>Machine agenda</h3><span class="own">Build room</span></div>
+      <ul class="list" id="agenda"></ul>
+    </div>
+
+    <div class="p span4">
+      <div class="ph"><h3>Open defects</h3><span class="own">Gate inventory</span></div>
+      <ul class="def" id="defects"></ul>
+    </div>
+
+    <div class="p span8">
+      <div class="ph"><h3>Live feed</h3><span class="own">HEARTBEAT/logs/QUEUE.log</span></div>
+      <pre id="rows"></pre>
+    </div>
+
+    <div class="p span4">
+      <div class="ph"><h3>Signatures</h3><span class="own">All time</span></div>
+      <div class="metric" id="signed"></div>
+      <div class="msub" id="signedsub"></div>
+      <div class="ph" style="margin-top:14px"><h3>Content lane</h3><span class="own">6:00 AM</span></div>
+      <div class="metric" style="font-size:22px" id="lane"></div>
+      <div class="msub" id="lanesub"></div>
+    </div>
+
+  </div>
+
+  <footer id="foot"></footer>
+</div>
+
+<!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
+<script id="ciq-state" type="application/json">
+{
+ "generated": "2026-09-15 10:30 CDT",
+ "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
+ "system": {
+  "word": "HELD, WORKING",
+  "ok": false
+ },
+ "calendar": [
+  {
+   "t": "8:00 AM",
+   "n": "CIQ LinkedIn prep and post",
+   "s": "recurring",
+   "past": true
+  },
+  {
+   "t": "1:30 PM",
+   "n": "Jason / Danielle Wallace, Kennyhertz Perry",
+   "s": "30 min .... last of the three firms",
+   "past": false,
+   "link": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc4OTE0NmRpMTc1Mms4YzFqNmdwNDhoMWc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNmgzMzhkMWk2aDBqMGUxaDhoMTQ2Z2hrOG9zazJoMWc4NHJqNGdwaTZzc2oyY3BqNmdvMCBqZWhpZ2gxMEBt",
+   "doc": "https://drive.google.com/file/d/1GH8F9fTQP5gZUyUGlHecjKH_IDlDyAIq/view",
+   "doclabel": "prep sheet"
+  },
+  {
+   "t": "TOMORROW",
+   "n": "1 Million Cups .... PRESENTING",
+   "s": "Wed 8:30 AM, Groover Labs, 334 N St Francis",
+   "past": false,
+   "link": "https://www.google.com/calendar/event?eid=ZnNkamNzamM3MDJ1cmR1OXZubWJ1czF1ZzAgamVoaWdoMTBAbQ",
+   "doc": "https://drive.google.com/file/d/1Vy5V2yUO8iFzxo8axXZJtwFK48ug3cwG/view",
+   "doclabel": "hand sheet"
+  }
+ ],
+ "todo": [
+  {
+   "n": "Send the 1MC tech email to Derrick and Neil",
+   "s": "done",
+   "done": true
+  },
+  {
+   "n": "Print the hand sheet, two pages",
+   "s": "CIQ-1MC-HAND-SHEET.pdf",
+   "done": false,
+   "link": "https://drive.google.com/file/d/1Vy5V2yUO8iFzxo8axXZJtwFK48ug3cwG/view"
+  },
+  {
+   "n": "Read the call prep before 1:30",
+   "s": "the do-not-say list is the part that matters",
+   "done": false,
+   "link": "https://drive.google.com/file/d/1GH8F9fTQP5gZUyUGlHecjKH_IDlDyAIq/view"
+  },
+  {
+   "n": "Say the opener out loud, twice, standing",
+   "s": "your carrier has a strategy, now you do too",
+   "done": false,
+   "link": "https://drive.google.com/file/d/1Vy5V2yUO8iFzxo8axXZJtwFK48ug3cwG/view"
+  },
+  {
+   "n": "Tell Mothership what is missing from this board",
+   "s": "only machine ask of the day",
+   "done": false
+  }
+ ],
+ "next": [
+  {
+   "n": "Path-verified minting, A27",
+   "s": "proven on fixtures, unproven in production",
+   "tag": "run"
+  },
+  {
+   "n": "Dashboard regenerator",
+   "s": "build room writes ciq-dashboard.py",
+   "tag": "run"
+  },
+  {
+   "n": "Three scoped goals for rung 2",
+   "s": "Mothership supplies when the mint gate is live",
+   "tag": ""
+  },
+  {
+   "n": "Formation counsel decision",
+   "s": "Friday, Sep 18",
+   "tag": "hot"
+  }
+ ],
+ "rung2": {
+  "signed": 0,
+  "needed": 3
+ },
+ "spend": {
+  "today": 7.36,
+  "day_stop": 60.0,
+  "ceiling": 210.0,
+  "note": "goal sessions $2.34 from THROTTLE/logs/COST.log plus content lane $5.02 from CONTENT COST rows"
+ },
+ "clock": {
+  "last_row": "10:30:01",
+  "alive": true,
+  "repair_stop": true
+ },
+ "queue": {
+  "ready": 0,
+  "running": 0,
+  "held": 11,
+  "proposed": 10,
+  "hold_lines": 67
+ },
+ "signatures": {
+  "total": 0,
+  "last": "none"
+ },
+ "lane": {
+  "state": "SHIPPED",
+  "detail": "posted to C0BQ8GSBUDA at 06:26:02 DRAFT-2026-09-15-SMOKE-DAMAGE-BURDEN.md",
+  "cost": 5.0244
+ },
+ "agenda": [
+  {
+   "n": "Channel capacity measured",
+   "s": "16,000 chars clean; empty returns were angle brackets, not spill",
+   "tag": "done"
+  },
+  {
+   "n": "GOAL-0609 classified AUTHOR",
+   "s": "four absent paths, three stamped January 2025",
+   "tag": "done"
+  },
+  {
+   "n": "Authoring path named",
+   "s": "JARVIS, 2.5 cents to mint, $3.09 to be blocked by it",
+   "tag": "done"
+  },
+  {
+   "n": "0608 and 0609 retired",
+   "s": "held, not hand-moved, per A25",
+   "tag": "done"
+  },
+  {
+   "n": "A27 path-verified minting",
+   "s": "in at line 61, enforced at author_full_spec, fixtures pass",
+   "tag": "run"
+  },
+  {
+   "n": "Dashboard regenerator",
+   "s": "JSON between the markers, nothing else touched",
+   "tag": "run"
+  },
+  {
+   "n": "Rung 2, three signatures",
+   "s": "waits for the mint gate to be proven in production",
+   "tag": "blk"
+  },
+  {
+   "n": "Repair rule, then lift REPAIR-STOP",
+   "s": "",
+   "tag": ""
+  },
+  {
+   "n": "Desk post fixes",
+   "s": "real file is ciq-desk-post.py; the mention, the double post, the leaked numbers",
+   "tag": ""
+  },
+  {
+   "n": "Content lane, why both graders fail",
+   "s": "two straight days draft-only",
+   "tag": ""
+  }
+ ],
+ "defects": [
+  {
+   "t": "JARVIS minted fabricated paths",
+   "d": "A27 blocks it at mint. Proven on fixtures, not yet in production."
+  },
+  {
+   "t": "HOLD.txt keys on a lineage, not a file",
+   "d": "One number controls every goal sharing it. Released two at once on Monday."
+  },
+  {
+   "t": "QUEUED rows name no writer",
+   "d": "153 rows, every detail field a dash. A24 written, not yet enforced."
+  },
+  {
+   "t": "ROOM-PROTOCOL Drive copy is stale",
+   "d": "A21 to A27 live on disk. Chat rooms reading Drive still see a book that stops at A20."
+  }
+ ],
+ "rows": [
+  "09:30:04  NO-WORK [clock]",
+  "09:30:04 ciq-command-center.html DASHBOARD generated=2026-09-15 09:30 CDT bytes=18174 [clock]",
+  "10:00:03 MERGE-SKIPPED x10",
+  "10:00:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "10:00:03  NO-WORK [clock]",
+  "10:00:03 ciq-command-center.html DASHBOARD generated=2026-09-15 10:00 CDT bytes=18258 [clock]",
+  "10:00:41 MERGE-SKIPPED x5",
+  "10:07:18 RELAY HEARTBEAT hb-fresh-13s",
+  "10:24:01 ciq-command-center.html DASHBOARD generated=2026-09-15 10:24 CDT bytes=18175 [clock]",
+  "10:30:01 MERGE-SKIPPED x10",
+  "10:30:01  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "10:30:01  NO-WORK [clock]"
+ ],
+ "agents": [
+  {
+   "agent": "UNKNOWN",
+   "last_seen": "10:07:18",
+   "last_action": "HEARTBEAT",
+   "spend_today": 5.0244,
+   "rows": 309,
+   "state": "IDLE"
+  },
+  {
+   "agent": "clock",
+   "last_seen": "10:30:01",
+   "last_action": "NO-WORK",
+   "spend_today": 0.0,
+   "rows": 12,
+   "state": "ACTIVE"
+  },
+  {
+   "agent": "queue-gate",
+   "last_seen": "10:30:01",
+   "last_action": "MERGE-SKIPPED",
+   "spend_today": 0.0,
+   "rows": 30,
+   "state": "ACTIVE"
+  }
+ ]
+}
+</script>
+<!-- CIQ-STATE-END -->
+
+<script>
+(function(){
+  var S = JSON.parse(document.getElementById('ciq-state').textContent);
+  var $ = function(i){ return document.getElementById(i); };
+
+  var d = new Date();
+  $('date').textContent = d.toLocaleDateString(undefined,
+      {weekday:'long', month:'long', day:'numeric', year:'numeric'});
+  function tick(){
+    $('time').textContent = new Date().toLocaleTimeString(undefined,
+        {hour:'numeric', minute:'2-digit', second:'2-digit'});
+  }
+  tick(); setInterval(tick, 1000);
+
+  $('sysword').textContent = S.system.word;
+  if(!S.system.ok){ $('sysdot').className = 'dot warn'; }
+
+  $('cal').innerHTML = S.calendar.map(function(e){
+    var title = e.link ? '<a href="' + e.link + '" target="_blank">' + e.n + '</a>' : e.n;
+    var doc = e.doc ? ' <a class="doc" href="' + e.doc + '" target="_blank">' + (e.doclabel||'open') + ' &rarr;</a>' : '';
+    return '<li><span class="tm' + (e.past ? '' : ' now') + '">' + e.t + '</span>'
+         + '<div class="li-t">' + title + '<span>' + (e.s||'') + doc + '</span></div></li>';
+  }).join('');
+
+  $('todo').innerHTML = S.todo.map(function(t){
+    return '<li class="' + (t.done ? 'done' : '') + '">'
+         + '<span class="box' + (t.done ? ' done' : '') + '"></span>'
+         + '<div class="li-t">' + (t.link ? '<a href="' + t.link + '" target="_blank">' + t.n + '</a>' : t.n)
+         + '<span>' + (t.s||'') + '</span></div></li>';
+  }).join('');
+
+  function taglist(arr){
+    return arr.map(function(a){
+      return '<li><div class="li-t">' + a.n + '<span>' + (a.s||'') + '</span></div>'
+           + (a.tag ? '<span class="tag ' + a.tag + '">' + a.tag + '</span>' : '') + '</li>';
+    }).join('');
+  }
+  $('next').innerHTML = taglist(S.next);
+  $('agenda').innerHTML = taglist(S.agenda);
+
+  $('rung').textContent = S.rung2.signed + ' of ' + S.rung2.needed;
+  var pips = '';
+  for (var i = 0; i < S.rung2.needed; i++){
+    pips += '<div class="pip' + (i < S.rung2.signed ? ' on' : '') + '"></div>';
+  }
+  $('pips').innerHTML = pips;
+
+  $('spend').textContent = '$' + S.spend.today.toFixed(2);
+  $('spendbar').style.width = Math.min(100, S.spend.today / S.spend.day_stop * 100).toFixed(0) + '%';
+  $('spendsub').textContent = 'Day stop $' + S.spend.day_stop + ', ceiling $' + S.spend.ceiling
+                            + '. ' + S.spend.note;
+
+  $('clock').innerHTML = S.clock.alive ? 'ALIVE' : 'DEAD';
+  $('clock').style.color = S.clock.alive ? 'var(--green)' : 'var(--red)';
+  $('clocksub').innerHTML = 'Last row ' + S.clock.last_row + '. REPAIR-STOP '
+      + (S.clock.repair_stop ? '<b style="color:var(--gold)">ON</b>' : 'off');
+
+  $('q_ready').textContent = S.queue.ready;
+  $('q_running').textContent = S.queue.running;
+  $('q_held').textContent = S.queue.held;
+  $('q_proposed').textContent = S.queue.proposed;
+  $('q_hold').textContent = S.queue.hold_lines;
+
+  $('signed').textContent = S.signatures.total;
+  $('signedsub').textContent = 'Last: ' + S.signatures.last;
+
+  $('lane').textContent = S.lane.state;
+  $('lane').style.color = S.lane.state === 'SHIPPED' ? 'var(--green)' : 'var(--gold)';
+  $('lanesub').textContent = S.lane.detail + ' .... $' + S.lane.cost.toFixed(2);
+
+  $('defects').innerHTML = S.defects.map(function(x){
+    return '<li>' + x.t + '<span>' + x.d + '</span></li>';
+  }).join('');
+
+  $('rows').textContent = S.rows.join('\n');
+
+  $('foot').textContent = 'Generated ' + S.generated + ' .... ' + S.source
+    + '. Every machine number comes from the ledger or a directory listing. Nothing is inferred. '
+    + 'The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.';
+})();
+</script>
+</body>
+</html>
