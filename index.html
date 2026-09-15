@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-15 12:46 CDT",
+ "generated": "2026-09-15 13:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -276,7 +276,7 @@
   "note": "goal sessions $2.34 from THROTTLE/logs/COST.log plus content lane $5.02 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "12:41:25",
+  "last_row": "13:00:03",
   "alive": true,
   "repair_stop": true
  },
@@ -367,18 +367,18 @@
   }
  ],
  "rows": [
-  "11:30:01  NO-WORK [clock]",
-  "11:30:01 ciq-command-center.html DASHBOARD generated=2026-09-15 11:30 CDT bytes=18782 [clock]",
-  "12:00:01 MERGE-SKIPPED x10",
-  "12:00:01  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "12:00:01  NO-WORK [clock]",
   "12:00:01 ciq-command-center.html DASHBOARD generated=2026-09-15 12:00 CDT bytes=18707 [clock]",
   "12:07:18 RELAY HEARTBEAT hb-fresh-3s",
   "12:30:00 MERGE-SKIPPED x10",
   "12:30:00  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
   "12:30:00  NO-WORK [clock]",
   "12:30:00 ciq-command-center.html DASHBOARD generated=2026-09-15 12:30 CDT bytes=18634 [clock]",
-  "12:41:25 MERGE-SKIPPED x5"
+  "12:41:25 MERGE-SKIPPED x5",
+  "12:46:47 ciq-command-center.html DASHBOARD generated=2026-09-15 12:46 CDT bytes=18611 [clock]",
+  "12:46:47 ciq-command-center.html PAGES-FAILED rc=128 ssh: Could not resolve hostname http://github.com: nodename nor servname provided,  [clock]",
+  "13:00:03 MERGE-SKIPPED x5",
+  "13:00:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "13:00:03  NO-WORK [clock]"
  ],
  "agents": [
   {
@@ -399,10 +399,10 @@
   },
   {
    "agent": "clock",
-   "last_seen": "12:30:00",
-   "last_action": "DASHBOARD",
+   "last_seen": "13:00:03",
+   "last_action": "NO-WORK",
    "spend_today": 0.0,
-   "rows": 25,
+   "rows": 29,
    "state": "ACTIVE"
   },
   {
@@ -415,10 +415,10 @@
   },
   {
    "agent": "queue-gate",
-   "last_seen": "12:41:25",
+   "last_seen": "13:00:03",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 75,
+   "rows": 80,
    "state": "ACTIVE"
   },
   {
