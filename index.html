@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-15 17:00 CDT",
+ "generated": "2026-09-15 17:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -270,13 +270,13 @@
   "needed": 3
  },
  "spend": {
-  "today": 7.36,
+  "today": 9.43,
   "day_stop": 60.0,
   "ceiling": 210.0,
-  "note": "goal sessions $2.34 from THROTTLE/logs/COST.log plus content lane $5.02 from CONTENT COST rows"
+  "note": "goal sessions $4.41 from THROTTLE/logs/COST.log plus content lane $5.02 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "17:00:04",
+  "last_row": "17:30:05",
   "alive": true,
   "repair_stop": true
  },
@@ -367,27 +367,27 @@
   }
  ],
  "rows": [
-  "16:00:07 ciq-command-center.html PAGES pushed 6f2d67c to coveredgeiq/ciq-command-center [clock]",
-  "16:12:19 RELAY HEARTBEAT hb-fresh-53s",
-  "16:30:01 MERGE-SKIPPED x10",
-  "16:30:01  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "16:30:01  NO-WORK [clock]",
-  "16:30:01 ciq-command-center.html DASHBOARD generated=2026-09-15 16:30 CDT bytes=18837 [clock]",
-  "16:30:04 ciq-command-center.html PAGES pushed 2366fc4 to coveredgeiq/ciq-command-center [clock]",
-  "16:42:30 MERGE-SKIPPED x5",
-  "16:44:19 GOAL-0610-DESK-POST-NAMES-ITEMS RELEASED Mothership M116 scope G-A minted by build room 4 through ciq-next-lineage.py, NEEDS paths  [buildroom4]",
-  "17:00:04 MERGE-SKIPPED x5",
-  "17:00:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "17:00:04 GOAL-0610-DESK-POST-NAMES-ITEMS START [clock]"
+  "17:00:04 GOAL-0610-DESK-POST-NAMES-ITEMS START [clock]",
+  "17:00:05 ciq-command-center.html DASHBOARD generated=2026-09-15 17:00 CDT bytes=18920 [clock]",
+  "17:00:08 ciq-command-center.html PAGES pushed ce59b90 to coveredgeiq/ciq-command-center [clock]",
+  "17:07:31 GOAL-0610-DESK-POST-NAMES-ITEMS FAIL VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not marked for crea [clock]",
+  "17:07:31  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "17:07:31 RETIRED-NEEDS-DECISION x15",
+  "17:09:42 MERGE-SKIPPED x5",
+  "17:12:19 RELAY HEARTBEAT hb-fresh-52s",
+  "17:30:05 MERGE-SKIPPED x5",
+  "17:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "17:30:05 GOAL-0610-DESK-POST-NAMES-ITEMS START [clock]",
+  "17:30:05 EA DIGEST-POSTED 1789511405.565529"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "16:12:19",
-   "last_action": "HEARTBEAT",
+   "last_seen": "17:30:05",
+   "last_action": "DIGEST-POSTED",
    "spend_today": 5.0244,
-   "rows": 316,
-   "state": "IDLE"
+   "rows": 334,
+   "state": "ACTIVE"
   },
   {
    "agent": "build-room-4",
@@ -403,14 +403,14 @@
    "last_action": "RELEASED",
    "spend_today": 0.0,
    "rows": 2,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "clock",
-   "last_seen": "17:00:04",
+   "last_seen": "17:30:05",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 63,
+   "rows": 68,
    "state": "ACTIVE"
   },
   {
@@ -423,10 +423,10 @@
   },
   {
    "agent": "queue-gate",
-   "last_seen": "17:00:04",
+   "last_seen": "17:30:05",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 165,
+   "rows": 175,
    "state": "ACTIVE"
   },
   {
