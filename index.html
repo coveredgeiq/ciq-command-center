@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-15 15:30 CDT",
+ "generated": "2026-09-15 16:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -276,7 +276,7 @@
   "note": "goal sessions $2.34 from THROTTLE/logs/COST.log plus content lane $5.02 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "15:30:03",
+  "last_row": "16:00:05",
   "alive": true,
   "repair_stop": true
  },
@@ -367,18 +367,18 @@
   }
  ],
  "rows": [
-  "14:30:05  NO-WORK [clock]",
-  "14:30:05 ciq-command-center.html DASHBOARD generated=2026-09-15 14:30 CDT bytes=18991 [clock]",
-  "14:30:07 ciq-command-center.html PAGES pushed b055d4f to coveredgeiq/ciq-command-center [clock]",
-  "15:00:04 MERGE-SKIPPED x10",
-  "15:00:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
   "15:00:04  NO-WORK [clock]",
   "15:00:05 ciq-command-center.html DASHBOARD generated=2026-09-15 15:00 CDT bytes=18939 [clock]",
   "15:00:07 ciq-command-center.html PAGES pushed f11066d to coveredgeiq/ciq-command-center [clock]",
   "15:12:18 RELAY HEARTBEAT hb-fresh-56s",
   "15:30:03 MERGE-SKIPPED x10",
   "15:30:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "15:30:03  NO-WORK [clock]"
+  "15:30:03  NO-WORK [clock]",
+  "15:30:03 ciq-command-center.html DASHBOARD generated=2026-09-15 15:30 CDT bytes=18837 [clock]",
+  "15:30:06 ciq-command-center.html PAGES pushed 3137af3 to coveredgeiq/ciq-command-center [clock]",
+  "16:00:05 MERGE-SKIPPED x10",
+  "16:00:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "16:00:05  NO-WORK [clock]"
  ],
  "agents": [
   {
@@ -387,7 +387,7 @@
    "last_action": "HEARTBEAT",
    "spend_today": 5.0244,
    "rows": 315,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "build-room-4",
@@ -407,10 +407,10 @@
   },
   {
    "agent": "clock",
-   "last_seen": "15:30:03",
+   "last_seen": "16:00:05",
    "last_action": "NO-WORK",
    "spend_today": 0.0,
-   "rows": 51,
+   "rows": 55,
    "state": "ACTIVE"
   },
   {
@@ -423,10 +423,10 @@
   },
   {
    "agent": "queue-gate",
-   "last_seen": "15:30:03",
+   "last_seen": "16:00:05",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 135,
+   "rows": 145,
    "state": "ACTIVE"
   },
   {
