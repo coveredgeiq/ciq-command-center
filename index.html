@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-15 10:30 CDT",
+ "generated": "2026-09-15 11:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -276,7 +276,7 @@
   "note": "goal sessions $2.34 from THROTTLE/logs/COST.log plus content lane $5.02 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "10:30:01",
+  "last_row": "11:00:03",
   "alive": true,
   "repair_stop": true
  },
@@ -285,7 +285,7 @@
   "running": 0,
   "held": 11,
   "proposed": 10,
-  "hold_lines": 67
+  "hold_lines": 68
  },
  "signatures": {
   "total": 0,
@@ -367,18 +367,18 @@
   }
  ],
  "rows": [
-  "09:30:04  NO-WORK [clock]",
-  "09:30:04 ciq-command-center.html DASHBOARD generated=2026-09-15 09:30 CDT bytes=18174 [clock]",
-  "10:00:03 MERGE-SKIPPED x10",
-  "10:00:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "10:00:03  NO-WORK [clock]",
   "10:00:03 ciq-command-center.html DASHBOARD generated=2026-09-15 10:00 CDT bytes=18258 [clock]",
   "10:00:41 MERGE-SKIPPED x5",
   "10:07:18 RELAY HEARTBEAT hb-fresh-13s",
   "10:24:01 ciq-command-center.html DASHBOARD generated=2026-09-15 10:24 CDT bytes=18175 [clock]",
   "10:30:01 MERGE-SKIPPED x10",
   "10:30:01  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "10:30:01  NO-WORK [clock]"
+  "10:30:01  NO-WORK [clock]",
+  "10:30:01 ciq-command-center.html DASHBOARD generated=2026-09-15 10:30 CDT bytes=18165 [clock]",
+  "10:51:32  STOPPED QUEUE/STOP.txt present, A29, writer=daily-build trigger=a29-proof [daily-build]",
+  "11:00:03 MERGE-SKIPPED x10",
+  "11:00:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "11:00:03  NO-WORK [clock]"
  ],
  "agents": [
   {
@@ -391,18 +391,26 @@
   },
   {
    "agent": "clock",
-   "last_seen": "10:30:01",
+   "last_seen": "11:00:03",
    "last_action": "NO-WORK",
    "spend_today": 0.0,
-   "rows": 12,
+   "rows": 15,
+   "state": "ACTIVE"
+  },
+  {
+   "agent": "daily-build",
+   "last_seen": "10:51:32",
+   "last_action": "STOPPED",
+   "spend_today": 0.0,
+   "rows": 1,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "10:30:01",
+   "last_seen": "11:00:03",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 30,
+   "rows": 40,
    "state": "ACTIVE"
   }
  ]
