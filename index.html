@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-15 23:00 CDT",
+ "generated": "2026-09-15 23:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -276,7 +276,7 @@
   "note": "goal sessions $12.44 from THROTTLE/logs/COST.log plus content lane $5.02 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "23:00:01",
+  "last_row": "23:30:04",
   "alive": true,
   "repair_stop": true
  },
@@ -367,27 +367,27 @@
   }
  ],
  "rows": [
-  "22:00:01 ciq-command-center.html DASHBOARD generated=2026-09-15 22:00 CDT bytes=18843 [clock]",
-  "22:00:03 ciq-command-center.html PAGES pushed 46dcd36 to coveredgeiq/ciq-command-center [clock]",
-  "22:04:28 MERGE-SKIPPED x5",
-  "22:12:20 RELAY HEARTBEAT hb-fresh-37s",
-  "22:30:04 MERGE-SKIPPED x5",
-  "22:30:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
   "22:30:04  NO-WORK [clock]",
   "22:30:04 ciq-command-center.html DASHBOARD generated=2026-09-15 22:30 CDT bytes=18845 [clock]",
   "22:30:06 ciq-command-center.html PAGES pushed af055c7 to coveredgeiq/ciq-command-center [clock]",
   "23:00:01 MERGE-SKIPPED x15",
   "23:00:01  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "23:00:01  NO-WORK [clock]"
+  "23:00:01  NO-WORK [clock]",
+  "23:00:01 ciq-command-center.html DASHBOARD generated=2026-09-15 23:00 CDT bytes=18843 [clock]",
+  "23:00:03 ciq-command-center.html PAGES pushed e6c0d4d to coveredgeiq/ciq-command-center [clock]",
+  "23:12:20 RELAY HEARTBEAT hb-fresh-34s",
+  "23:30:04 MERGE-SKIPPED x10",
+  "23:30:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "23:30:04  NO-WORK [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "22:12:20",
+   "last_seen": "23:12:20",
    "last_action": "HEARTBEAT",
    "spend_today": 5.0244,
-   "rows": 420,
-   "state": "IDLE"
+   "rows": 421,
+   "state": "ACTIVE"
   },
   {
    "agent": "build-room-4",
@@ -407,10 +407,10 @@
   },
   {
    "agent": "clock",
-   "last_seen": "23:00:01",
+   "last_seen": "23:30:04",
    "last_action": "NO-WORK",
    "spend_today": 0.0,
-   "rows": 117,
+   "rows": 121,
    "state": "ACTIVE"
   },
   {
@@ -423,10 +423,10 @@
   },
   {
    "agent": "queue-gate",
-   "last_seen": "23:00:01",
+   "last_seen": "23:30:04",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 295,
+   "rows": 305,
    "state": "ACTIVE"
   },
   {
