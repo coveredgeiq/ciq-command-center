@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-16 05:30 CDT",
+ "generated": "2026-09-16 06:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -276,7 +276,7 @@
   "note": "goal sessions $0.00 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "05:30:00",
+  "last_row": "06:00:02",
   "alive": true,
   "repair_stop": true
  },
@@ -292,9 +292,9 @@
   "last": "none"
  },
  "lane": {
-  "state": "SHIPPED",
-  "detail": "posted to C0BQ8GSBUDA at 06:26:02 DRAFT-2026-09-15-SMOKE-DAMAGE-BURDEN.md",
-  "cost": 5.0244
+  "state": "RUNNING",
+  "detail": "started 06:00:01",
+  "cost": 0.0
  },
  "agenda": [
   {
@@ -367,42 +367,42 @@
   }
  ],
  "rows": [
-  "04:30:01  NO-WORK [clock]",
-  "04:30:01 ciq-command-center.html DASHBOARD generated=2026-09-16 04:30 CDT bytes=18234 [clock]",
-  "04:30:03 ciq-command-center.html PAGES pushed 846c59a to coveredgeiq/ciq-command-center [clock]",
-  "05:00:05 MERGE-SKIPPED x10",
-  "05:00:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "05:00:05  NO-WORK [clock]",
-  "05:00:05 ciq-command-center.html DASHBOARD generated=2026-09-16 05:00 CDT bytes=18232 [clock]",
   "05:00:08 ciq-command-center.html PAGES pushed 669f7ec to coveredgeiq/ciq-command-center [clock]",
   "05:12:21 RELAY HEARTBEAT hb-fresh-17s",
   "05:30:00 MERGE-SKIPPED x10",
   "05:30:00  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "05:30:00  NO-WORK [clock]"
+  "05:30:00  NO-WORK [clock]",
+  "05:30:00 ciq-command-center.html DASHBOARD generated=2026-09-16 05:30 CDT bytes=18234 [clock]",
+  "05:30:02 ciq-command-center.html PAGES pushed 2aa05a5 to coveredgeiq/ciq-command-center [clock]",
+  "05:39:43 MERGE-SKIPPED x5",
+  "06:00:01 GOAL-0135-CONTENT-EVERY-MORNING CONTENT START day=2026-09-16",
+  "06:00:02 MERGE-SKIPPED x5",
+  "06:00:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "06:00:02  NO-WORK [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "05:12:21",
-   "last_action": "HEARTBEAT",
+   "last_seen": "06:00:01",
+   "last_action": "CONTENT START",
    "spend_today": 0.0,
-   "rows": 6,
+   "rows": 7,
    "state": "ACTIVE"
   },
   {
    "agent": "clock",
-   "last_seen": "05:30:00",
+   "last_seen": "06:00:02",
    "last_action": "NO-WORK",
    "spend_today": 0.0,
-   "rows": 46,
+   "rows": 50,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "05:30:00",
+   "last_seen": "06:00:02",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 120,
+   "rows": 130,
    "state": "ACTIVE"
   }
  ]
