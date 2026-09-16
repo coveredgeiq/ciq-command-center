@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-15 19:30 CDT",
+ "generated": "2026-09-15 20:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -270,19 +270,19 @@
   "needed": 3
  },
  "spend": {
-  "today": 16.26,
+  "today": 17.46,
   "day_stop": 60.0,
   "ceiling": 210.0,
-  "note": "goal sessions $11.23 from THROTTLE/logs/COST.log plus content lane $5.02 from CONTENT COST rows"
+  "note": "goal sessions $12.44 from THROTTLE/logs/COST.log plus content lane $5.02 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "19:30:05",
+  "last_row": "20:00:04",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
   "ready": 0,
-  "running": 2,
+  "running": 0,
   "held": 11,
   "proposed": 10,
   "hold_lines": 68
@@ -367,27 +367,27 @@
   }
  ],
  "rows": [
-  "19:00:01 MERGE-SKIPPED x10",
-  "19:00:01  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "19:00:01 GOAL-0611-DESK-POST-NAMES-ITEMS START [clock]",
-  "19:00:03 ciq-command-center.html DASHBOARD generated=2026-09-15 19:00 CDT bytes=19091 [clock]",
-  "19:00:05 ciq-command-center.html PAGES pushed 5ce37fa to coveredgeiq/ciq-command-center [clock]",
-  "19:04:19 GOAL-0611-DESK-POST-NAMES-ITEMS FAIL VERDICT: CHECK-FAILED rc=2 out=TESTS/desk-post-fixture/run_compose.py:0 grep: ....: No suc [clock]",
-  "19:04:19  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
-  "19:04:19 RETIRED-NEEDS-DECISION x15",
   "19:12:19 RELAY HEARTBEAT hb-fresh-46s",
   "19:30:05 MERGE-SKIPPED x10",
   "19:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "19:30:05 GOAL-0611-DESK-POST-NAMES-ITEMS START [clock]"
+  "19:30:05 GOAL-0611-DESK-POST-NAMES-ITEMS START [clock]",
+  "19:30:05 ciq-command-center.html DASHBOARD generated=2026-09-15 19:30 CDT bytes=18956 [clock]",
+  "19:30:07 ciq-command-center.html PAGES pushed acc6b89 to coveredgeiq/ciq-command-center [clock]",
+  "19:34:22 GOAL-0611-DESK-POST-NAMES-ITEMS RETIRED VERDICT: CHECK-FAILED rc=2 out=TESTS/desk-post-fixture/run_compose.py:0 grep: ....: No suc [clock]",
+  "19:34:22  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "19:34:22 RETIRED-NEEDS-DECISION x15",
+  "20:00:04 MERGE-SKIPPED x10",
+  "20:00:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "20:00:04  NO-WORK [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "19:12:19",
-   "last_action": "HEARTBEAT",
+   "last_seen": "19:34:22",
+   "last_action": "RETIRED-NEEDS-DECISION",
    "spend_today": 5.0244,
-   "rows": 401,
-   "state": "ACTIVE"
+   "rows": 417,
+   "state": "IDLE"
   },
   {
    "agent": "build-room-4",
@@ -407,10 +407,10 @@
   },
   {
    "agent": "clock",
-   "last_seen": "19:30:05",
-   "last_action": "START",
+   "last_seen": "20:00:04",
+   "last_action": "NO-WORK",
    "spend_today": 0.0,
-   "rows": 88,
+   "rows": 93,
    "state": "ACTIVE"
   },
   {
@@ -423,10 +423,10 @@
   },
   {
    "agent": "queue-gate",
-   "last_seen": "19:30:05",
+   "last_seen": "20:00:04",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 220,
+   "rows": 230,
    "state": "ACTIVE"
   },
   {
