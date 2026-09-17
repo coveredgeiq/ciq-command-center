@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-17 13:00 CDT",
+ "generated": "2026-09-17 13:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -270,19 +270,19 @@
   "needed": 3
  },
  "spend": {
-  "today": 8.68,
+  "today": 12.18,
   "day_stop": 60.0,
   "ceiling": 210.0,
-  "note": "goal sessions $4.12 from THROTTLE/logs/COST.log plus content lane $4.56 from CONTENT COST rows"
+  "note": "goal sessions $7.62 from THROTTLE/logs/COST.log plus content lane $4.56 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "13:00:02",
+  "last_row": "13:30:02",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
   "ready": 0,
-  "running": 2,
+  "running": 0,
   "held": 12,
   "proposed": 10,
   "hold_lines": 71
@@ -367,58 +367,58 @@
   }
  ],
  "rows": [
-  "12:41:53 DOCTRINE/WRITER-DOCTRINE LOCK_CANDIDATE W5 no reference to the product, the platform or CoverEdgeIQ in the post body; founder edit [buildroom4]",
-  "12:41:53 DOCTRINE/WRITER-DOCTRINE LOCK_CANDIDATE W6 waitlist emails never assign a task; the only ask is a reply with the reader own questi [buildroom4]",
-  "12:41:53 SHIP/HELD/WAITLIST/WELCOME-EMAIL-02 HELD founder-approved text copied verbatim from #ciq-cmo ts 1789665324.631529 in thread 1789663 [buildroom4]",
-  "12:41:53 SHIP/HELD/WAITLIST/WELCOME-EMAIL-01 HELD-SUPERSEDED hold line WELCOME-EMAIL-01 added to QUEUE/HOLD.txt on Mothership M116 order so it leaves t [buildroom4]",
-  "12:52:11 GOAL-0612-DESK-POST-NAMES-ITEMS HELD bare lineage 0612 added to QUEUE/HOLD.txt before the 13:00 tick on Mothership M116 ruling  [buildroom4]",
-  "12:52:39 GOAL-0612-DESK-POST-NAMES-ITEMS G-A-BUILT-BY-PROOF Mothership M116 ruling 2: G-A graded BUILT by proof PROOFS/GOAL-0612-DESK-POST-NAMES-ITEMS [buildroom4]",
-  "12:53:43 GOAL-0613-INTAKE RELEASED Mothership M116 scope G-B intake; NEEDS verified (A27), plist and Drive paths repaired to  [buildroom4]",
-  "12:54:44 MERGE-SKIPPED x5",
-  "12:54:44 GOAL-0612-DESK-POST-NAMES-ITEMS HELD held by QUEUE/HOLD.txt entry 0612 [queue-gate]",
-  "13:00:02 MERGE-SKIPPED x5",
-  "13:00:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "13:00:02 GOAL-0613-INTAKE START [clock]"
+  "13:20:05 JARVIS SKIPPED-ALREADY-PROPOSED BUILD-ROOM-CLOSES [JARVIS]",
+  "13:20:05 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
+  "13:20:05 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
+  "13:20:05 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
+  "13:20:05 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
+  "13:20:05 JARVIS PLANNER PROPOSED 0 [JARVIS]",
+  "13:20:05 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-09-17-2.md [JARVIS]",
+  "13:20:05 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
+  "13:20:05 JARVIS COST usd=0.0000 [JARVIS]",
+  "13:30:01 MERGE-SKIPPED x10",
+  "13:30:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "13:30:02  NO-WORK [clock]"
  ],
  "agents": [
   {
    "agent": "JARVIS",
-   "last_seen": "07:20:05",
+   "last_seen": "13:20:05",
    "last_action": "COST",
    "spend_today": 0.0,
-   "rows": 26,
-   "state": "IDLE"
+   "rows": 53,
+   "state": "ACTIVE"
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "12:38:28",
-   "last_action": "RETIRED-NEEDS-DECISION",
+   "last_seen": "13:17:28",
+   "last_action": "HEARTBEAT",
    "spend_today": 4.5571,
-   "rows": 80,
-   "state": "IDLE"
+   "rows": 97,
+   "state": "ACTIVE"
   },
   {
    "agent": "buildroom4",
-   "last_seen": "12:53:43",
-   "last_action": "RELEASED",
+   "last_seen": "13:11:01",
+   "last_action": "CREATED",
    "spend_today": 0.0,
-   "rows": 18,
+   "rows": 19,
    "state": "ACTIVE"
   },
   {
    "agent": "clock",
-   "last_seen": "13:00:02",
-   "last_action": "START",
+   "last_seen": "13:30:02",
+   "last_action": "NO-WORK",
    "spend_today": 0.0,
-   "rows": 108,
+   "rows": 113,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "13:00:02",
+   "last_seen": "13:30:01",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 281,
+   "rows": 291,
    "state": "ACTIVE"
   }
  ]
