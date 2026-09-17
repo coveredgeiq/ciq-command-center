@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-17 12:00 CDT",
+ "generated": "2026-09-17 12:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -270,13 +270,13 @@
   "needed": 3
  },
  "spend": {
-  "today": 4.56,
+  "today": 7.0,
   "day_stop": 60.0,
   "ceiling": 210.0,
-  "note": "goal sessions $0.00 from THROTTLE/logs/COST.log plus content lane $4.56 from CONTENT COST rows"
+  "note": "goal sessions $2.45 from THROTTLE/logs/COST.log plus content lane $4.56 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "12:00:02",
+  "last_row": "12:30:05",
   "alive": true,
   "repair_stop": true
  },
@@ -367,18 +367,18 @@
   }
  ],
  "rows": [
-  "11:30:04  NO-WORK [clock]",
-  "11:30:05 ciq-command-center.html DASHBOARD generated=2026-09-17 11:30 CDT bytes=18377 [clock]",
-  "11:30:09 ciq-command-center.html PAGES pushed 07bd155 to coveredgeiq/ciq-command-center [clock]",
-  "11:34:36 MERGE-SKIPPED x5",
-  "11:40:58 SHIP/HELD/HELD-2026-09-08-MITIGATION-PAPERWORK-v2 HELD-POSTED-FOR-WORD posted in full to C0C0GMNBWCU ts=1789663164.716519, first line HELD reply post or kill, Mo [buildroom4]",
-  "11:40:58 SHIP/HELD/HELD-2026-09-09-WATER-EXCLUSION-EXCEPTION HELD-POSTED-FOR-WORD posted in full to C0C0GMNBWCU ts=1789663193.835249, first line HELD reply post or kill, Mo [buildroom4]",
-  "11:40:58 SHIP/HELD/WAITLIST/WELCOME-EMAIL-01 HELD-POSTED-FOR-WORD posted in full to C0C0GMNBWCU ts=1789663201.404249, first line HELD reply send hold or rew [buildroom4]",
-  "11:40:58 ciq-desk-post.py RESTORE-PRE-START BUILDS/ciq-desk-post.py restored from BUILDS/snapshots/ciq-desk-post.py.20260915-1450-pre- [buildroom4]",
-  "11:40:59 GOAL-0612-DESK-POST-NAMES-ITEMS RELEASED Mothership M116 scope G-A, rung 2 attempt 3 of 3; ciq-desk-post.py restored to 7cb157e7b5a [buildroom4]",
-  "12:00:01 MERGE-SKIPPED x5",
-  "12:00:01  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "12:00:02 GOAL-0612-DESK-POST-NAMES-ITEMS START [clock]"
+  "12:00:03 ciq-command-center.html DASHBOARD generated=2026-09-17 12:00 CDT bytes=19022 [clock]",
+  "12:00:06 ciq-command-center.html PAGES pushed ab8263a to coveredgeiq/ciq-command-center [clock]",
+  "12:01:18 MERGE-SKIPPED x5",
+  "12:01:50 SHIP/HELD/HELD-2026-09-09-WATER-EXCLUSION-EXCEPTION HELD-POSTED-FOR-WORD reposted under A34, post text only, to C0C0GMNBWCU ts=1789664486.228919; earlier full post [buildroom4]",
+  "12:01:50 SHIP/HELD/HELD-2026-09-08-MITIGATION-PAPERWORK-v2 HELD-POSTED-FOR-WORD reposted under A34, post text only, to C0C0GMNBWCU ts=1789664492.452129; earlier full post [buildroom4]",
+  "12:11:25 GOAL-0612-DESK-POST-NAMES-ITEMS FAIL VERDICT: FAIL [clock]",
+  "12:11:26  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "12:11:26 RETIRED-NEEDS-DECISION x15",
+  "12:17:27 RELAY HEARTBEAT hb-fresh-4s",
+  "12:30:04 MERGE-SKIPPED x10",
+  "12:30:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "12:30:05 GOAL-0612-DESK-POST-NAMES-ITEMS START [clock]"
  ],
  "agents": [
   {
@@ -391,34 +391,34 @@
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "11:17:27",
+   "last_seen": "12:17:27",
    "last_action": "HEARTBEAT",
    "spend_today": 4.5571,
-   "rows": 47,
-   "state": "IDLE"
-  },
-  {
-   "agent": "buildroom4",
-   "last_seen": "11:40:59",
-   "last_action": "RELEASED",
-   "spend_today": 0.0,
-   "rows": 5,
+   "rows": 64,
    "state": "ACTIVE"
   },
   {
+   "agent": "buildroom4",
+   "last_seen": "12:01:50",
+   "last_action": "HELD-POSTED-FOR-WORD",
+   "spend_today": 0.0,
+   "rows": 7,
+   "state": "IDLE"
+  },
+  {
    "agent": "clock",
-   "last_seen": "12:00:02",
+   "last_seen": "12:30:05",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 98,
+   "rows": 103,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "12:00:01",
+   "last_seen": "12:30:04",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 255,
+   "rows": 270,
    "state": "ACTIVE"
   }
  ]
