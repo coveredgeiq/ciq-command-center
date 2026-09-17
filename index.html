@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-17 12:30 CDT",
+ "generated": "2026-09-17 13:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -270,22 +270,22 @@
   "needed": 3
  },
  "spend": {
-  "today": 7.0,
+  "today": 8.68,
   "day_stop": 60.0,
   "ceiling": 210.0,
-  "note": "goal sessions $2.45 from THROTTLE/logs/COST.log plus content lane $4.56 from CONTENT COST rows"
+  "note": "goal sessions $4.12 from THROTTLE/logs/COST.log plus content lane $4.56 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "12:30:05",
+  "last_row": "13:00:02",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
   "ready": 0,
   "running": 2,
-  "held": 11,
+  "held": 12,
   "proposed": 10,
-  "hold_lines": 69
+  "hold_lines": 71
  },
  "signatures": {
   "total": 0,
@@ -367,18 +367,18 @@
   }
  ],
  "rows": [
-  "12:00:03 ciq-command-center.html DASHBOARD generated=2026-09-17 12:00 CDT bytes=19022 [clock]",
-  "12:00:06 ciq-command-center.html PAGES pushed ab8263a to coveredgeiq/ciq-command-center [clock]",
-  "12:01:18 MERGE-SKIPPED x5",
-  "12:01:50 SHIP/HELD/HELD-2026-09-09-WATER-EXCLUSION-EXCEPTION HELD-POSTED-FOR-WORD reposted under A34, post text only, to C0C0GMNBWCU ts=1789664486.228919; earlier full post [buildroom4]",
-  "12:01:50 SHIP/HELD/HELD-2026-09-08-MITIGATION-PAPERWORK-v2 HELD-POSTED-FOR-WORD reposted under A34, post text only, to C0C0GMNBWCU ts=1789664492.452129; earlier full post [buildroom4]",
-  "12:11:25 GOAL-0612-DESK-POST-NAMES-ITEMS FAIL VERDICT: FAIL [clock]",
-  "12:11:26  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
-  "12:11:26 RETIRED-NEEDS-DECISION x15",
-  "12:17:27 RELAY HEARTBEAT hb-fresh-4s",
-  "12:30:04 MERGE-SKIPPED x10",
-  "12:30:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "12:30:05 GOAL-0612-DESK-POST-NAMES-ITEMS START [clock]"
+  "12:41:53 DOCTRINE/WRITER-DOCTRINE LOCK_CANDIDATE W5 no reference to the product, the platform or CoverEdgeIQ in the post body; founder edit [buildroom4]",
+  "12:41:53 DOCTRINE/WRITER-DOCTRINE LOCK_CANDIDATE W6 waitlist emails never assign a task; the only ask is a reply with the reader own questi [buildroom4]",
+  "12:41:53 SHIP/HELD/WAITLIST/WELCOME-EMAIL-02 HELD founder-approved text copied verbatim from #ciq-cmo ts 1789665324.631529 in thread 1789663 [buildroom4]",
+  "12:41:53 SHIP/HELD/WAITLIST/WELCOME-EMAIL-01 HELD-SUPERSEDED hold line WELCOME-EMAIL-01 added to QUEUE/HOLD.txt on Mothership M116 order so it leaves t [buildroom4]",
+  "12:52:11 GOAL-0612-DESK-POST-NAMES-ITEMS HELD bare lineage 0612 added to QUEUE/HOLD.txt before the 13:00 tick on Mothership M116 ruling  [buildroom4]",
+  "12:52:39 GOAL-0612-DESK-POST-NAMES-ITEMS G-A-BUILT-BY-PROOF Mothership M116 ruling 2: G-A graded BUILT by proof PROOFS/GOAL-0612-DESK-POST-NAMES-ITEMS [buildroom4]",
+  "12:53:43 GOAL-0613-INTAKE RELEASED Mothership M116 scope G-B intake; NEEDS verified (A27), plist and Drive paths repaired to  [buildroom4]",
+  "12:54:44 MERGE-SKIPPED x5",
+  "12:54:44 GOAL-0612-DESK-POST-NAMES-ITEMS HELD held by QUEUE/HOLD.txt entry 0612 [queue-gate]",
+  "13:00:02 MERGE-SKIPPED x5",
+  "13:00:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "13:00:02 GOAL-0613-INTAKE START [clock]"
  ],
  "agents": [
   {
@@ -391,34 +391,34 @@
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "12:17:27",
-   "last_action": "HEARTBEAT",
+   "last_seen": "12:38:28",
+   "last_action": "RETIRED-NEEDS-DECISION",
    "spend_today": 4.5571,
-   "rows": 64,
-   "state": "ACTIVE"
-  },
-  {
-   "agent": "buildroom4",
-   "last_seen": "12:01:50",
-   "last_action": "HELD-POSTED-FOR-WORD",
-   "spend_today": 0.0,
-   "rows": 7,
+   "rows": 80,
    "state": "IDLE"
   },
   {
+   "agent": "buildroom4",
+   "last_seen": "12:53:43",
+   "last_action": "RELEASED",
+   "spend_today": 0.0,
+   "rows": 18,
+   "state": "ACTIVE"
+  },
+  {
    "agent": "clock",
-   "last_seen": "12:30:05",
+   "last_seen": "13:00:02",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 103,
+   "rows": 108,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "12:30:04",
+   "last_seen": "13:00:02",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 270,
+   "rows": 281,
    "state": "ACTIVE"
   }
  ]
