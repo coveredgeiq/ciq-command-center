@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-17 18:00 CDT",
+ "generated": "2026-09-17 18:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -275,13 +275,13 @@
   "needed": 3
  },
  "spend": {
-  "today": 14.75,
+  "today": 15.8,
   "day_stop": 60.0,
   "ceiling": 210.0,
-  "note": "goal sessions $10.20 from THROTTLE/logs/COST.log plus content lane $4.56 from CONTENT COST rows"
+  "note": "goal sessions $11.24 from THROTTLE/logs/COST.log plus content lane $4.56 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "18:00:01",
+  "last_row": "18:30:00",
   "alive": true,
   "repair_stop": true
  },
@@ -372,35 +372,35 @@
   }
  ],
  "rows": [
-  "17:30:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "17:30:04 GOAL-0614-JONGIE-LINE-CHECKIN START [clock]",
-  "17:30:04 EA DIGEST-POSTED 1789684204.251389",
-  "17:30:04 DESK-POST delivered https://ciq-corp.slack.com/archives/C0C06P3QP7X/p1789684204283169",
-  "17:30:05 ciq-command-center.html DASHBOARD generated=2026-09-17 17:30 CDT bytes=18606 [clock]",
-  "17:30:06 ciq-command-center.html PAGES pushed 5d193ff to coveredgeiq/ciq-command-center [clock]",
-  "17:39:50 GOAL-0614-JONGIE-LINE-CHECKIN FAIL VERDICT: NO-CHECK-POWER the CHECK-CMD returns rc=0 against an empty state, so it cannot fa [clock]",
-  "17:39:51  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
-  "17:39:51 RETIRED-NEEDS-DECISION x15",
-  "18:00:01 MERGE-SKIPPED x10",
-  "18:00:01  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "18:00:01 GOAL-0614-JONGIE-LINE-CHECKIN START [clock]"
+  "18:20:06 JARVIS SKIPPED-ALREADY-PROPOSED BUILD-ROOM-CLOSES [JARVIS]",
+  "18:20:06 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
+  "18:20:06 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
+  "18:20:06 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
+  "18:20:06 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
+  "18:20:06 JARVIS PLANNER PROPOSED 0 [JARVIS]",
+  "18:20:06 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-09-17-7.md [JARVIS]",
+  "18:20:06 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
+  "18:20:06 JARVIS COST usd=0.0000 [JARVIS]",
+  "18:30:00 MERGE-SKIPPED x5",
+  "18:30:00  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "18:30:00 GOAL-0614-JONGIE-LINE-CHECKIN START [clock]"
  ],
  "agents": [
   {
    "agent": "JARVIS",
-   "last_seen": "17:20:03",
+   "last_seen": "18:20:06",
    "last_action": "COST",
    "spend_today": 0.0,
-   "rows": 161,
-   "state": "IDLE"
+   "rows": 188,
+   "state": "ACTIVE"
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "17:39:51",
-   "last_action": "RETIRED-NEEDS-DECISION",
+   "last_seen": "18:17:29",
+   "last_action": "HEARTBEAT",
    "spend_today": 4.5571,
-   "rows": 120,
-   "state": "IDLE"
+   "rows": 137,
+   "state": "ACTIVE"
   },
   {
    "agent": "buildroom4",
@@ -412,18 +412,18 @@
   },
   {
    "agent": "clock",
-   "last_seen": "18:00:01",
+   "last_seen": "18:30:00",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 150,
+   "rows": 155,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "18:00:01",
+   "last_seen": "18:30:00",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 386,
+   "rows": 396,
    "state": "ACTIVE"
   }
  ]
