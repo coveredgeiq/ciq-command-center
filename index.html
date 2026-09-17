@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-17 16:00 CDT",
+ "generated": "2026-09-17 16:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -281,7 +281,7 @@
   "note": "goal sessions $7.62 from THROTTLE/logs/COST.log plus content lane $4.56 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "16:00:03",
+  "last_row": "16:30:03",
   "alive": true,
   "repair_stop": true
  },
@@ -372,58 +372,58 @@
   }
  ],
  "rows": [
-  "15:20:02 JARVIS PLANNER PROPOSED 0 [JARVIS]",
-  "15:20:02 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-09-17-4.md [JARVIS]",
-  "15:20:02 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
-  "15:20:02 JARVIS COST usd=0.0000 [JARVIS]",
-  "15:30:00 MERGE-SKIPPED x5",
-  "15:30:00  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "15:30:00  NO-WORK [clock]",
-  "15:30:00 ciq-command-center.html DASHBOARD generated=2026-09-17 15:30 CDT bytes=18572 [clock]",
-  "15:30:02 ciq-command-center.html PAGES pushed 2a4b613 to coveredgeiq/ciq-command-center [clock]",
-  "16:00:03 MERGE-SKIPPED x10",
-  "16:00:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "16:00:03  NO-WORK [clock]"
+  "16:20:02 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
+  "16:20:02 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
+  "16:20:02 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
+  "16:20:02 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
+  "16:20:02 JARVIS PLANNER PROPOSED 0 [JARVIS]",
+  "16:20:02 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-09-17-5.md [JARVIS]",
+  "16:20:02 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
+  "16:20:02 JARVIS COST usd=0.0000 [JARVIS]",
+  "16:25:32 python3 INSTALLED slack-bolt and slack-sdk installed for G-D on Mothership M116 ruling 2; versions printed i [buildroom4]",
+  "16:30:03 MERGE-SKIPPED x10",
+  "16:30:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "16:30:03  NO-WORK [clock]"
  ],
  "agents": [
   {
    "agent": "JARVIS",
-   "last_seen": "15:20:02",
+   "last_seen": "16:20:02",
    "last_action": "COST",
    "spend_today": 0.0,
-   "rows": 107,
-   "state": "IDLE"
+   "rows": 134,
+   "state": "ACTIVE"
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "15:17:28",
+   "last_seen": "16:17:29",
    "last_action": "HEARTBEAT",
    "spend_today": 4.5571,
-   "rows": 99,
-   "state": "IDLE"
+   "rows": 100,
+   "state": "ACTIVE"
   },
   {
    "agent": "buildroom4",
-   "last_seen": "13:35:27",
-   "last_action": "CREATED",
+   "last_seen": "16:25:32",
+   "last_action": "INSTALLED",
    "spend_today": 0.0,
-   "rows": 20,
-   "state": "IDLE"
+   "rows": 21,
+   "state": "ACTIVE"
   },
   {
    "agent": "clock",
-   "last_seen": "16:00:03",
+   "last_seen": "16:30:03",
    "last_action": "NO-WORK",
    "spend_today": 0.0,
-   "rows": 133,
+   "rows": 137,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "16:00:03",
+   "last_seen": "16:30:03",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 341,
+   "rows": 356,
    "state": "ACTIVE"
   }
  ]
