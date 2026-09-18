@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-18 17:30 CDT",
+ "generated": "2026-09-18 18:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -281,7 +281,7 @@
   "note": "goal sessions $9.22 from THROTTLE/logs/COST.log plus content lane $3.56 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "17:30:00",
+  "last_row": "18:00:01",
   "alive": true,
   "repair_stop": true
  },
@@ -372,18 +372,18 @@
   }
  ],
  "rows": [
-  "17:20:02 JARVIS SKIPPED-ALREADY-PROPOSED BUILD-ROOM-CLOSES [JARVIS]",
-  "17:20:02 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
-  "17:20:02 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
-  "17:20:02 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
-  "17:20:02 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
-  "17:20:02 JARVIS PLANNER PROPOSED 0 [JARVIS]",
-  "17:20:02 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-09-18-11.md [JARVIS]",
-  "17:20:02 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
-  "17:20:02 JARVIS COST usd=0.0000 [JARVIS]",
   "17:30:00 MERGE-SKIPPED x5",
   "17:30:00  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "17:30:00  NO-WORK [clock]"
+  "17:30:00  NO-WORK [clock]",
+  "17:30:00 ciq-command-center.html DASHBOARD generated=2026-09-18 17:30 CDT bytes=18565 [clock]",
+  "17:30:01 EA DIGEST-POSTED 1789770601.098179",
+  "17:30:02 ciq-command-center.html PAGES pushed 59c65e4 to coveredgeiq/ciq-command-center [clock]",
+  "17:30:03 MERGE-SKIPPED x5",
+  "17:30:03 DESK-POST delivered https://ciq-corp.slack.com/archives/C0C06P3QP7X/p1789770601701239",
+  "17:32:34 RELAY HEARTBEAT hb-fresh-51s",
+  "18:00:01 MERGE-SKIPPED x10",
+  "18:00:01  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "18:00:01  NO-WORK [clock]"
  ],
  "agents": [
   {
@@ -392,14 +392,14 @@
    "last_action": "COST",
    "spend_today": 0.0,
    "rows": 297,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "16:32:33",
+   "last_seen": "17:32:34",
    "last_action": "HEARTBEAT",
    "spend_today": 3.5603,
-   "rows": 100,
+   "rows": 103,
    "state": "IDLE"
   },
   {
@@ -412,18 +412,18 @@
   },
   {
    "agent": "clock",
-   "last_seen": "17:30:00",
+   "last_seen": "18:00:01",
    "last_action": "NO-WORK",
    "spend_today": 0.0,
-   "rows": 145,
+   "rows": 149,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "17:30:00",
+   "last_seen": "18:00:01",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 376,
+   "rows": 391,
    "state": "ACTIVE"
   }
  ]
