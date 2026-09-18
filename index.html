@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-18 14:00 CDT",
+ "generated": "2026-09-18 14:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -281,7 +281,7 @@
   "note": "goal sessions $9.22 from THROTTLE/logs/COST.log plus content lane $3.56 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "14:00:02",
+  "last_row": "14:30:05",
   "alive": true,
   "repair_stop": true
  },
@@ -372,35 +372,35 @@
   }
  ],
  "rows": [
-  "13:20:06 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-09-18-7.md [JARVIS]",
-  "13:20:06 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
-  "13:20:06 JARVIS COST usd=0.0000 [JARVIS]",
-  "13:27:33 RELAY HEARTBEAT hb-fresh-2s",
-  "13:30:03 MERGE-SKIPPED x10",
-  "13:30:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "13:30:03  NO-WORK [clock]",
-  "13:30:03 ciq-command-center.html DASHBOARD generated=2026-09-18 13:30 CDT bytes=18535 [clock]",
-  "13:30:06 ciq-command-center.html PAGES pushed 5068506 to coveredgeiq/ciq-command-center [clock]",
-  "14:00:02 MERGE-SKIPPED x10",
-  "14:00:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "14:00:02  NO-WORK [clock]"
+  "14:20:03 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
+  "14:20:03 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
+  "14:20:03 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
+  "14:20:03 JARVIS PLANNER PROPOSED 0 [JARVIS]",
+  "14:20:03 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-09-18-8.md [JARVIS]",
+  "14:20:03 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
+  "14:20:03 JARVIS COST usd=0.0000 [JARVIS]",
+  "14:22:25 MERGE-SKIPPED x5",
+  "14:27:33 RELAY HEARTBEAT hb-fresh-59s",
+  "14:30:04 MERGE-SKIPPED x5",
+  "14:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "14:30:05  NO-WORK [clock]"
  ],
  "agents": [
   {
    "agent": "JARVIS",
-   "last_seen": "13:20:06",
+   "last_seen": "14:20:03",
    "last_action": "COST",
    "spend_today": 0.0,
-   "rows": 189,
-   "state": "IDLE"
+   "rows": 216,
+   "state": "ACTIVE"
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "13:27:33",
+   "last_seen": "14:27:33",
    "last_action": "HEARTBEAT",
    "spend_today": 3.5603,
-   "rows": 97,
-   "state": "IDLE"
+   "rows": 98,
+   "state": "ACTIVE"
   },
   {
    "agent": "buildroom5",
@@ -412,18 +412,18 @@
   },
   {
    "agent": "clock",
-   "last_seen": "14:00:02",
+   "last_seen": "14:30:05",
    "last_action": "NO-WORK",
    "spend_today": 0.0,
-   "rows": 117,
+   "rows": 121,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "14:00:02",
+   "last_seen": "14:30:04",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 306,
+   "rows": 316,
    "state": "ACTIVE"
   }
  ]
