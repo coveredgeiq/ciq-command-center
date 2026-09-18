@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-17 20:30 CDT",
+ "generated": "2026-09-17 21:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -281,13 +281,13 @@
   "note": "goal sessions $12.34 from THROTTLE/logs/COST.log plus content lane $4.56 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "20:30:03",
+  "last_row": "21:00:03",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
   "ready": 0,
-  "running": 0,
+  "running": 2,
   "held": 12,
   "proposed": 10,
   "hold_lines": 71
@@ -372,18 +372,18 @@
   }
  ],
  "rows": [
-  "20:20:01 JARVIS SKIPPED-ALREADY-PROPOSED BUILD-ROOM-CLOSES [JARVIS]",
-  "20:20:01 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
-  "20:20:01 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
-  "20:20:01 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
-  "20:20:01 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
-  "20:20:01 JARVIS PLANNER PROPOSED 0 [JARVIS]",
-  "20:20:01 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-09-17-9.md [JARVIS]",
   "20:20:01 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
   "20:20:01 JARVIS COST usd=0.0000 [JARVIS]",
   "20:30:03 MERGE-SKIPPED x10",
   "20:30:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "20:30:03  NO-WORK [clock]"
+  "20:30:03  NO-WORK [clock]",
+  "20:30:03 ciq-command-center.html DASHBOARD generated=2026-09-17 20:30 CDT bytes=18575 [clock]",
+  "20:30:05 ciq-command-center.html PAGES pushed 9876e91 to coveredgeiq/ciq-command-center [clock]",
+  "20:47:58 BUILDS/ciq-desk-post.py RESTORE-PRE-START Mothership M116 order T15 Order 1, A31 pre-START restore for lineage 0615, no lineage runn [buildroom5]",
+  "20:53:30 GOAL-0615-JONGIE-LINE-CHECKIN RELEASED Mothership M116 order T15 Order 3, scope G-C as minted in 0614 with four CHECK-CMD lines r [buildroom5]",
+  "21:00:02 MERGE-SKIPPED x10",
+  "21:00:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "21:00:03 GOAL-0615-JONGIE-LINE-CHECKIN START [clock]"
  ],
  "agents": [
   {
@@ -392,7 +392,7 @@
    "last_action": "COST",
    "spend_today": 0.0,
    "rows": 242,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "UNKNOWN",
@@ -400,7 +400,7 @@
    "last_action": "HEARTBEAT",
    "spend_today": 4.5571,
    "rows": 155,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "buildroom4",
@@ -411,19 +411,27 @@
    "state": "IDLE"
   },
   {
-   "agent": "clock",
-   "last_seen": "20:30:03",
-   "last_action": "NO-WORK",
+   "agent": "buildroom5",
+   "last_seen": "20:53:30",
+   "last_action": "RELEASED",
    "spend_today": 0.0,
-   "rows": 172,
+   "rows": 2,
+   "state": "ACTIVE"
+  },
+  {
+   "agent": "clock",
+   "last_seen": "21:00:03",
+   "last_action": "START",
+   "spend_today": 0.0,
+   "rows": 176,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "20:30:03",
+   "last_seen": "21:00:02",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 441,
+   "rows": 451,
    "state": "ACTIVE"
   }
  ]
