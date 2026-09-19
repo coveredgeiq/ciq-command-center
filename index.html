@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-19 12:00 CDT",
+ "generated": "2026-09-19 12:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -281,7 +281,7 @@
   "note": "goal sessions $2.68 from THROTTLE/logs/COST.log plus content lane $4.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "12:00:05",
+  "last_row": "12:30:00",
   "alive": true,
   "repair_stop": true
  },
@@ -372,27 +372,27 @@
   }
  ],
  "rows": [
-  "11:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "11:30:05 GOAL-0619-HELD-POST-TO-CMO START [clock]",
-  "11:30:06 ciq-command-center.html DASHBOARD generated=2026-09-19 11:30 CDT bytes=18598 [clock]",
-  "11:30:10 ciq-command-center.html PAGES pushed 4cbcdd5 to coveredgeiq/ciq-command-center [clock]",
-  "11:32:39 RELAY HEARTBEAT hb-fresh-11s",
-  "11:33:25 GOAL-0619-HELD-POST-TO-CMO HELD build room 5, R5-T1 section E second-FAIL branch, ordered by Mothership M117 2026-09-19-T1 [buildroom5]",
-  "11:35:27 GOAL-0619-HELD-POST-TO-CMO RETIRED VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not marked for crea [clock]",
-  "11:35:27  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
-  "11:35:27 RETIRED-NEEDS-DECISION x15",
-  "12:00:05 MERGE-SKIPPED x10",
-  "12:00:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "12:00:05  NO-WORK [clock]"
+  "12:20:05 JARVIS SKIPPED-ALREADY-PROPOSED BUILD-ROOM-CLOSES [JARVIS]",
+  "12:20:05 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
+  "12:20:05 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
+  "12:20:05 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
+  "12:20:05 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
+  "12:20:05 JARVIS PLANNER PROPOSED 0 [JARVIS]",
+  "12:20:05 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-09-19-6.md [JARVIS]",
+  "12:20:05 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
+  "12:20:05 JARVIS COST usd=0.0000 [JARVIS]",
+  "12:30:00 MERGE-SKIPPED x5",
+  "12:30:00  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "12:30:00  NO-WORK [clock]"
  ],
  "agents": [
   {
    "agent": "JARVIS",
-   "last_seen": "11:20:04",
+   "last_seen": "12:20:05",
    "last_action": "COST",
    "spend_today": 0.0,
-   "rows": 135,
-   "state": "IDLE"
+   "rows": 162,
+   "state": "ACTIVE"
   },
   {
    "agent": "UNKNOWN",
@@ -412,18 +412,18 @@
   },
   {
    "agent": "clock",
-   "last_seen": "12:00:05",
+   "last_seen": "12:30:00",
    "last_action": "NO-WORK",
    "spend_today": 0.0,
-   "rows": 100,
+   "rows": 104,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "12:00:05",
+   "last_seen": "12:30:00",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 261,
+   "rows": 271,
    "state": "ACTIVE"
   }
  ]
