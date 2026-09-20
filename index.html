@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-20 07:30 CDT",
+ "generated": "2026-09-20 08:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -281,7 +281,7 @@
   "note": "goal sessions $0.00 from THROTTLE/logs/COST.log plus content lane $3.75 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "07:30:04",
+  "last_row": "08:00:04",
   "alive": true,
   "repair_stop": true
  },
@@ -372,18 +372,18 @@
   }
  ],
  "rows": [
-  "07:20:02 JARVIS SKIPPED-ALREADY-PROPOSED BUILD-ROOM-CLOSES [JARVIS]",
-  "07:20:03 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
-  "07:20:03 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
-  "07:20:03 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
-  "07:20:03 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
-  "07:20:03 JARVIS PLANNER PROPOSED 0 [JARVIS]",
   "07:20:03 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-09-20.md [JARVIS]",
   "07:20:03 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
   "07:20:03 JARVIS COST usd=0.0000 [JARVIS]",
   "07:30:04 MERGE-SKIPPED x10",
   "07:30:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "07:30:04  NO-WORK [clock]"
+  "07:30:04  NO-WORK [clock]",
+  "07:30:04 ciq-command-center.html DASHBOARD generated=2026-09-20 07:30 CDT bytes=18432 [clock]",
+  "07:30:06 ciq-command-center.html PAGES pushed bb3550b to coveredgeiq/ciq-command-center [clock]",
+  "07:37:43 RELAY HEARTBEAT hb-fresh-22s",
+  "08:00:04 MERGE-SKIPPED x10",
+  "08:00:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "08:00:04  NO-WORK [clock]"
  ],
  "agents": [
   {
@@ -392,30 +392,30 @@
    "last_action": "COST",
    "spend_today": 0.0,
    "rows": 27,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "07:00:13",
-   "last_action": "RETIRED-NEEDS-DECISION",
+   "last_seen": "07:37:43",
+   "last_action": "HEARTBEAT",
    "spend_today": 3.7516,
-   "rows": 42,
+   "rows": 43,
    "state": "IDLE"
   },
   {
    "agent": "clock",
-   "last_seen": "07:30:04",
+   "last_seen": "08:00:04",
    "last_action": "NO-WORK",
    "spend_today": 0.0,
-   "rows": 62,
+   "rows": 66,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "07:30:04",
+   "last_seen": "08:00:04",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 165,
+   "rows": 175,
    "state": "ACTIVE"
   }
  ]
