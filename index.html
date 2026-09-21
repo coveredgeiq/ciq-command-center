@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-21 13:00 CDT",
+ "generated": "2026-09-21 13:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -292,18 +292,18 @@
   "needed": 3
  },
  "spend": {
-  "today": 20.92,
+  "today": 24.09,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $16.47 from THROTTLE/logs/COST.log plus content lane $4.45 from CONTENT COST rows"
+  "note": "goal sessions $19.64 from THROTTLE/logs/COST.log plus content lane $4.45 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "13:00:02",
+  "last_row": "13:30:03",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
-  "ready": 0,
+  "ready": 1,
   "running": 2,
   "held": 12,
   "proposed": 10,
@@ -389,34 +389,34 @@
   }
  ],
  "rows": [
-  "12:30:01  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "12:30:01  NO-WORK [clock]",
-  "12:30:01 ciq-command-center.html DASHBOARD generated=2026-09-21 12:30 CDT bytes=19550 [clock]",
-  "12:30:05 ciq-command-center.html PAGES pushed 3b99dc4 to coveredgeiq/ciq-command-center [clock]",
-  "12:32:51 MERGE-SKIPPED x5",
-  "12:33:58 CALENDAR.json CALENDAR-STALE-REMOVED Mothership M117 order 2026-09-21-T5 ruling 2: the three September 15 entries (LinkedIn pre [buildroom5]",
-  "12:33:58 lineage 0628 UNHELD build room 5: the author seat took no lineage, both its sessions returned Not logged in fr [buildroom5]",
-  "12:34:52 GOAL-0628-JONGIE-QUESTION-REACHES-FOUNDER RELEASED from OUTCOME-JONGIE-QUESTION-REACHES-FOUNDER.md, Mothership M117 order 2026-09-21-T5 rulin [buildroom5]",
-  "12:42:49 RELAY HEARTBEAT hb-fresh-11s",
-  "13:00:01 MERGE-SKIPPED x10",
-  "13:00:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "13:00:02 GOAL-0628-JONGIE-QUESTION-REACHES-FOUNDER START [clock]"
+  "13:20:04 JARVIS SKIPPED-ALREADY-PROPOSED BUILD-ROOM-CLOSES [JARVIS]",
+  "13:20:04 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
+  "13:20:04 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
+  "13:20:04 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
+  "13:20:04 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
+  "13:20:04 JARVIS PLANNER PROPOSED 0 [JARVIS]",
+  "13:20:04 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-09-21-7.md [JARVIS]",
+  "13:20:04 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
+  "13:20:04 JARVIS COST usd=0.0000 [JARVIS]",
+  "13:30:02 MERGE-SKIPPED x10",
+  "13:30:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "13:30:03 GOAL-0629-SEAT-CANNOT-FOOL-ITSELF START [clock]"
  ],
  "agents": [
   {
    "agent": "JARVIS",
-   "last_seen": "12:20:02",
+   "last_seen": "13:20:04",
    "last_action": "COST",
    "spend_today": 0.0,
-   "rows": 162,
-   "state": "IDLE"
+   "rows": 189,
+   "state": "ACTIVE"
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "12:42:49",
-   "last_action": "HEARTBEAT",
+   "last_seen": "13:11:25",
+   "last_action": "RETIRED-NEEDS-DECISION",
    "spend_today": 4.4475,
-   "rows": 128,
+   "rows": 144,
    "state": "ACTIVE"
   },
   {
@@ -429,26 +429,26 @@
   },
   {
    "agent": "buildroom5",
-   "last_seen": "12:34:52",
+   "last_seen": "13:14:04",
    "last_action": "RELEASED",
    "spend_today": 0.0,
-   "rows": 14,
-   "state": "IDLE"
+   "rows": 16,
+   "state": "ACTIVE"
   },
   {
    "agent": "clock",
-   "last_seen": "13:00:02",
+   "last_seen": "13:30:03",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 111,
+   "rows": 116,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "13:00:01",
+   "last_seen": "13:30:02",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 285,
+   "rows": 295,
    "state": "ACTIVE"
   }
  ]
