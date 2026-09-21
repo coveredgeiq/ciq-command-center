@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-20 22:00 CDT",
+ "generated": "2026-09-20 22:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -281,7 +281,7 @@
   "note": "goal sessions $0.00 from THROTTLE/logs/COST.log plus content lane $3.75 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "22:00:05",
+  "last_row": "22:30:05",
   "alive": true,
   "repair_stop": true
  },
@@ -372,27 +372,27 @@
   }
  ],
  "rows": [
-  "21:20:05 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-09-20-15.md [JARVIS]",
-  "21:20:05 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
-  "21:20:05 JARVIS COST usd=0.0000 [JARVIS]",
-  "21:30:04 MERGE-SKIPPED x10",
-  "21:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "21:30:05  NO-WORK [clock]",
-  "21:30:05 ciq-command-center.html DASHBOARD generated=2026-09-20 21:30 CDT bytes=18424 [clock]",
-  "21:30:06 ciq-command-center.html PAGES pushed 7a53560 to coveredgeiq/ciq-command-center [clock]",
-  "21:42:46 RELAY HEARTBEAT hb-fresh-47s",
-  "22:00:05 MERGE-SKIPPED x10",
-  "22:00:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "22:00:05  NO-WORK [clock]"
+  "22:20:03 JARVIS SKIPPED-ALREADY-PROPOSED BUILD-ROOM-CLOSES [JARVIS]",
+  "22:20:03 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
+  "22:20:03 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
+  "22:20:03 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
+  "22:20:03 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
+  "22:20:03 JARVIS PLANNER PROPOSED 0 [JARVIS]",
+  "22:20:03 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-09-20-16.md [JARVIS]",
+  "22:20:03 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
+  "22:20:03 JARVIS COST usd=0.0000 [JARVIS]",
+  "22:30:05 MERGE-SKIPPED x5",
+  "22:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "22:30:05  NO-WORK [clock]"
  ],
  "agents": [
   {
    "agent": "JARVIS",
-   "last_seen": "21:20:05",
+   "last_seen": "22:20:03",
    "last_action": "COST",
    "spend_today": 0.0,
-   "rows": 405,
-   "state": "IDLE"
+   "rows": 432,
+   "state": "ACTIVE"
   },
   {
    "agent": "UNKNOWN",
@@ -400,22 +400,22 @@
    "last_action": "HEARTBEAT",
    "spend_today": 3.7516,
    "rows": 59,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "clock",
-   "last_seen": "22:00:05",
+   "last_seen": "22:30:05",
    "last_action": "NO-WORK",
    "spend_today": 0.0,
-   "rows": 178,
+   "rows": 182,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "22:00:05",
+   "last_seen": "22:30:05",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 470,
+   "rows": 480,
    "state": "ACTIVE"
   }
  ]
