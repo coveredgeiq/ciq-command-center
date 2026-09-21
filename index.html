@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-21 12:00 CDT",
+ "generated": "2026-09-21 12:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -292,22 +292,22 @@
   "needed": 3
  },
  "spend": {
-  "today": 17.2,
+  "today": 20.92,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $12.75 from THROTTLE/logs/COST.log plus content lane $4.45 from CONTENT COST rows"
+  "note": "goal sessions $16.47 from THROTTLE/logs/COST.log plus content lane $4.45 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "12:00:02",
+  "last_row": "12:30:01",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
   "ready": 0,
-  "running": 2,
+  "running": 0,
   "held": 12,
   "proposed": 10,
-  "hold_lines": 72
+  "hold_lines": 73
  },
  "signatures": {
   "total": 0,
@@ -389,58 +389,66 @@
   }
  ],
  "rows": [
-  "11:30:04 ciq-command-center.html DASHBOARD generated=2026-09-21 11:30 CDT bytes=18584 [clock]",
-  "11:30:07 ciq-command-center.html PAGES pushed 7bcf65b to coveredgeiq/ciq-command-center [clock]",
-  "11:36:06 TODO BOARD-LIST-SET Mothership M117 order 2026-09-21-T4 step A: the six September 15 week items on the command [buildroom5]",
-  "11:39:47 MERGE-SKIPPED x5",
-  "11:39:51 GOAL-0627-ONE-ASK-ONE-MESSAGE RELEASED Mothership M117 OUTCOME O-L of orders 2026-09-21-T2 and T4, written by build room 5 under  [buildroom5]",
-  "11:42:49 RELAY HEARTBEAT hb-fresh-13s",
-  "11:59:53 GOAL-0626-AUTHOR-SEAT DONE VERDICT: SIGNED-PASS CHECK-PASS rc=0 out= proof=GOAL-0626-AUTHOR-SEAT.md.CHECK.20260921-11 [clock]",
-  "11:59:53  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
-  "11:59:53 RETIRED-NEEDS-DECISION x15",
-  "12:00:02 MERGE-SKIPPED x5",
-  "12:00:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "12:00:02 GOAL-0627-ONE-ASK-ONE-MESSAGE START [clock]"
+  "12:20:02 JARVIS SKIPPED-ALREADY-PROPOSED BUILD-ROOM-CLOSES [JARVIS]",
+  "12:20:02 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
+  "12:20:02 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
+  "12:20:02 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
+  "12:20:02 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
+  "12:20:02 JARVIS PLANNER PROPOSED 0 [JARVIS]",
+  "12:20:02 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-09-21-6.md [JARVIS]",
+  "12:20:02 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
+  "12:20:02 JARVIS COST usd=0.0000 [JARVIS]",
+  "12:30:00 MERGE-SKIPPED x5",
+  "12:30:01  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "12:30:01  NO-WORK [clock]"
  ],
  "agents": [
   {
    "agent": "JARVIS",
-   "last_seen": "11:20:05",
+   "last_seen": "12:20:02",
    "last_action": "COST",
    "spend_today": 0.0,
-   "rows": 135,
-   "state": "IDLE"
-  },
-  {
-   "agent": "UNKNOWN",
-   "last_seen": "11:59:53",
-   "last_action": "RETIRED-NEEDS-DECISION",
-   "spend_today": 4.4475,
-   "rows": 111,
+   "rows": 162,
    "state": "ACTIVE"
   },
   {
-   "agent": "buildroom5",
-   "last_seen": "11:39:51",
-   "last_action": "RELEASED",
+   "agent": "UNKNOWN",
+   "last_seen": "12:13:41",
+   "last_action": "RETIRED-NEEDS-DECISION",
+   "spend_today": 4.4475,
+   "rows": 127,
+   "state": "ACTIVE"
+  },
+  {
+   "agent": "author-seat",
+   "last_seen": "12:01:32",
+   "last_action": "GATED",
    "spend_today": 0.0,
-   "rows": 10,
+   "rows": 2,
+   "state": "IDLE"
+  },
+  {
+   "agent": "buildroom5",
+   "last_seen": "12:01:29",
+   "last_action": "HELD",
+   "spend_today": 0.0,
+   "rows": 11,
    "state": "IDLE"
   },
   {
    "agent": "clock",
-   "last_seen": "12:00:02",
-   "last_action": "START",
+   "last_seen": "12:30:01",
+   "last_action": "NO-WORK",
    "spend_today": 0.0,
-   "rows": 102,
+   "rows": 107,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "12:00:02",
+   "last_seen": "12:30:00",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 260,
+   "rows": 270,
    "state": "ACTIVE"
   }
  ]
