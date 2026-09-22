@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-22 01:30 CDT",
+ "generated": "2026-09-22 02:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -298,7 +298,7 @@
   "note": "goal sessions $0.00 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "01:30:02",
+  "last_row": "02:00:02",
   "alive": true,
   "repair_stop": true
  },
@@ -389,42 +389,42 @@
   }
  ],
  "rows": [
-  "00:30:05 ciq-command-center.html DASHBOARD generated=2026-09-22 00:30 CDT bytes=18686 [clock]",
-  "00:30:06 ciq-command-center.html PAGES pushed bf78f3b to coveredgeiq/ciq-command-center [clock]",
-  "00:32:53 MERGE-SKIPPED x5",
-  "00:47:56 RELAY HEARTBEAT hb-fresh-33s",
-  "01:00:03 MERGE-SKIPPED x10",
-  "01:00:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
   "01:00:03  NO-WORK [clock]",
   "01:00:03 ciq-command-center.html DASHBOARD generated=2026-09-22 01:00 CDT bytes=19111 [clock]",
   "01:00:06 ciq-command-center.html PAGES pushed b705a6b to coveredgeiq/ciq-command-center [clock]",
   "01:30:02 MERGE-SKIPPED x10",
   "01:30:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "01:30:02  NO-WORK [clock]"
+  "01:30:02  NO-WORK [clock]",
+  "01:30:03 ciq-command-center.html DASHBOARD generated=2026-09-22 01:30 CDT bytes=19109 [clock]",
+  "01:30:05 ciq-command-center.html PAGES pushed 2748fd0 to coveredgeiq/ciq-command-center [clock]",
+  "01:47:56 RELAY HEARTBEAT hb-fresh-31s",
+  "02:00:01 MERGE-SKIPPED x10",
+  "02:00:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "02:00:02  NO-WORK [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "00:47:56",
+   "last_seen": "01:47:56",
    "last_action": "HEARTBEAT",
    "spend_today": 0.0,
-   "rows": 1,
-   "state": "IDLE"
+   "rows": 2,
+   "state": "ACTIVE"
   },
   {
    "agent": "clock",
-   "last_seen": "01:30:02",
+   "last_seen": "02:00:02",
    "last_action": "NO-WORK",
    "spend_today": 0.0,
-   "rows": 14,
+   "rows": 18,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "01:30:02",
+   "last_seen": "02:00:01",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 40,
+   "rows": 50,
    "state": "ACTIVE"
   }
  ]
