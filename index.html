@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-21 23:00 CDT",
+ "generated": "2026-09-21 23:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -298,7 +298,7 @@
   "note": "goal sessions $24.98 from THROTTLE/logs/COST.log plus content lane $4.45 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "23:00:02",
+  "last_row": "23:30:05",
   "alive": true,
   "repair_stop": true
  },
@@ -389,18 +389,18 @@
   }
  ],
  "rows": [
-  "22:20:04 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
-  "22:20:04 JARVIS COST usd=0.0000 [JARVIS]",
-  "22:30:05 MERGE-SKIPPED x5",
-  "22:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "22:30:05  NO-WORK [clock]",
   "22:30:05 ciq-command-center.html DASHBOARD generated=2026-09-21 22:30 CDT bytes=19540 [clock]",
   "22:30:07 ciq-command-center.html PAGES pushed ba6af0a to coveredgeiq/ciq-command-center [clock]",
   "22:45:31 MERGE-SKIPPED x5",
   "22:47:55 RELAY HEARTBEAT hb-fresh-38s",
   "23:00:02 MERGE-SKIPPED x5",
   "23:00:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "23:00:02  NO-WORK [clock]"
+  "23:00:02  NO-WORK [clock]",
+  "23:00:03 ciq-command-center.html DASHBOARD generated=2026-09-21 23:00 CDT bytes=19517 [clock]",
+  "23:00:06 ciq-command-center.html PAGES pushed b092fd1 to coveredgeiq/ciq-command-center [clock]",
+  "23:30:04 MERGE-SKIPPED x10",
+  "23:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "23:30:05  NO-WORK [clock]"
  ],
  "agents": [
   {
@@ -417,7 +417,7 @@
    "last_action": "HEARTBEAT",
    "spend_today": 4.4475,
    "rows": 187,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "author-seat",
@@ -437,18 +437,18 @@
   },
   {
    "agent": "clock",
-   "last_seen": "23:00:02",
+   "last_seen": "23:30:05",
    "last_action": "NO-WORK",
    "spend_today": 0.0,
-   "rows": 194,
+   "rows": 198,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "23:00:02",
+   "last_seen": "23:30:04",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 495,
+   "rows": 505,
    "state": "ACTIVE"
   }
  ]
