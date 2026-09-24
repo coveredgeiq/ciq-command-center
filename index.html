@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-23 23:00 CDT",
+ "generated": "2026-09-23 23:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -298,7 +298,7 @@
   "note": "goal sessions $25.46 from THROTTLE/logs/COST.log plus content lane $4.41 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "23:00:03",
+  "last_row": "23:30:02",
   "alive": true,
   "repair_stop": true
  },
@@ -389,18 +389,18 @@
   }
  ],
  "rows": [
-  "22:20:03 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
-  "22:20:03 JARVIS COST usd=0.0000 [JARVIS]",
-  "22:30:04 MERGE-SKIPPED x5",
-  "22:30:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "22:30:04  NO-WORK [clock]",
-  "22:30:04 ciq-command-center.html DASHBOARD generated=2026-09-23 22:30 CDT bytes=19548 [clock]",
-  "22:30:07 ciq-command-center.html PAGES pushed db5b328 to coveredgeiq/ciq-command-center [clock]",
   "22:39:40 MERGE-SKIPPED x5",
   "22:48:09 RELAY HEARTBEAT hb-fresh-37s",
   "23:00:03 MERGE-SKIPPED x5",
   "23:00:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "23:00:03  NO-WORK [clock]"
+  "23:00:03  NO-WORK [clock]",
+  "23:00:03 ciq-command-center.html DASHBOARD generated=2026-09-23 23:00 CDT bytes=19525 [clock]",
+  "23:00:07 ciq-command-center.html PAGES pushed 90a7b88 to coveredgeiq/ciq-command-center [clock]",
+  "23:03:40 OUTCOME-FAILURES-BECOME-OUTCOMES SEAT-BAD-REPLY API Error: 400 You have reached your specified API usage limits. You will regain attempt 1 [author-seat]",
+  "23:03:59 OUTCOME-SIGNED-MEANS-LIVE-v1.1 SEAT-BAD-REPLY API Error: 400 You have reached your specified API usage limits. You will regain attempt 1 [author-seat]",
+  "23:30:02 MERGE-SKIPPED x10",
+  "23:30:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "23:30:02  NO-WORK [clock]"
  ],
  "agents": [
   {
@@ -417,14 +417,14 @@
    "last_action": "HEARTBEAT",
    "spend_today": 4.4058,
    "rows": 187,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "author-seat",
-   "last_seen": "22:03:25",
+   "last_seen": "23:03:59",
    "last_action": "SEAT-BAD-REPLY",
    "spend_today": 0.0,
-   "rows": 18,
+   "rows": 20,
    "state": "IDLE"
   },
   {
@@ -437,18 +437,18 @@
   },
   {
    "agent": "clock",
-   "last_seen": "23:00:03",
+   "last_seen": "23:30:02",
    "last_action": "NO-WORK",
    "spend_today": 0.0,
-   "rows": 197,
+   "rows": 201,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "23:00:03",
+   "last_seen": "23:30:02",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 495,
+   "rows": 505,
    "state": "ACTIVE"
   }
  ]
