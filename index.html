@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-24 14:30 CDT",
+ "generated": "2026-09-24 15:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -292,18 +292,18 @@
   "needed": 3
  },
  "spend": {
-  "today": 18.06,
+  "today": 21.09,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $18.06 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $21.09 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "14:30:05",
+  "last_row": "15:00:03",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
-  "ready": 3,
+  "ready": 4,
   "running": 2,
   "held": 12,
   "proposed": 10,
@@ -389,18 +389,18 @@
   }
  ],
  "rows": [
-  "14:20:03 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
-  "14:20:03 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
-  "14:20:03 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
-  "14:20:03 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
-  "14:20:03 JARVIS PLANNER PROPOSED 0 [JARVIS]",
-  "14:20:03 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-09-24-8.md [JARVIS]",
-  "14:20:03 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
-  "14:20:03 JARVIS COST usd=0.0000 [JARVIS]",
-  "14:30:04 MERGE-SKIPPED x10",
-  "14:30:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "14:30:04 GOAL-0642-CONSTRAINT-REACHES-THE-PACKET SKIP-UNCHANGED [clock]",
-  "14:30:05 GOAL-0641-EA-FIRES-ITS-OWN-LIVE-TEST START [clock]"
+  "14:38:09 GOAL-0641-EA-FIRES-ITS-OWN-LIVE-TEST FAIL VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not marked for crea [clock]",
+  "14:38:09  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "14:38:09 RETIRED-NEEDS-DECISION x15",
+  "14:48:15 RELAY HEARTBEAT hb-fresh-58s",
+  "15:00:02 MERGE-SKIPPED x10",
+  "15:00:02 GOAL-0644-AUDIT-READS-THE-REGISTER QUEUED [queue-gate]",
+  "15:00:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "15:00:02 GOAL-0640-SIGNED-CAUSE-BECOMES-CONSTRAINT SKIP-UNCHANGED [clock]",
+  "15:00:02 GOAL-0643-EA-DAILY-LIVE-ROW SKIP-UNCHANGED [clock]",
+  "15:00:03 GOAL-0642-CONSTRAINT-REACHES-THE-PACKET SKIP-UNCHANGED [clock]",
+  "15:00:03 GOAL-0641-EA-FIRES-ITS-OWN-LIVE-TEST SKIP-UNCHANGED [clock]",
+  "15:00:03 GOAL-0644-AUDIT-READS-THE-REGISTER START [clock]"
  ],
  "agents": [
   {
@@ -409,15 +409,15 @@
    "last_action": "COST",
    "spend_today": 0.0,
    "rows": 216,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "14:05:42",
-   "last_action": "RETIRED-NEEDS-DECISION",
+   "last_seen": "14:48:15",
+   "last_action": "HEARTBEAT",
    "spend_today": 0.0,
-   "rows": 129,
-   "state": "IDLE"
+   "rows": 146,
+   "state": "ACTIVE"
   },
   {
    "agent": "author-seat",
@@ -429,18 +429,18 @@
   },
   {
    "agent": "clock",
-   "last_seen": "14:30:05",
+   "last_seen": "15:00:03",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 128,
+   "rows": 137,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "14:30:04",
-   "last_action": "MERGE-SKIPPED",
+   "last_seen": "15:00:02",
+   "last_action": "QUEUED",
    "spend_today": 0.0,
-   "rows": 319,
+   "rows": 330,
    "state": "ACTIVE"
   }
  ]
