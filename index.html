@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-24 05:00 CDT",
+ "generated": "2026-09-24 05:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -298,7 +298,7 @@
   "note": "goal sessions $0.00 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "05:00:03",
+  "last_row": "05:30:02",
   "alive": true,
   "repair_stop": true
  },
@@ -389,18 +389,18 @@
   }
  ],
  "rows": [
-  "04:03:08 MERGE-SKIPPED x5",
-  "04:06:51 OUTCOME-FAILURES-BECOME-OUTCOMES SEAT-BAD-REPLY API Error: 400 You have reached your specified API usage limits. You will regain attempt 1 [author-seat]",
-  "04:07:09 OUTCOME-SIGNED-MEANS-LIVE-v1.1 SEAT-BAD-REPLY API Error: 400 You have reached your specified API usage limits. You will regain attempt 1 [author-seat]",
-  "04:30:04 MERGE-SKIPPED x10",
-  "04:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "04:30:05  NO-WORK [clock]",
-  "04:30:05 ciq-command-center.html DASHBOARD generated=2026-09-24 04:30 CDT bytes=19397 [clock]",
   "04:30:08 ciq-command-center.html PAGES pushed c517c13 to coveredgeiq/ciq-command-center [clock]",
   "04:48:12 RELAY HEARTBEAT hb-fresh-23s",
   "05:00:03 MERGE-SKIPPED x10",
   "05:00:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "05:00:03  NO-WORK [clock]"
+  "05:00:03  NO-WORK [clock]",
+  "05:00:03 ciq-command-center.html DASHBOARD generated=2026-09-24 05:00 CDT bytes=19400 [clock]",
+  "05:00:07 ciq-command-center.html PAGES pushed 0b4d04a to coveredgeiq/ciq-command-center [clock]",
+  "05:07:27 OUTCOME-FAILURES-BECOME-OUTCOMES SEAT-BAD-REPLY API Error: 400 You have reached your specified API usage limits. You will regain attempt 1 [author-seat]",
+  "05:07:47 OUTCOME-SIGNED-MEANS-LIVE-v1.1 SEAT-BAD-REPLY API Error: 400 You have reached your specified API usage limits. You will regain attempt 1 [author-seat]",
+  "05:30:02 MERGE-SKIPPED x10",
+  "05:30:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "05:30:02  NO-WORK [clock]"
  ],
  "agents": [
   {
@@ -409,30 +409,30 @@
    "last_action": "HEARTBEAT",
    "spend_today": 0.0,
    "rows": 5,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "author-seat",
-   "last_seen": "04:07:09",
+   "last_seen": "05:07:47",
    "last_action": "SEAT-BAD-REPLY",
    "spend_today": 0.0,
-   "rows": 10,
+   "rows": 12,
    "state": "IDLE"
   },
   {
    "agent": "clock",
-   "last_seen": "05:00:03",
+   "last_seen": "05:30:02",
    "last_action": "NO-WORK",
    "spend_today": 0.0,
-   "rows": 42,
+   "rows": 46,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "05:00:03",
+   "last_seen": "05:30:02",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 115,
+   "rows": 125,
    "state": "ACTIVE"
   }
  ]
