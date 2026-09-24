@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-24 14:00 CDT",
+ "generated": "2026-09-24 14:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -292,13 +292,13 @@
   "needed": 3
  },
  "spend": {
-  "today": 16.3,
+  "today": 18.06,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $16.30 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $18.06 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "14:00:05",
+  "last_row": "14:30:05",
   "alive": true,
   "repair_stop": true
  },
@@ -389,35 +389,35 @@
   }
  ],
  "rows": [
-  "13:37:36 GOAL-0642-CONSTRAINT-REACHES-THE-PACKET FAIL VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not marked for crea [clock]",
-  "13:37:37  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
-  "13:37:37 RETIRED-NEEDS-DECISION x15",
-  "13:44:13 OUTCOME-SIGNED-MEANS-LIVE-v1.1 SEAT-BAD-REPLY (empty) attempt 2 [author-seat]",
-  "13:48:14 RELAY HEARTBEAT hb-fresh-0s",
-  "13:55:45 MERGE-SKIPPED x5",
-  "13:55:45 GOAL-0643-EA-DAILY-LIVE-ROW QUEUED [queue-gate]",
-  "14:00:03 MERGE-SKIPPED x5",
-  "14:00:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "14:00:03 GOAL-0641-EA-FIRES-ITS-OWN-LIVE-TEST SKIP-UNCHANGED [clock]",
-  "14:00:04 GOAL-0640-SIGNED-CAUSE-BECOMES-CONSTRAINT SKIP-UNCHANGED [clock]",
-  "14:00:05 GOAL-0643-EA-DAILY-LIVE-ROW START [clock]"
+  "14:20:03 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
+  "14:20:03 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
+  "14:20:03 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
+  "14:20:03 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
+  "14:20:03 JARVIS PLANNER PROPOSED 0 [JARVIS]",
+  "14:20:03 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-09-24-8.md [JARVIS]",
+  "14:20:03 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
+  "14:20:03 JARVIS COST usd=0.0000 [JARVIS]",
+  "14:30:04 MERGE-SKIPPED x10",
+  "14:30:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "14:30:04 GOAL-0642-CONSTRAINT-REACHES-THE-PACKET SKIP-UNCHANGED [clock]",
+  "14:30:05 GOAL-0641-EA-FIRES-ITS-OWN-LIVE-TEST START [clock]"
  ],
  "agents": [
   {
    "agent": "JARVIS",
-   "last_seen": "13:20:05",
+   "last_seen": "14:20:03",
    "last_action": "COST",
    "spend_today": 0.0,
-   "rows": 189,
-   "state": "IDLE"
+   "rows": 216,
+   "state": "ACTIVE"
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "13:48:14",
-   "last_action": "HEARTBEAT",
+   "last_seen": "14:05:42",
+   "last_action": "RETIRED-NEEDS-DECISION",
    "spend_today": 0.0,
-   "rows": 113,
-   "state": "ACTIVE"
+   "rows": 129,
+   "state": "IDLE"
   },
   {
    "agent": "author-seat",
@@ -425,22 +425,22 @@
    "last_action": "SEAT-BAD-REPLY",
    "spend_today": 0.0,
    "rows": 36,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "clock",
-   "last_seen": "14:00:05",
+   "last_seen": "14:30:05",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 122,
+   "rows": 128,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "14:00:03",
+   "last_seen": "14:30:04",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 309,
+   "rows": 319,
    "state": "ACTIVE"
   }
  ]
