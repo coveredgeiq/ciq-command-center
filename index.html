@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-24 16:00 CDT",
+ "generated": "2026-09-24 16:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -292,18 +292,18 @@
   "needed": 3
  },
  "spend": {
-  "today": 24.02,
+  "today": 26.65,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $24.02 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $26.65 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "16:00:04",
+  "last_row": "16:30:07",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
-  "ready": 3,
+  "ready": 4,
   "running": 2,
   "held": 12,
   "proposed": 10,
@@ -389,58 +389,58 @@
   }
  ],
  "rows": [
-  "15:30:05 GOAL-0640-SIGNED-CAUSE-BECOMES-CONSTRAINT START [clock]",
-  "15:30:06 ciq-command-center.html DASHBOARD generated=2026-09-24 15:30 CDT bytes=19389 [clock]",
-  "15:30:09 ciq-command-center.html PAGES pushed 3e15adb to coveredgeiq/ciq-command-center [clock]",
-  "15:33:01 GOAL-0640-SIGNED-CAUSE-BECOMES-CONSTRAINT RETIRED VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not marked for crea [clock]",
-  "15:33:01  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
-  "15:33:01 RETIRED-NEEDS-DECISION x15",
-  "15:43:21 MERGE-SKIPPED x5",
-  "15:48:15 RELAY HEARTBEAT hb-fresh-56s",
-  "16:00:03 MERGE-SKIPPED x5",
-  "16:00:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "16:00:03 GOAL-0643-EA-DAILY-LIVE-ROW SKIP-UNCHANGED [clock]",
-  "16:00:04 GOAL-0642-CONSTRAINT-REACHES-THE-PACKET START [clock]"
+  "16:20:05 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-09-24-10.md [JARVIS]",
+  "16:20:05 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
+  "16:20:05 JARVIS COST usd=0.0000 [JARVIS]",
+  "16:20:55 OUTCOME-LEARNING-EDGE SEAT-BAD-REPLY (empty) attempt 2 [author-seat]",
+  "16:30:04 MERGE-SKIPPED x5",
+  "16:30:04 GOAL-0645-DAILY-AUDIT-RUNS-THE-CONSTRAINTS-WRITER QUEUED [queue-gate]",
+  "16:30:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "16:30:04 GOAL-0641-EA-FIRES-ITS-OWN-LIVE-TEST SKIP-UNCHANGED [clock]",
+  "16:30:05 GOAL-0644-AUDIT-READS-THE-REGISTER SKIP-UNCHANGED [clock]",
+  "16:30:06 GOAL-0643-EA-DAILY-LIVE-ROW SKIP-UNCHANGED [clock]",
+  "16:30:06 GOAL-0642-CONSTRAINT-REACHES-THE-PACKET SKIP-UNCHANGED [clock]",
+  "16:30:07 GOAL-0645-DAILY-AUDIT-RUNS-THE-CONSTRAINTS-WRITER START [clock]"
  ],
  "agents": [
   {
    "agent": "JARVIS",
-   "last_seen": "15:20:06",
+   "last_seen": "16:20:05",
    "last_action": "COST",
    "spend_today": 0.0,
-   "rows": 243,
-   "state": "IDLE"
-  },
-  {
-   "agent": "UNKNOWN",
-   "last_seen": "15:48:15",
-   "last_action": "HEARTBEAT",
-   "spend_today": 0.0,
-   "rows": 179,
+   "rows": 270,
    "state": "ACTIVE"
   },
   {
-   "agent": "author-seat",
-   "last_seen": "13:44:13",
-   "last_action": "SEAT-BAD-REPLY",
+   "agent": "UNKNOWN",
+   "last_seen": "16:03:42",
+   "last_action": "RETIRED-NEEDS-DECISION",
    "spend_today": 0.0,
-   "rows": 36,
+   "rows": 195,
    "state": "IDLE"
   },
   {
+   "agent": "author-seat",
+   "last_seen": "16:20:55",
+   "last_action": "SEAT-BAD-REPLY",
+   "spend_today": 0.0,
+   "rows": 39,
+   "state": "ACTIVE"
+  },
+  {
    "agent": "clock",
-   "last_seen": "16:00:04",
+   "last_seen": "16:30:07",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 148,
+   "rows": 157,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "16:00:03",
-   "last_action": "MERGE-SKIPPED",
+   "last_seen": "16:30:04",
+   "last_action": "QUEUED",
    "spend_today": 0.0,
-   "rows": 350,
+   "rows": 361,
    "state": "ACTIVE"
   }
  ]
