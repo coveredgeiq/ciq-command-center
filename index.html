@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-24 16:30 CDT",
+ "generated": "2026-09-24 17:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -292,13 +292,13 @@
   "needed": 3
  },
  "spend": {
-  "today": 26.65,
+  "today": 27.84,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $26.65 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $27.84 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "16:30:07",
+  "last_row": "17:00:03",
   "alive": true,
   "repair_stop": true
  },
@@ -389,18 +389,18 @@
   }
  ],
  "rows": [
-  "16:20:05 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-09-24-10.md [JARVIS]",
-  "16:20:05 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
-  "16:20:05 JARVIS COST usd=0.0000 [JARVIS]",
-  "16:20:55 OUTCOME-LEARNING-EDGE SEAT-BAD-REPLY (empty) attempt 2 [author-seat]",
-  "16:30:04 MERGE-SKIPPED x5",
-  "16:30:04 GOAL-0645-DAILY-AUDIT-RUNS-THE-CONSTRAINTS-WRITER QUEUED [queue-gate]",
-  "16:30:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "16:30:04 GOAL-0641-EA-FIRES-ITS-OWN-LIVE-TEST SKIP-UNCHANGED [clock]",
-  "16:30:05 GOAL-0644-AUDIT-READS-THE-REGISTER SKIP-UNCHANGED [clock]",
-  "16:30:06 GOAL-0643-EA-DAILY-LIVE-ROW SKIP-UNCHANGED [clock]",
-  "16:30:06 GOAL-0642-CONSTRAINT-REACHES-THE-PACKET SKIP-UNCHANGED [clock]",
-  "16:30:07 GOAL-0645-DAILY-AUDIT-RUNS-THE-CONSTRAINTS-WRITER START [clock]"
+  "16:30:11 ciq-command-center.html PAGES pushed 641c888 to coveredgeiq/ciq-command-center [clock]",
+  "16:30:56 OUTCOME-SIGNED-MEANS-LIVE-v1.1 SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
+  "16:34:14 GOAL-0645-DAILY-AUDIT-RUNS-THE-CONSTRAINTS-WRITER FAIL VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not marked for crea [clock]",
+  "16:34:14  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "16:34:14 RETIRED-NEEDS-DECISION x15",
+  "16:37:25 MERGE-SKIPPED x5",
+  "16:48:15 RELAY HEARTBEAT hb-fresh-54s",
+  "17:00:02 MERGE-SKIPPED x5",
+  "17:00:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "17:00:02 GOAL-0641-EA-FIRES-ITS-OWN-LIVE-TEST SKIP-UNCHANGED [clock]",
+  "17:00:02 GOAL-0644-AUDIT-READS-THE-REGISTER SKIP-UNCHANGED [clock]",
+  "17:00:03 GOAL-0643-EA-DAILY-LIVE-ROW START [clock]"
  ],
  "agents": [
   {
@@ -409,38 +409,38 @@
    "last_action": "COST",
    "spend_today": 0.0,
    "rows": 270,
-   "state": "ACTIVE"
-  },
-  {
-   "agent": "UNKNOWN",
-   "last_seen": "16:03:42",
-   "last_action": "RETIRED-NEEDS-DECISION",
-   "spend_today": 0.0,
-   "rows": 195,
    "state": "IDLE"
   },
   {
-   "agent": "author-seat",
-   "last_seen": "16:20:55",
-   "last_action": "SEAT-BAD-REPLY",
+   "agent": "UNKNOWN",
+   "last_seen": "16:48:15",
+   "last_action": "HEARTBEAT",
    "spend_today": 0.0,
-   "rows": 39,
+   "rows": 212,
    "state": "ACTIVE"
   },
   {
+   "agent": "author-seat",
+   "last_seen": "16:30:56",
+   "last_action": "SEAT-BAD-REPLY",
+   "spend_today": 0.0,
+   "rows": 40,
+   "state": "IDLE"
+  },
+  {
    "agent": "clock",
-   "last_seen": "16:30:07",
+   "last_seen": "17:00:03",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 157,
+   "rows": 164,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "16:30:04",
-   "last_action": "QUEUED",
+   "last_seen": "17:00:02",
+   "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 361,
+   "rows": 371,
    "state": "ACTIVE"
   }
  ]
