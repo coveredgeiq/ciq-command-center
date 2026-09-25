@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-25 16:30 CDT",
+ "generated": "2026-09-25 17:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -298,7 +298,7 @@
   "note": "goal sessions $60.23 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "16:30:05",
+  "last_row": "17:00:03",
   "alive": true,
   "repair_stop": true
  },
@@ -389,18 +389,18 @@
   }
  ],
  "rows": [
-  "16:20:05 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
-  "16:20:05 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
-  "16:20:05 JARVIS PLANNER PROPOSED 0 [JARVIS]",
-  "16:20:05 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-09-25-10.md [JARVIS]",
-  "16:20:05 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
-  "16:20:05 JARVIS COST usd=0.0000 [JARVIS]",
-  "16:22:58 CIO SKIPPED-CEILING today's spend $60.23 >= ceiling $60.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
-  "16:25:39 MERGE-SKIPPED x5",
-  "16:28:38 OUTCOME-SIGNED-MEANS-LIVE-v1.1 SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
-  "16:30:04 MERGE-SKIPPED x5",
   "16:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "16:30:05  CEILING-STOP spend=$60.23 ceiling=$60.00 [clock]"
+  "16:30:05  CEILING-STOP spend=$60.23 ceiling=$60.00 [clock]",
+  "16:30:06 ciq-command-center.html DASHBOARD generated=2026-09-25 16:30 CDT bytes=19422 [clock]",
+  "16:30:09 ciq-command-center.html PAGES pushed e63d57f to coveredgeiq/ciq-command-center [clock]",
+  "16:32:58 CIO SKIPPED-CEILING today's spend $60.23 >= ceiling $60.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
+  "16:42:58 CIO SKIPPED-CEILING today's spend $60.23 >= ceiling $60.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
+  "16:48:23 RELAY HEARTBEAT hb-fresh-52s",
+  "16:52:50 MERGE-SKIPPED x5",
+  "16:52:58 CIO SKIPPED-CEILING today's spend $60.23 >= ceiling $60.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
+  "17:00:03 MERGE-SKIPPED x5",
+  "17:00:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "17:00:03  CEILING-STOP spend=$60.23 ceiling=$60.00 [clock]"
  ],
  "agents": [
   {
@@ -409,14 +409,14 @@
    "last_action": "COST",
    "spend_today": 0.0,
    "rows": 270,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "16:22:58",
+   "last_seen": "16:52:58",
    "last_action": "SKIPPED-CEILING",
    "spend_today": 0.0,
-   "rows": 456,
+   "rows": 460,
    "state": "ACTIVE"
   },
   {
@@ -425,22 +425,22 @@
    "last_action": "SEAT-BAD-REPLY",
    "spend_today": 0.0,
    "rows": 40,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "clock",
-   "last_seen": "16:30:05",
+   "last_seen": "17:00:03",
    "last_action": "CEILING-STOP",
    "spend_today": 0.0,
-   "rows": 186,
+   "rows": 190,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "16:30:04",
+   "last_seen": "17:00:03",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 371,
+   "rows": 381,
    "state": "ACTIVE"
   }
  ]
