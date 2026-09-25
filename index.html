@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-25 01:00 CDT",
+ "generated": "2026-09-25 01:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -292,13 +292,13 @@
   "needed": 3
  },
  "spend": {
-  "today": 3.02,
+  "today": 4.92,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $3.02 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $4.92 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "01:00:01",
+  "last_row": "01:30:05",
   "alive": true,
   "repair_stop": true
  },
@@ -389,27 +389,27 @@
   }
  ],
  "rows": [
-  "00:30:06 GOAL-0647-SEED-AND-SCHEDULE-THE-FAILURE-LOOP SKIP-UNCHANGED [clock]",
-  "00:30:06 GOAL-0650-RETIREMENT-CHECK-KNOWS-ITS-OWN-CODE START [clock]",
-  "00:30:07 ciq-command-center.html DASHBOARD generated=2026-09-25 00:30 CDT bytes=19255 [clock]",
-  "00:30:09 ciq-command-center.html PAGES pushed 1ab0491 to coveredgeiq/ciq-command-center [clock]",
-  "00:36:55 GOAL-0650-RETIREMENT-CHECK-KNOWS-ITS-OWN-CODE FAIL VERDICT: FAIL [clock]",
-  "00:36:55  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
-  "00:36:55 RETIRED-NEEDS-DECISION x15",
-  "00:42:08 MERGE-SKIPPED x5",
   "00:48:18 RELAY HEARTBEAT hb-fresh-33s",
   "01:00:01 MERGE-SKIPPED x5",
   "01:00:01  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "01:00:01 GOAL-0648-RETIRED-CONSTRAINT-NEVER-DELETED START [clock]"
+  "01:00:01 GOAL-0648-RETIRED-CONSTRAINT-NEVER-DELETED START [clock]",
+  "01:00:02 ciq-command-center.html DASHBOARD generated=2026-09-25 01:00 CDT bytes=19241 [clock]",
+  "01:00:04 ciq-command-center.html PAGES pushed 0226b74 to coveredgeiq/ciq-command-center [clock]",
+  "01:07:11 GOAL-0648-RETIRED-CONSTRAINT-NEVER-DELETED FAIL VERDICT: FAIL [clock]",
+  "01:07:12  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "01:07:12 RETIRED-NEEDS-DECISION x15",
+  "01:30:04 MERGE-SKIPPED x10",
+  "01:30:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "01:30:05 GOAL-0649-CMO-FIRES-ITS-OWN-LIVE-TEST START [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "00:48:18",
-   "last_action": "HEARTBEAT",
+   "last_seen": "01:07:12",
+   "last_action": "RETIRED-NEEDS-DECISION",
    "spend_today": 0.0,
-   "rows": 33,
-   "state": "ACTIVE"
+   "rows": 49,
+   "state": "IDLE"
   },
   {
    "agent": "author-seat",
@@ -421,18 +421,18 @@
   },
   {
    "agent": "clock",
-   "last_seen": "01:00:01",
+   "last_seen": "01:30:05",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 15,
+   "rows": 20,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "01:00:01",
+   "last_seen": "01:30:04",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 26,
+   "rows": 36,
    "state": "ACTIVE"
   }
  ]
