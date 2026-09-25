@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-24 22:30 CDT",
+ "generated": "2026-09-24 23:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -292,18 +292,18 @@
   "needed": 3
  },
  "spend": {
-  "today": 44.94,
+  "today": 47.36,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $44.94 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $47.36 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "22:30:05",
+  "last_row": "23:00:05",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
-  "ready": 1,
+  "ready": 2,
   "running": 2,
   "held": 12,
   "proposed": 10,
@@ -389,18 +389,18 @@
   }
  ],
  "rows": [
-  "22:20:04 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
-  "22:20:04 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
-  "22:20:04 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
-  "22:20:04 JARVIS PLANNER PROPOSED 0 [JARVIS]",
-  "22:20:04 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-09-24-16.md [JARVIS]",
-  "22:20:04 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
-  "22:20:04 JARVIS COST usd=0.0000 [JARVIS]",
-  "22:27:28 MERGE-SKIPPED x5",
-  "22:28:19 OUTCOME-FAILURES-BECOME-OUTCOMES SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
-  "22:30:05 MERGE-SKIPPED x5",
-  "22:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "22:30:05 GOAL-0646-SEED-BEFORE-FIRST-REAL-FIRE START [clock]"
+  "22:34:29 RETIRED-NEEDS-DECISION x15",
+  "22:36:00 OUTCOME-LEARNING-EDGE GATED FINAL FAIL attempt 1: FINAL FAIL GATE-SPEC [author-seat]",
+  "22:46:01 OUTCOME-LEARNING-EDGE SEAT-BAD-REPLY (empty) attempt 2 [author-seat]",
+  "22:48:18 RELAY HEARTBEAT hb-fresh-37s",
+  "22:54:22 MERGE-SKIPPED x5",
+  "22:54:22 GOAL-0648-RETIRED-CONSTRAINT-NEVER-DELETED QUEUED [queue-gate]",
+  "22:56:02 OUTCOME-SIGNED-MEANS-LIVE-v1.1 SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
+  "23:00:04 MERGE-SKIPPED x5",
+  "23:00:04 GOAL-0649-CMO-FIRES-ITS-OWN-LIVE-TEST QUEUED [queue-gate]",
+  "23:00:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "23:00:04 GOAL-0647-SEED-AND-SCHEDULE-THE-FAILURE-LOOP SKIP-UNCHANGED [clock]",
+  "23:00:05 GOAL-0648-RETIRED-CONSTRAINT-NEVER-DELETED START [clock]"
  ],
  "agents": [
   {
@@ -409,38 +409,38 @@
    "last_action": "COST",
    "spend_today": 0.0,
    "rows": 432,
-   "state": "ACTIVE"
-  },
-  {
-   "agent": "UNKNOWN",
-   "last_seen": "22:04:21",
-   "last_action": "RETIRED-NEEDS-DECISION",
-   "spend_today": 0.0,
-   "rows": 394,
    "state": "IDLE"
   },
   {
+   "agent": "UNKNOWN",
+   "last_seen": "22:48:18",
+   "last_action": "HEARTBEAT",
+   "spend_today": 0.0,
+   "rows": 411,
+   "state": "ACTIVE"
+  },
+  {
    "agent": "author-seat",
-   "last_seen": "22:28:19",
+   "last_seen": "22:56:02",
    "last_action": "SEAT-BAD-REPLY",
    "spend_today": 0.0,
-   "rows": 52,
+   "rows": 55,
    "state": "ACTIVE"
   },
   {
    "agent": "clock",
-   "last_seen": "22:30:05",
+   "last_seen": "23:00:05",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 232,
+   "rows": 238,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "22:30:05",
-   "last_action": "MERGE-SKIPPED",
+   "last_seen": "23:00:04",
+   "last_action": "QUEUED",
    "spend_today": 0.0,
-   "rows": 493,
+   "rows": 505,
    "state": "ACTIVE"
   }
  ]
