@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-25 05:30 CDT",
+ "generated": "2026-09-25 06:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -292,13 +292,13 @@
   "needed": 3
  },
  "spend": {
-  "today": 22.68,
+  "today": 25.16,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $22.68 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $25.16 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "05:30:03",
+  "last_row": "06:00:03",
   "alive": true,
   "repair_stop": true
  },
@@ -315,7 +315,7 @@
  },
  "lane": {
   "state": "RUNNING",
-  "detail": "started 06:00:04",
+  "detail": "started 06:00:02",
   "cost": 0.0
  },
  "agenda": [
@@ -389,27 +389,27 @@
   }
  ],
  "rows": [
-  "05:00:05 GOAL-0651-CIO-FIRES-ITS-OWN-LIVE-TEST SKIP-UNCHANGED [clock]",
-  "05:00:05 GOAL-0650-RETIREMENT-CHECK-KNOWS-ITS-OWN-CODE SKIP-UNCHANGED [clock]",
-  "05:00:05 GOAL-0652-CIO-DAILY-LIVE-ROW SKIP-UNCHANGED [clock]",
-  "05:00:06 GOAL-0653-KEPT-POST-BECOMES-A-GOLD-EXAMPLE START [clock]",
-  "05:00:07 ciq-command-center.html DASHBOARD generated=2026-09-25 05:00 CDT bytes=19203 [clock]",
-  "05:00:08 ciq-command-center.html PAGES pushed 0bd2e35 to coveredgeiq/ciq-command-center [clock]",
-  "05:09:08 GOAL-0653-KEPT-POST-BECOMES-A-GOLD-EXAMPLE FAIL VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not marked for crea [clock]",
-  "05:09:09  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
-  "05:09:09 RETIRED-NEEDS-DECISION x15",
-  "05:30:03 MERGE-SKIPPED x10",
-  "05:30:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "05:30:03 GOAL-0654-CMO-DAILY-LIVE-ROW START [clock]"
+  "05:30:07 ciq-command-center.html PAGES pushed 349d1d2 to coveredgeiq/ciq-command-center [clock]",
+  "05:39:14 MERGE-SKIPPED x5",
+  "05:39:15 GOAL-0654-CMO-DAILY-LIVE-ROW FAIL VERDICT: FAIL [clock]",
+  "05:39:16  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "05:39:16 RETIRED-NEEDS-DECISION x15",
+  "05:48:20 RELAY HEARTBEAT hb-fresh-19s",
+  "06:00:02 GOAL-0135-CONTENT-EVERY-MORNING CONTENT START day=2026-09-25",
+  "06:00:02 GOAL-0135-CONTENT-EVERY-MORNING CONTENT NO-UNUSED-CASE NO-UNUSED-CASE: no unused case found in ciq-cto-workspace/DOCS/CASES and the news-allowed",
+  "06:00:02 GOAL-0135-CONTENT-EVERY-MORNING CONTENT COST usd=0.00 (no session spawned; blocked before any draft)",
+  "06:00:02 MERGE-SKIPPED x5",
+  "06:00:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "06:00:03 GOAL-0651-CIO-FIRES-ITS-OWN-LIVE-TEST START [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "05:09:09",
-   "last_action": "RETIRED-NEEDS-DECISION",
+   "last_seen": "06:00:02",
+   "last_action": "CONTENT COST",
    "spend_today": 0.0,
-   "rows": 182,
-   "state": "IDLE"
+   "rows": 202,
+   "state": "ACTIVE"
   },
   {
    "agent": "author-seat",
@@ -421,18 +421,18 @@
   },
   {
    "agent": "clock",
-   "last_seen": "05:30:03",
+   "last_seen": "06:00:03",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 71,
+   "rows": 76,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "05:30:03",
+   "last_seen": "06:00:02",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 125,
+   "rows": 135,
    "state": "ACTIVE"
   }
  ]
