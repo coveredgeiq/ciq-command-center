@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-25 13:00 CDT",
+ "generated": "2026-09-25 13:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -292,13 +292,13 @@
   "needed": 3
  },
  "spend": {
-  "today": 51.67,
+  "today": 53.86,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $51.67 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $53.86 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "13:00:02",
+  "last_row": "13:30:05",
   "alive": true,
   "repair_stop": true
  },
@@ -389,58 +389,58 @@
   }
  ],
  "rows": [
-  "12:30:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "12:30:04  NO-WORK [clock]",
-  "12:30:04 ciq-command-center.html DASHBOARD generated=2026-09-25 12:30 CDT bytes=19340 [clock]",
-  "12:30:06 ciq-command-center.html PAGES pushed ead683d to coveredgeiq/ciq-command-center [clock]",
-  "12:43:45 OUTCOME-FAILURES-BECOME-OUTCOMES GATED FINAL FAIL attempt 1: FINAL FAIL GATE-SPEC [author-seat]",
-  "12:48:22 RELAY HEARTBEAT hb-fresh-1s",
-  "12:50:15 MERGE-SKIPPED x5",
-  "12:50:15 GOAL-0659-MOTHERSHIP-PACKET-READS-THE-INBOX QUEUED [queue-gate]",
-  "12:53:45 OUTCOME-FAILURES-BECOME-OUTCOMES SEAT-BAD-REPLY (empty) attempt 2 [author-seat]",
-  "13:00:02 MERGE-SKIPPED x5",
-  "13:00:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "13:00:02 GOAL-0659-MOTHERSHIP-PACKET-READS-THE-INBOX START [clock]"
+  "13:20:04 JARVIS SKIPPED-ALREADY-PROPOSED BUILD-ROOM-CLOSES [JARVIS]",
+  "13:20:04 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
+  "13:20:04 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
+  "13:20:04 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
+  "13:20:04 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
+  "13:20:04 JARVIS PLANNER PROPOSED 0 [JARVIS]",
+  "13:20:04 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-09-25-7.md [JARVIS]",
+  "13:20:04 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
+  "13:20:04 JARVIS COST usd=0.0000 [JARVIS]",
+  "13:30:04 MERGE-SKIPPED x5",
+  "13:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "13:30:05 GOAL-0659-MOTHERSHIP-PACKET-READS-THE-INBOX START [clock]"
  ],
  "agents": [
   {
    "agent": "JARVIS",
-   "last_seen": "12:20:04",
+   "last_seen": "13:20:04",
    "last_action": "COST",
    "spend_today": 0.0,
-   "rows": 162,
-   "state": "IDLE"
-  },
-  {
-   "agent": "UNKNOWN",
-   "last_seen": "12:48:22",
-   "last_action": "HEARTBEAT",
-   "spend_today": 0.0,
-   "rows": 386,
+   "rows": 189,
    "state": "ACTIVE"
   },
   {
+   "agent": "UNKNOWN",
+   "last_seen": "13:08:44",
+   "last_action": "RETIRED-NEEDS-DECISION",
+   "spend_today": 0.0,
+   "rows": 402,
+   "state": "IDLE"
+  },
+  {
    "agent": "author-seat",
-   "last_seen": "12:53:45",
+   "last_seen": "13:13:50",
    "last_action": "SEAT-BAD-REPLY",
    "spend_today": 0.0,
-   "rows": 30,
+   "rows": 32,
    "state": "ACTIVE"
   },
   {
    "agent": "clock",
-   "last_seen": "13:00:02",
+   "last_seen": "13:30:05",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 154,
+   "rows": 159,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "13:00:02",
+   "last_seen": "13:30:04",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 294,
+   "rows": 304,
    "state": "ACTIVE"
   }
  ]
