@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-25 02:30 CDT",
+ "generated": "2026-09-25 03:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -292,18 +292,18 @@
   "needed": 3
  },
  "spend": {
-  "today": 11.02,
+  "today": 12.43,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $11.02 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $12.43 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "02:30:04",
+  "last_row": "03:00:02",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
-  "ready": 4,
+  "ready": 3,
   "running": 2,
   "held": 12,
   "proposed": 10,
@@ -389,26 +389,26 @@
   }
  ],
  "rows": [
-  "02:00:03 GOAL-0648-RETIRED-CONSTRAINT-NEVER-DELETED SKIP-UNCHANGED [clock]",
-  "02:00:03 GOAL-0649-CMO-FIRES-ITS-OWN-LIVE-TEST SKIP-UNCHANGED [clock]",
-  "02:00:04 GOAL-0651-CIO-FIRES-ITS-OWN-LIVE-TEST START [clock]",
-  "02:00:05 ciq-command-center.html DASHBOARD generated=2026-09-25 02:00 CDT bytes=19229 [clock]",
-  "02:00:07 ciq-command-center.html PAGES pushed eaf6097 to coveredgeiq/ciq-command-center [clock]",
-  "02:02:45 MERGE-SKIPPED x5",
-  "02:10:11 GOAL-0651-CIO-FIRES-ITS-OWN-LIVE-TEST FAIL VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not marked for crea [clock]",
-  "02:10:11  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
-  "02:10:11 RETIRED-NEEDS-DECISION x15",
-  "02:30:04 MERGE-SKIPPED x10",
   "02:30:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "02:30:04 GOAL-0647-SEED-AND-SCHEDULE-THE-FAILURE-LOOP START [clock]"
+  "02:30:04 GOAL-0647-SEED-AND-SCHEDULE-THE-FAILURE-LOOP START [clock]",
+  "02:30:05 ciq-command-center.html DASHBOARD generated=2026-09-25 02:30 CDT bytes=19350 [clock]",
+  "02:30:07 ciq-command-center.html PAGES pushed 81354a7 to coveredgeiq/ciq-command-center [clock]",
+  "02:34:50 GOAL-0647-SEED-AND-SCHEDULE-THE-FAILURE-LOOP RETIRED VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not marked for crea [clock]",
+  "02:34:51  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "02:34:51 RETIRED-NEEDS-DECISION x15",
+  "02:42:22 CIO SKIPPED-API-ERROR intake read failed: local:<urlopen error [Errno 8] nodename nor servname provided, or not",
+  "02:48:19 RELAY HEARTBEAT hb-fresh-27s",
+  "03:00:02 MERGE-SKIPPED x10",
+  "03:00:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "03:00:02 GOAL-0650-RETIREMENT-CHECK-KNOWS-ITS-OWN-CODE START [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "02:10:11",
-   "last_action": "RETIRED-NEEDS-DECISION",
+   "last_seen": "02:48:19",
+   "last_action": "HEARTBEAT",
    "spend_today": 0.0,
-   "rows": 82,
+   "rows": 100,
    "state": "ACTIVE"
   },
   {
@@ -421,18 +421,18 @@
   },
   {
    "agent": "clock",
-   "last_seen": "02:30:04",
+   "last_seen": "03:00:02",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 34,
+   "rows": 39,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "02:30:04",
+   "last_seen": "03:00:02",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 62,
+   "rows": 72,
    "state": "ACTIVE"
   }
  ]
