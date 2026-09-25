@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-25 00:30 CDT",
+ "generated": "2026-09-25 01:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -292,13 +292,13 @@
   "needed": 3
  },
  "spend": {
-  "today": 1.33,
+  "today": 3.02,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $1.33 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $3.02 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "00:30:06",
+  "last_row": "01:00:01",
   "alive": true,
   "repair_stop": true
  },
@@ -389,27 +389,27 @@
   }
  ],
  "rows": [
-  "00:03:56 RETIRED-NEEDS-DECISION x15",
-  "00:06:04 OUTCOME-FAILURES-BECOME-OUTCOMES SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
-  "00:15:10 MERGE-SKIPPED x5",
-  "00:16:06 OUTCOME-LEARNING-EDGE SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
-  "00:26:07 OUTCOME-SIGNED-MEANS-LIVE-v1.1 SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
-  "00:30:05 MERGE-SKIPPED x5",
-  "00:30:05 GOAL-0650-RETIREMENT-CHECK-KNOWS-ITS-OWN-CODE QUEUED [queue-gate]",
-  "00:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "00:30:05 GOAL-0648-RETIRED-CONSTRAINT-NEVER-DELETED SKIP-UNCHANGED [clock]",
-  "00:30:06 GOAL-0649-CMO-FIRES-ITS-OWN-LIVE-TEST SKIP-UNCHANGED [clock]",
   "00:30:06 GOAL-0647-SEED-AND-SCHEDULE-THE-FAILURE-LOOP SKIP-UNCHANGED [clock]",
-  "00:30:06 GOAL-0650-RETIREMENT-CHECK-KNOWS-ITS-OWN-CODE START [clock]"
+  "00:30:06 GOAL-0650-RETIREMENT-CHECK-KNOWS-ITS-OWN-CODE START [clock]",
+  "00:30:07 ciq-command-center.html DASHBOARD generated=2026-09-25 00:30 CDT bytes=19255 [clock]",
+  "00:30:09 ciq-command-center.html PAGES pushed 1ab0491 to coveredgeiq/ciq-command-center [clock]",
+  "00:36:55 GOAL-0650-RETIREMENT-CHECK-KNOWS-ITS-OWN-CODE FAIL VERDICT: FAIL [clock]",
+  "00:36:55  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "00:36:55 RETIRED-NEEDS-DECISION x15",
+  "00:42:08 MERGE-SKIPPED x5",
+  "00:48:18 RELAY HEARTBEAT hb-fresh-33s",
+  "01:00:01 MERGE-SKIPPED x5",
+  "01:00:01  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "01:00:01 GOAL-0648-RETIRED-CONSTRAINT-NEVER-DELETED START [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "00:03:56",
-   "last_action": "RETIRED-NEEDS-DECISION",
+   "last_seen": "00:48:18",
+   "last_action": "HEARTBEAT",
    "spend_today": 0.0,
-   "rows": 16,
-   "state": "IDLE"
+   "rows": 33,
+   "state": "ACTIVE"
   },
   {
    "agent": "author-seat",
@@ -417,22 +417,22 @@
    "last_action": "SEAT-BAD-REPLY",
    "spend_today": 0.0,
    "rows": 3,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "clock",
-   "last_seen": "00:30:06",
+   "last_seen": "01:00:01",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 10,
+   "rows": 15,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "00:30:05",
-   "last_action": "QUEUED",
+   "last_seen": "01:00:01",
+   "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 16,
+   "rows": 26,
    "state": "ACTIVE"
   }
  ]
