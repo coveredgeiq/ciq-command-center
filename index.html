@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-26 05:30 CDT",
+ "generated": "2026-09-26 06:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -292,13 +292,13 @@
   "needed": 3
  },
  "spend": {
-  "today": 20.6,
+  "today": 23.61,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $20.60 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $23.61 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "05:30:05",
+  "last_row": "06:00:08",
   "alive": true,
   "repair_stop": true
  },
@@ -315,7 +315,7 @@
  },
  "lane": {
   "state": "RUNNING",
-  "detail": "started 06:00:02",
+  "detail": "started 06:00:05",
   "cost": 0.0
  },
  "agenda": [
@@ -389,50 +389,50 @@
   }
  ],
  "rows": [
-  "04:48:27 RELAY HEARTBEAT hb-fresh-14s",
-  "05:00:04 MERGE-SKIPPED x10",
-  "05:00:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "05:00:05 GOAL-0663-ONE-RUN-ID-TIES-THE-PROOF START [clock]",
-  "05:00:06 ciq-command-center.html DASHBOARD generated=2026-09-26 05:00 CDT bytes=19317 [clock]",
-  "05:00:09 ciq-command-center.html PAGES pushed 3d3b6fa to coveredgeiq/ciq-command-center [clock]",
-  "05:03:35 GOAL-0663-ONE-RUN-ID-TIES-THE-PROOF FAIL VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not marked for crea [clock]",
-  "05:03:36  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
-  "05:03:36 RETIRED-NEEDS-DECISION x15",
-  "05:30:04 MERGE-SKIPPED x10",
-  "05:30:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "05:30:05 GOAL-0662-LIVE-VIEW-SKIPS-A-RETIRED-GOLD-EXAMPLE START [clock]"
+  "05:53:01 OUTCOME-FAILURES-BECOME-OUTCOMES SEAT-BAD-REPLY (empty) attempt 2 [author-seat]",
+  "05:53:33 MERGE-SKIPPED x5",
+  "05:59:14 OUTCOME-LEARNING-EDGE GATED FINAL FAIL attempt 1: FINAL FAIL GATE-SPEC [author-seat]",
+  "06:00:05 GOAL-0135-CONTENT-EVERY-MORNING CONTENT START day=2026-09-26",
+  "06:00:05 GOAL-0135-CONTENT-EVERY-MORNING CONTENT NO-UNUSED-CASE NO-UNUSED-CASE: no unused case found in ciq-cto-workspace/DOCS/CASES and the news-allowed",
+  "06:00:05 GOAL-0135-CONTENT-EVERY-MORNING CONTENT COST usd=0.00 (no session spawned; blocked before any draft)",
+  "06:00:05 MERGE-SKIPPED x5",
+  "06:00:05 GOAL-0670-REPAIRED-POST-LANDS-A-FRESH-GOLD-EXAMPLE QUEUED [queue-gate]",
+  "06:00:06  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "06:00:06 GOAL-0668-ALERT-POST-IS-NEVER-A-FAILING-SHAPE SKIP-UNCHANGED [clock]",
+  "06:00:06 GOAL-0663-ONE-RUN-ID-TIES-THE-PROOF SKIP-UNCHANGED [clock]",
+  "06:00:08 GOAL-0670-REPAIRED-POST-LANDS-A-FRESH-GOLD-EXAMPLE START [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "05:03:36",
-   "last_action": "RETIRED-NEEDS-DECISION",
+   "last_seen": "06:00:05",
+   "last_action": "CONTENT COST",
    "spend_today": 0.0,
-   "rows": 181,
-   "state": "IDLE"
+   "rows": 201,
+   "state": "ACTIVE"
   },
   {
    "agent": "author-seat",
-   "last_seen": "04:32:45",
-   "last_action": "SEAT-BAD-REPLY",
+   "last_seen": "05:59:14",
+   "last_action": "GATED",
    "spend_today": 0.0,
-   "rows": 16,
-   "state": "IDLE"
+   "rows": 19,
+   "state": "ACTIVE"
   },
   {
    "agent": "clock",
-   "last_seen": "05:30:05",
+   "last_seen": "06:00:08",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 68,
+   "rows": 75,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "05:30:04",
-   "last_action": "MERGE-SKIPPED",
+   "last_seen": "06:00:05",
+   "last_action": "QUEUED",
    "spend_today": 0.0,
-   "rows": 131,
+   "rows": 142,
    "state": "ACTIVE"
   }
  ]
