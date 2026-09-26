@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-26 00:00 CDT",
+ "generated": "2026-09-26 00:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -292,18 +292,18 @@
   "needed": 3
  },
  "spend": {
-  "today": 0.0,
+  "today": 1.22,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $0.00 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $1.22 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "00:00:01",
+  "last_row": "00:30:04",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
-  "ready": 3,
+  "ready": 2,
   "running": 2,
   "held": 16,
   "proposed": 10,
@@ -389,26 +389,50 @@
   }
  ],
  "rows": [
-  "00:00:00 MERGE-SKIPPED x5",
-  "00:00:00 GOAL-0664-REPAIRED-GOAL-LANDS-A-FRESH-ROW QUEUED [queue-gate]",
-  "00:00:00  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "00:00:01 GOAL-0661-INBOX-CANNOT-GROW-THE-PACKET-UNBOUNDED START [clock]"
+  "00:00:01 GOAL-0661-INBOX-CANNOT-GROW-THE-PACKET-UNBOUNDED START [clock]",
+  "00:00:02 ciq-command-center.html DASHBOARD generated=2026-09-26 00:00 CDT bytes=18354 [clock]",
+  "00:00:05 ciq-command-center.html PAGES pushed a796070 to coveredgeiq/ciq-command-center [clock]",
+  "00:03:34 MERGE-SKIPPED x5",
+  "00:03:57 GOAL-0661-INBOX-CANNOT-GROW-THE-PACKET-UNBOUNDED DONE VERDICT: SIGNED-PASS CHECK-PASS rc=0 out= proof=GOAL-0661-INBOX-CANNOT-GROW-THE-PACKET-UNB [clock]",
+  "00:03:58  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "00:03:58 RETIRED-NEEDS-DECISION x15",
+  "00:07:51 OUTCOME-LEARNING-EDGE SEAT-BAD-REPLY (empty) attempt 2 [author-seat]",
+  "00:17:54 OUTCOME-SIGNED-MEANS-LIVE-v1.1 SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
+  "00:30:03 MERGE-SKIPPED x5",
+  "00:30:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "00:30:04 GOAL-0662-LIVE-VIEW-SKIPS-A-RETIRED-GOLD-EXAMPLE START [clock]"
  ],
  "agents": [
   {
-   "agent": "clock",
-   "last_seen": "00:00:01",
-   "last_action": "START",
+   "agent": "UNKNOWN",
+   "last_seen": "00:03:58",
+   "last_action": "RETIRED-NEEDS-DECISION",
+   "spend_today": 0.0,
+   "rows": 16,
+   "state": "IDLE"
+  },
+  {
+   "agent": "author-seat",
+   "last_seen": "00:17:54",
+   "last_action": "SEAT-BAD-REPLY",
    "spend_today": 0.0,
    "rows": 2,
    "state": "ACTIVE"
   },
   {
-   "agent": "queue-gate",
-   "last_seen": "00:00:00",
-   "last_action": "QUEUED",
+   "agent": "clock",
+   "last_seen": "00:30:04",
+   "last_action": "START",
    "spend_today": 0.0,
-   "rows": 6,
+   "rows": 7,
+   "state": "ACTIVE"
+  },
+  {
+   "agent": "queue-gate",
+   "last_seen": "00:30:03",
+   "last_action": "MERGE-SKIPPED",
+   "spend_today": 0.0,
+   "rows": 16,
    "state": "ACTIVE"
   }
  ]
