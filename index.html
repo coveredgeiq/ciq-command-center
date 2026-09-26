@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-26 04:30 CDT",
+ "generated": "2026-09-26 05:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -292,18 +292,18 @@
   "needed": 3
  },
  "spend": {
-  "today": 18.0,
+  "today": 19.67,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $18.00 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $19.67 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "04:30:07",
+  "last_row": "05:00:05",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
-  "ready": 3,
+  "ready": 2,
   "running": 2,
   "held": 16,
   "proposed": 10,
@@ -389,50 +389,50 @@
   }
  ],
  "rows": [
-  "04:05:18  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
-  "04:05:18 RETIRED-NEEDS-DECISION x15",
-  "04:05:54 MERGE-SKIPPED x5",
-  "04:12:41 OUTCOME-REPAIR-CONTENT-HUNT-STEP-WINDOW GATED FINAL FAIL attempt 1: FINAL FAIL GATE-SPEC [author-seat]",
-  "04:22:41 OUTCOME-REPAIR-CONTENT-HUNT-STEP-WINDOW SEAT-BAD-REPLY (empty) attempt 2 [author-seat]",
-  "04:30:05 MERGE-SKIPPED x5",
-  "04:30:05 GOAL-0669-A-FAILED-DRAFT-IS-NEVER-A-MINT QUEUED [queue-gate]",
-  "04:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "04:30:05 GOAL-0663-ONE-RUN-ID-TIES-THE-PROOF SKIP-UNCHANGED [clock]",
-  "04:30:06 GOAL-0662-LIVE-VIEW-SKIPS-A-RETIRED-GOLD-EXAMPLE SKIP-UNCHANGED [clock]",
-  "04:30:06 GOAL-0668-ALERT-POST-IS-NEVER-A-FAILING-SHAPE SKIP-UNCHANGED [clock]",
-  "04:30:07 GOAL-0669-A-FAILED-DRAFT-IS-NEVER-A-MINT START [clock]"
+  "04:30:07 GOAL-0669-A-FAILED-DRAFT-IS-NEVER-A-MINT START [clock]",
+  "04:30:08 ciq-command-center.html DASHBOARD generated=2026-09-26 04:30 CDT bytes=19298 [clock]",
+  "04:30:11 ciq-command-center.html PAGES pushed cf0acaf to coveredgeiq/ciq-command-center [clock]",
+  "04:32:45 OUTCOME-SIGNED-MEANS-LIVE-v1.1 SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
+  "04:32:47 MERGE-SKIPPED x5",
+  "04:35:27 GOAL-0669-A-FAILED-DRAFT-IS-NEVER-A-MINT DONE VERDICT: SIGNED-PASS CHECK-PASS rc=0 out= proof=GOAL-0669-A-FAILED-DRAFT-IS-NEVER-A-MINT.m [clock]",
+  "04:35:28  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "04:35:28 RETIRED-NEEDS-DECISION x15",
+  "04:48:27 RELAY HEARTBEAT hb-fresh-14s",
+  "05:00:04 MERGE-SKIPPED x10",
+  "05:00:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "05:00:05 GOAL-0663-ONE-RUN-ID-TIES-THE-PROOF START [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "04:05:18",
-   "last_action": "RETIRED-NEEDS-DECISION",
+   "last_seen": "04:48:27",
+   "last_action": "HEARTBEAT",
    "spend_today": 0.0,
-   "rows": 148,
-   "state": "IDLE"
-  },
-  {
-   "agent": "author-seat",
-   "last_seen": "04:22:41",
-   "last_action": "SEAT-BAD-REPLY",
-   "spend_today": 0.0,
-   "rows": 15,
+   "rows": 165,
    "state": "ACTIVE"
   },
   {
+   "agent": "author-seat",
+   "last_seen": "04:32:45",
+   "last_action": "SEAT-BAD-REPLY",
+   "spend_today": 0.0,
+   "rows": 16,
+   "state": "IDLE"
+  },
+  {
    "agent": "clock",
-   "last_seen": "04:30:07",
+   "last_seen": "05:00:05",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 58,
+   "rows": 63,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "04:30:05",
-   "last_action": "QUEUED",
+   "last_seen": "05:00:04",
+   "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 106,
+   "rows": 121,
    "state": "ACTIVE"
   }
  ]
