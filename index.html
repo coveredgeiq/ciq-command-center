@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-25 23:30 CDT",
+ "generated": "2026-09-26 00:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -292,19 +292,19 @@
   "needed": 3
  },
  "spend": {
-  "today": 61.25,
+  "today": 0.0,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $61.25 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $0.00 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "23:30:04",
+  "last_row": "00:00:01",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
   "ready": 3,
-  "running": 0,
+  "running": 2,
   "held": 16,
   "proposed": 10,
   "hold_lines": 76
@@ -389,58 +389,26 @@
   }
  ],
  "rows": [
-  "23:00:05 MERGE-SKIPPED x5",
-  "23:00:06  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "23:00:06  CEILING-STOP spend=$61.25 ceiling=$60.00 [clock]",
-  "23:00:07 ciq-command-center.html DASHBOARD generated=2026-09-25 23:00 CDT bytes=19548 [clock]",
-  "23:00:09 ciq-command-center.html PAGES pushed fdbb267 to coveredgeiq/ciq-command-center [clock]",
-  "23:03:04 CIO SKIPPED-CEILING today's spend $61.25 >= ceiling $60.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
-  "23:09:48 MERGE-SKIPPED x5",
-  "23:13:04 CIO SKIPPED-CEILING today's spend $61.25 >= ceiling $60.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
-  "23:23:04 CIO SKIPPED-CEILING today's spend $61.25 >= ceiling $60.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
-  "23:30:04 MERGE-SKIPPED x5",
-  "23:30:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "23:30:04  CEILING-STOP spend=$61.25 ceiling=$60.00 [clock]"
+  "00:00:00 MERGE-SKIPPED x5",
+  "00:00:00 GOAL-0664-REPAIRED-GOAL-LANDS-A-FRESH-ROW QUEUED [queue-gate]",
+  "00:00:00  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "00:00:01 GOAL-0661-INBOX-CANNOT-GROW-THE-PACKET-UNBOUNDED START [clock]"
  ],
  "agents": [
   {
-   "agent": "JARVIS",
-   "last_seen": "22:20:05",
-   "last_action": "COST",
-   "spend_today": 0.0,
-   "rows": 432,
-   "state": "IDLE"
-  },
-  {
-   "agent": "UNKNOWN",
-   "last_seen": "23:23:04",
-   "last_action": "SKIPPED-CEILING",
-   "spend_today": 0.0,
-   "rows": 505,
-   "state": "ACTIVE"
-  },
-  {
-   "agent": "author-seat",
-   "last_seen": "22:37:49",
-   "last_action": "SEAT-BAD-REPLY",
-   "spend_today": 0.0,
-   "rows": 53,
-   "state": "IDLE"
-  },
-  {
    "agent": "clock",
-   "last_seen": "23:30:04",
-   "last_action": "CEILING-STOP",
+   "last_seen": "00:00:01",
+   "last_action": "START",
    "spend_today": 0.0,
-   "rows": 242,
+   "rows": 2,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "23:30:04",
-   "last_action": "MERGE-SKIPPED",
+   "last_seen": "00:00:00",
+   "last_action": "QUEUED",
    "spend_today": 0.0,
-   "rows": 518,
+   "rows": 6,
    "state": "ACTIVE"
   }
  ]
