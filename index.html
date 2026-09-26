@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-26 01:00 CDT",
+ "generated": "2026-09-26 01:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -292,18 +292,18 @@
   "needed": 3
  },
  "spend": {
-  "today": 2.72,
+  "today": 4.31,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $2.72 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $4.31 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "01:00:04",
+  "last_row": "01:30:06",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
-  "ready": 2,
+  "ready": 3,
   "running": 2,
   "held": 16,
   "proposed": 10,
@@ -389,50 +389,50 @@
   }
  ],
  "rows": [
-  "00:30:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "00:30:04 GOAL-0662-LIVE-VIEW-SKIPS-A-RETIRED-GOLD-EXAMPLE START [clock]",
-  "00:30:06 ciq-command-center.html DASHBOARD generated=2026-09-26 00:30 CDT bytes=19392 [clock]",
-  "00:30:09 ciq-command-center.html PAGES pushed ec0652b to coveredgeiq/ciq-command-center [clock]",
-  "00:30:50 MERGE-SKIPPED x5",
-  "00:35:12 GOAL-0662-LIVE-VIEW-SKIPS-A-RETIRED-GOLD-EXAMPLE FAIL VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not marked for crea [clock]",
-  "00:35:13  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
-  "00:35:13 RETIRED-NEEDS-DECISION x15",
-  "00:48:26 RELAY HEARTBEAT hb-fresh-28s",
-  "01:00:03 MERGE-SKIPPED x10",
-  "01:00:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "01:00:04 GOAL-0663-ONE-RUN-ID-TIES-THE-PROOF START [clock]"
+  "01:00:04 GOAL-0663-ONE-RUN-ID-TIES-THE-PROOF START [clock]",
+  "01:00:06 ciq-command-center.html DASHBOARD generated=2026-09-26 01:00 CDT bytes=19360 [clock]",
+  "01:00:09 ciq-command-center.html PAGES pushed 29a01fd to coveredgeiq/ciq-command-center [clock]",
+  "01:05:12 GOAL-0663-ONE-RUN-ID-TIES-THE-PROOF FAIL VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not marked for crea [clock]",
+  "01:05:12  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "01:05:12 RETIRED-NEEDS-DECISION x15",
+  "01:24:35 MERGE-SKIPPED x5",
+  "01:28:04 OUTCOME-FAILURES-BECOME-OUTCOMES SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
+  "01:30:04 MERGE-SKIPPED x5",
+  "01:30:04 GOAL-0665-INBOX-CANNOT-BLOW-THE-WORD-CAP QUEUED [queue-gate]",
+  "01:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "01:30:06 GOAL-0664-REPAIRED-GOAL-LANDS-A-FRESH-ROW START [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "00:48:26",
-   "last_action": "HEARTBEAT",
+   "last_seen": "01:05:12",
+   "last_action": "RETIRED-NEEDS-DECISION",
    "spend_today": 0.0,
-   "rows": 33,
-   "state": "ACTIVE"
-  },
-  {
-   "agent": "author-seat",
-   "last_seen": "00:17:54",
-   "last_action": "SEAT-BAD-REPLY",
-   "spend_today": 0.0,
-   "rows": 2,
+   "rows": 49,
    "state": "IDLE"
   },
   {
+   "agent": "author-seat",
+   "last_seen": "01:28:04",
+   "last_action": "SEAT-BAD-REPLY",
+   "spend_today": 0.0,
+   "rows": 3,
+   "state": "ACTIVE"
+  },
+  {
    "agent": "clock",
-   "last_seen": "01:00:04",
+   "last_seen": "01:30:06",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 12,
+   "rows": 17,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "01:00:03",
-   "last_action": "MERGE-SKIPPED",
+   "last_seen": "01:30:04",
+   "last_action": "QUEUED",
    "spend_today": 0.0,
-   "rows": 31,
+   "rows": 42,
    "state": "ACTIVE"
   }
  ]
