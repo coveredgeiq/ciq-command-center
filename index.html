@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-28 06:30 CDT",
+ "generated": "2026-09-28 07:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -292,13 +292,13 @@
   "needed": 3
  },
  "spend": {
-  "today": 9.68,
+  "today": 11.28,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $9.68 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $11.28 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "06:30:04",
+  "last_row": "07:00:03",
   "alive": true,
   "repair_stop": true
  },
@@ -389,50 +389,50 @@
   }
  ],
  "rows": [
-  "06:00:04 GOAL-0135-CONTENT-EVERY-MORNING CONTENT START day=2026-09-28",
-  "06:00:04 GOAL-0135-CONTENT-EVERY-MORNING CONTENT NO-UNUSED-CASE NO-UNUSED-CASE: no unused case found in ciq-cto-workspace/DOCS/CASES and the news-allowed",
-  "06:00:04 GOAL-0135-CONTENT-EVERY-MORNING CONTENT COST usd=0.00 (no session spawned; blocked before any draft)",
-  "06:00:04 MERGE-SKIPPED x5",
-  "06:00:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "06:00:05  NO-WORK [clock]",
-  "06:00:06 ciq-command-center.html DASHBOARD generated=2026-09-28 06:00 CDT bytes=19241 [clock]",
-  "06:00:08 ciq-command-center.html PAGES pushed 62ddfaa to coveredgeiq/ciq-command-center [clock]",
-  "06:24:37 OUTCOME-FAILURES-BECOME-OUTCOMES SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
-  "06:30:03 MERGE-SKIPPED x10",
-  "06:30:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "06:30:04  NO-WORK [clock]"
+  "06:47:16 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0630.md",
+  "06:47:16 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0631.md",
+  "06:47:17 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0632.md",
+  "06:48:48 RELAY HEARTBEAT hb-fresh-56s",
+  "06:51:46 MERGE-SKIPPED x5",
+  "06:54:56 OUTCOME-REPAIR-CONTENT-HUNT-STEP-WINDOW SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
+  "06:57:17 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0630.md",
+  "06:57:17 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0631.md",
+  "06:57:17 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0632.md",
+  "07:00:02 MERGE-SKIPPED x5",
+  "07:00:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "07:00:03  NO-WORK [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "06:00:04",
-   "last_action": "CONTENT COST",
+   "last_seen": "06:57:17",
+   "last_action": "VERDICT-SKIP-NO-POST-TS",
    "spend_today": 0.0,
-   "rows": 76,
-   "state": "IDLE"
+   "rows": 86,
+   "state": "ACTIVE"
   },
   {
    "agent": "author-seat",
-   "last_seen": "06:24:37",
+   "last_seen": "06:54:56",
    "last_action": "SEAT-BAD-REPLY",
    "spend_today": 0.0,
-   "rows": 16,
+   "rows": 19,
    "state": "ACTIVE"
   },
   {
    "agent": "clock",
-   "last_seen": "06:30:04",
+   "last_seen": "07:00:03",
    "last_action": "NO-WORK",
    "spend_today": 0.0,
-   "rows": 58,
+   "rows": 62,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "06:30:03",
+   "last_seen": "07:00:02",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 145,
+   "rows": 155,
    "state": "ACTIVE"
   }
  ]
