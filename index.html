@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-28 11:00 CDT",
+ "generated": "2026-09-28 11:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -292,13 +292,13 @@
   "needed": 3
  },
  "spend": {
-  "today": 17.13,
+  "today": 20.24,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $17.13 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $20.24 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "11:00:06",
+  "last_row": "11:30:05",
   "alive": true,
   "repair_stop": true
  },
@@ -389,34 +389,34 @@
   }
  ],
  "rows": [
-  "10:46:11 OUTCOME-SIGNED-MEANS-LIVE-v1.1 SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
-  "10:47:40 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0630.md",
-  "10:47:40 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0631.md",
-  "10:47:40 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0632.md",
-  "10:48:50 RELAY HEARTBEAT hb-fresh-44s",
-  "10:53:55 MERGE-SKIPPED x5",
-  "10:57:42 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0630.md",
-  "10:57:42 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0631.md",
-  "10:57:42 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0632.md",
-  "11:00:05 MERGE-SKIPPED x5",
-  "11:00:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "11:00:06 GOAL-0704-CIO-CARD-WORD-IS-READ START [clock]"
+  "11:20:06 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-09-28-5.md [JARVIS]",
+  "11:20:06 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
+  "11:20:07 JARVIS COST usd=0.0000 [JARVIS]",
+  "11:21:40 MERGE-SKIPPED x5",
+  "11:21:40 GOAL-0705-FOUNDER-NOTE-BECOMES-WRITER-RULE QUEUED [queue-gate]",
+  "11:27:47 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0630.md",
+  "11:27:47 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0631.md",
+  "11:27:47 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0632.md",
+  "11:30:03 MERGE-SKIPPED x5",
+  "11:30:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "11:30:04 GOAL-0702-CONTENT-CYCLE-DAY-MODE SKIP-UNCHANGED [clock]",
+  "11:30:05 GOAL-0705-FOUNDER-NOTE-BECOMES-WRITER-RULE START [clock]"
  ],
  "agents": [
   {
    "agent": "JARVIS",
-   "last_seen": "10:20:04",
+   "last_seen": "11:20:07",
    "last_action": "COST",
    "spend_today": 0.0,
-   "rows": 108,
-   "state": "IDLE"
+   "rows": 135,
+   "state": "ACTIVE"
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "10:57:42",
+   "last_seen": "11:27:47",
    "last_action": "VERDICT-SKIP-NO-POST-TS",
    "spend_today": 0.0,
-   "rows": 226,
+   "rows": 251,
    "state": "ACTIVE"
   },
   {
@@ -425,22 +425,22 @@
    "last_action": "SEAT-BAD-REPLY",
    "spend_today": 0.0,
    "rows": 30,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "clock",
-   "last_seen": "11:00:06",
+   "last_seen": "11:30:05",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 96,
+   "rows": 102,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "11:00:05",
+   "last_seen": "11:30:03",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 244,
+   "rows": 255,
    "state": "ACTIVE"
   }
  ]
