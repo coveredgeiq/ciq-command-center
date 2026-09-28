@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-27 23:00 CDT",
+ "generated": "2026-09-27 23:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -292,13 +292,13 @@
   "needed": 3
  },
  "spend": {
-  "today": 23.01,
+  "today": 24.94,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $23.01 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $24.94 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "23:00:07",
+  "last_row": "23:30:06",
   "alive": true,
   "repair_stop": true
  },
@@ -389,18 +389,18 @@
   }
  ],
  "rows": [
-  "22:30:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "22:30:05 GOAL-0701-DESK-HONORS-KILL-AND-UNANSWERED START [clock]",
-  "22:30:06 ciq-command-center.html DASHBOARD generated=2026-09-27 22:30 CDT bytes=19388 [clock]",
-  "22:30:10 ciq-command-center.html PAGES pushed b6b449c to coveredgeiq/ciq-command-center [clock]",
-  "22:37:34 GOAL-0701-DESK-HONORS-KILL-AND-UNANSWERED FAIL VERDICT: FAIL [clock]",
-  "22:37:35  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
-  "22:37:35 RETIRED-NEEDS-DECISION x15",
-  "22:46:12 MERGE-SKIPPED x5",
-  "22:48:45 RELAY HEARTBEAT hb-fresh-18s",
-  "23:00:05 MERGE-SKIPPED x5",
-  "23:00:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "23:00:07 GOAL-0702-CONTENT-CYCLE-DAY-MODE START [clock]"
+  "23:00:08 ciq-command-center.html DASHBOARD generated=2026-09-27 23:00 CDT bytes=19415 [clock]",
+  "23:00:11 ciq-command-center.html PAGES pushed 386860a to coveredgeiq/ciq-command-center [clock]",
+  "23:02:14 OUTCOME-FAILURES-BECOME-OUTCOMES SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
+  "23:08:47 GOAL-0702-CONTENT-CYCLE-DAY-MODE FAIL VERDICT: FAIL [clock]",
+  "23:08:48  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "23:08:48 RETIRED-NEEDS-DECISION x15",
+  "23:12:19 OUTCOME-LEARNING-EDGE SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
+  "23:13:06 MERGE-SKIPPED x5",
+  "23:22:24 OUTCOME-REPAIR-CONTENT-HUNT-STEP-ALERT-POST SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
+  "23:30:04 MERGE-SKIPPED x5",
+  "23:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "23:30:06 GOAL-0703-HERMES-SKILLS-HUB-AND-CIQ-SKILLS-DIR START [clock]"
  ],
  "agents": [
   {
@@ -413,34 +413,34 @@
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "22:48:45",
-   "last_action": "HEARTBEAT",
+   "last_seen": "23:08:48",
+   "last_action": "RETIRED-NEEDS-DECISION",
    "spend_today": 0.0,
-   "rows": 162,
-   "state": "ACTIVE"
-  },
-  {
-   "agent": "author-seat",
-   "last_seen": "21:51:59",
-   "last_action": "SEAT-BAD-REPLY",
-   "spend_today": 0.0,
-   "rows": 61,
+   "rows": 178,
    "state": "IDLE"
   },
   {
+   "agent": "author-seat",
+   "last_seen": "23:22:24",
+   "last_action": "SEAT-BAD-REPLY",
+   "spend_today": 0.0,
+   "rows": 64,
+   "state": "ACTIVE"
+  },
+  {
    "agent": "clock",
-   "last_seen": "23:00:07",
+   "last_seen": "23:30:06",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 192,
+   "rows": 197,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "23:00:05",
+   "last_seen": "23:30:04",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 495,
+   "rows": 505,
    "state": "ACTIVE"
   }
  ]
