@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-27 21:30 CDT",
+ "generated": "2026-09-27 22:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -292,13 +292,13 @@
   "needed": 3
  },
  "spend": {
-  "today": 14.25,
+  "today": 16.93,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $14.25 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $16.93 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "21:30:03",
+  "last_row": "22:00:04",
   "alive": true,
   "repair_stop": true
  },
@@ -389,18 +389,18 @@
   }
  ],
  "rows": [
-  "21:20:05 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
-  "21:20:05 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
-  "21:20:05 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
-  "21:20:05 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
-  "21:20:05 JARVIS PLANNER PROPOSED 0 [JARVIS]",
-  "21:20:05 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-09-27-15.md [JARVIS]",
-  "21:20:05 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
-  "21:20:05 JARVIS COST usd=0.0000 [JARVIS]",
-  "21:21:42 OUTCOME-LEARNING-EDGE SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
-  "21:30:01 MERGE-SKIPPED x10",
-  "21:30:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "21:30:03 GOAL-0703-HERMES-SKILLS-HUB-AND-CIQ-SKILLS-DIR START [clock]"
+  "21:30:04 ciq-command-center.html DASHBOARD generated=2026-09-27 21:30 CDT bytes=19409 [clock]",
+  "21:30:07 ciq-command-center.html PAGES pushed 4a490c9 to coveredgeiq/ciq-command-center [clock]",
+  "21:31:47 OUTCOME-REPAIR-CONTENT-HUNT-STEP-ALERT-POST SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
+  "21:41:54 OUTCOME-REPAIR-CONTENT-HUNT-STEP-WINDOW SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
+  "21:46:34 GOAL-0703-HERMES-SKILLS-HUB-AND-CIQ-SKILLS-DIR FAIL VERDICT: FAIL [clock]",
+  "21:46:34  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "21:46:34 RETIRED-NEEDS-DECISION x15",
+  "21:48:44 RELAY HEARTBEAT hb-fresh-21s",
+  "21:51:59 OUTCOME-SIGNED-MEANS-LIVE-v1.1 SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
+  "22:00:02 MERGE-SKIPPED x10",
+  "22:00:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "22:00:04 GOAL-0704-CIO-CARD-WORD-IS-READ START [clock]"
  ],
  "agents": [
   {
@@ -409,38 +409,38 @@
    "last_action": "COST",
    "spend_today": 0.0,
    "rows": 405,
-   "state": "ACTIVE"
-  },
-  {
-   "agent": "UNKNOWN",
-   "last_seen": "21:08:46",
-   "last_action": "RETIRED-NEEDS-DECISION",
-   "spend_today": 0.0,
-   "rows": 112,
    "state": "IDLE"
   },
   {
+   "agent": "UNKNOWN",
+   "last_seen": "21:48:44",
+   "last_action": "HEARTBEAT",
+   "spend_today": 0.0,
+   "rows": 129,
+   "state": "ACTIVE"
+  },
+  {
    "agent": "author-seat",
-   "last_seen": "21:21:42",
+   "last_seen": "21:51:59",
    "last_action": "SEAT-BAD-REPLY",
    "spend_today": 0.0,
-   "rows": 58,
+   "rows": 61,
    "state": "ACTIVE"
   },
   {
    "agent": "clock",
-   "last_seen": "21:30:03",
+   "last_seen": "22:00:04",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 177,
+   "rows": 182,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "21:30:01",
+   "last_seen": "22:00:02",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 465,
+   "rows": 475,
    "state": "ACTIVE"
   }
  ]
