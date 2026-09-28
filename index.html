@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-28 01:30 CDT",
+ "generated": "2026-09-28 02:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -292,19 +292,19 @@
   "needed": 3
  },
  "spend": {
-  "today": 7.48,
+  "today": 9.68,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $7.48 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $9.68 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "01:30:04",
+  "last_row": "02:00:05",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
   "ready": 0,
-  "running": 2,
+  "running": 0,
   "held": 19,
   "proposed": 10,
   "hold_lines": 118
@@ -389,50 +389,50 @@
   }
  ],
  "rows": [
-  "01:00:06 ciq-command-center.html DASHBOARD generated=2026-09-28 01:00 CDT bytes=19348 [clock]",
-  "01:00:10 ciq-command-center.html PAGES pushed b1b44d0 to coveredgeiq/ciq-command-center [clock]",
-  "01:00:57 MERGE-SKIPPED x5",
-  "01:02:56 OUTCOME-LEARNING-EDGE SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
-  "01:13:00 OUTCOME-REPAIR-CONTENT-HUNT-STEP-ALERT-POST SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
-  "01:13:18 GOAL-0702-CONTENT-CYCLE-DAY-MODE RETIRED VERDICT: FAIL [clock]",
-  "01:13:19  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
-  "01:13:19 RETIRED-NEEDS-DECISION x15",
-  "01:23:05 OUTCOME-REPAIR-CONTENT-HUNT-STEP-WINDOW SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
-  "01:30:02 MERGE-SKIPPED x10",
   "01:30:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "01:30:04 GOAL-0704-CIO-CARD-WORD-IS-READ START [clock]"
+  "01:30:04 GOAL-0704-CIO-CARD-WORD-IS-READ START [clock]",
+  "01:30:05 ciq-command-center.html DASHBOARD generated=2026-09-28 01:30 CDT bytes=19327 [clock]",
+  "01:30:08 ciq-command-center.html PAGES pushed 12f6a48 to coveredgeiq/ciq-command-center [clock]",
+  "01:33:11 OUTCOME-SIGNED-MEANS-LIVE-v1.1 SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
+  "01:39:51 GOAL-0704-CIO-CARD-WORD-IS-READ RETIRED VERDICT: FAIL [clock]",
+  "01:39:52  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "01:39:52 RETIRED-NEEDS-DECISION x15",
+  "01:48:46 RELAY HEARTBEAT hb-fresh-10s",
+  "02:00:05 MERGE-SKIPPED x10",
+  "02:00:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "02:00:05  NO-WORK [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "01:13:19",
-   "last_action": "RETIRED-NEEDS-DECISION",
+   "last_seen": "01:48:46",
+   "last_action": "HEARTBEAT",
    "spend_today": 0.0,
-   "rows": 52,
+   "rows": 69,
    "state": "ACTIVE"
   },
   {
    "agent": "author-seat",
-   "last_seen": "01:23:05",
+   "last_seen": "01:33:11",
    "last_action": "SEAT-BAD-REPLY",
    "spend_today": 0.0,
-   "rows": 4,
-   "state": "ACTIVE"
+   "rows": 5,
+   "state": "IDLE"
   },
   {
    "agent": "clock",
-   "last_seen": "01:30:04",
-   "last_action": "START",
+   "last_seen": "02:00:05",
+   "last_action": "NO-WORK",
    "spend_today": 0.0,
-   "rows": 17,
+   "rows": 22,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "01:30:02",
+   "last_seen": "02:00:05",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 40,
+   "rows": 50,
    "state": "ACTIVE"
   }
  ]
