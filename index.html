@@ -175,13 +175,13 @@
 
   </div>
 
-  <footer id="foot"></footer>
+<!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-09-30 10:47 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
-<!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-30 10:44 CDT",
+ "generated": "2026-09-30 10:47 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -393,7 +393,7 @@
   "note": "goal sessions $3.93 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "10:42:31",
+  "last_row": "10:46:42",
   "alive": true,
   "repair_stop": true
  },
@@ -428,18 +428,18 @@
   }
  ],
  "rows": [
-  "10:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "10:30:06 GOAL-0712-BOARD-PANELS-SHOW-LIVE-TRUTH START [clock]",
-  "10:30:07 ciq-command-center.html DASHBOARD generated=2026-09-30 10:30 CDT bytes=19424 [clock]",
-  "10:30:11 ciq-command-center.html PAGES pushed 1a95a30 to coveredgeiq/ciq-command-center [clock]",
-  "10:31:55 OUTCOME-REPAIR-CONTENT-HUNT-STEP-ALERT-POST SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
   "10:36:40 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0630.md",
   "10:36:40 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0631.md",
   "10:36:40 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0632.md",
   "10:42:04 OUTCOME-REPAIR-CONTENT-HUNT-STEP-WINDOW SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
   "10:42:26 ciq-command-center.html DASHBOARD generated=2026-09-30 10:42 CDT bytes=19090 [clock]",
   "10:42:29 MERGE-SKIPPED x5",
-  "10:42:31 ciq-command-center.html PAGES pushed f16fade to coveredgeiq/ciq-command-center [clock]"
+  "10:42:31 ciq-command-center.html PAGES pushed f16fade to coveredgeiq/ciq-command-center [clock]",
+  "10:44:06 ciq-command-center.html DASHBOARD generated=2026-09-30 10:44 CDT bytes=18427 [clock]",
+  "10:44:10 ciq-command-center.html PAGES pushed 048610b to coveredgeiq/ciq-command-center [clock]",
+  "10:46:42 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0630.md",
+  "10:46:42 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0631.md",
+  "10:46:42 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0632.md"
  ],
  "agents": [
   {
@@ -452,10 +452,10 @@
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "10:36:40",
+   "last_seen": "10:46:42",
    "last_action": "VERDICT-SKIP-NO-POST-TS",
    "spend_today": 0.0,
-   "rows": 240,
+   "rows": 243,
    "state": "ACTIVE"
   },
   {
@@ -468,10 +468,10 @@
   },
   {
    "agent": "clock",
-   "last_seen": "10:42:31",
+   "last_seen": "10:44:10",
    "last_action": "PAGES",
    "spend_today": 0.0,
-   "rows": 90,
+   "rows": 92,
    "state": "ACTIVE"
   },
   {
