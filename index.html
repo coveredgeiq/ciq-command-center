@@ -181,7 +181,7 @@
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON between these two markers -->
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-30 01:00 CDT",
+ "generated": "2026-09-30 01:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -298,7 +298,7 @@
   "note": "goal sessions $0.36 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "01:00:04",
+  "last_row": "01:30:05",
   "alive": true,
   "repair_stop": true
  },
@@ -389,50 +389,50 @@
   }
  ],
  "rows": [
-  "00:44:10 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0631.md",
-  "00:44:10 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0632.md",
-  "00:49:05 OUTCOME-LEARNING-EDGE SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
-  "00:49:08 RELAY HEARTBEAT hb-fresh-53s",
-  "00:50:05 MERGE-SKIPPED x5",
-  "00:54:11 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0630.md",
-  "00:54:11 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0631.md",
-  "00:54:11 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0632.md",
-  "00:57:10 OUTCOME-REPAIR-CONTENT-HUNT-STEP-ALERT-POST GATED FINAL FAIL attempt 1: FINAL FAIL GATE-SPEC [author-seat]",
-  "01:00:04 MERGE-SKIPPED x5",
-  "01:00:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "01:00:04  NO-WORK [clock]"
+  "01:14:15 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0630.md",
+  "01:14:15 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0631.md",
+  "01:14:15 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0632.md",
+  "01:17:02 MERGE-SKIPPED x5",
+  "01:17:18 OUTCOME-REPAIR-CONTENT-HUNT-STEP-WINDOW SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
+  "01:24:16 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0630.md",
+  "01:24:16 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0631.md",
+  "01:24:16 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0632.md",
+  "01:27:30 OUTCOME-REPAIR-INTAKE-ROUTER-STEP-COLLECT-SLACK SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
+  "01:30:05 MERGE-SKIPPED x5",
+  "01:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "01:30:05  NO-WORK [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "00:54:11",
+   "last_seen": "01:24:16",
    "last_action": "VERDICT-SKIP-NO-POST-TS",
    "spend_today": 0.0,
-   "rows": 19,
+   "rows": 28,
    "state": "ACTIVE"
   },
   {
    "agent": "author-seat",
-   "last_seen": "00:57:10",
-   "last_action": "GATED",
+   "last_seen": "01:27:30",
+   "last_action": "SEAT-BAD-REPLY",
    "spend_today": 0.0,
-   "rows": 3,
+   "rows": 6,
    "state": "ACTIVE"
   },
   {
    "agent": "clock",
-   "last_seen": "01:00:04",
+   "last_seen": "01:30:05",
    "last_action": "NO-WORK",
    "spend_today": 0.0,
-   "rows": 10,
+   "rows": 14,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "01:00:04",
+   "last_seen": "01:30:05",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 25,
+   "rows": 35,
    "state": "ACTIVE"
   }
  ]
