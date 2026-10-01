@@ -176,12 +176,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-09-30 23:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-09-30 23:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-30 23:00 CDT",
+ "generated": "2026-09-30 23:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -414,7 +414,7 @@
   "note": "goal sessions $29.33 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "23:00:02",
+  "last_row": "23:30:04",
   "alive": true,
   "repair_stop": true
  },
@@ -449,18 +449,18 @@
   }
  ],
  "rows": [
-  "22:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "22:30:05  NO-WORK [clock]",
-  "22:30:06 ciq-command-center.html DASHBOARD generated=2026-09-30 22:30 CDT bytes=19038 [clock]",
-  "22:30:08 ciq-command-center.html PAGES pushed fa2be27 to coveredgeiq/ciq-command-center [clock]",
-  "22:39:20 OUTCOME-LEARNING-EDGE SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
-  "22:39:42 MERGE-SKIPPED x5",
-  "22:49:19 RELAY HEARTBEAT hb-fresh-57s",
-  "22:49:28 OUTCOME-REPAIR-CONTENT-HUNT-STEP-ALERT-POST SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
   "22:59:37 OUTCOME-REPAIR-CONTENT-HUNT-STEP-WINDOW SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
   "23:00:02 MERGE-SKIPPED x5",
   "23:00:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "23:00:02  NO-WORK [clock]"
+  "23:00:02  NO-WORK [clock]",
+  "23:00:03 ciq-command-center.html DASHBOARD generated=2026-09-30 23:00 CDT bytes=19094 [clock]",
+  "23:00:06 ciq-command-center.html PAGES pushed 4518fa6 to coveredgeiq/ciq-command-center [clock]",
+  "23:06:41 MERGE-SKIPPED x5",
+  "23:09:47 OUTCOME-REPAIR-INTAKE-ROUTER-STEP-COLLECT-SLACK SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
+  "23:19:58 OUTCOME-SIGNED-MEANS-LIVE-v1.1 SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
+  "23:30:04 MERGE-SKIPPED x5",
+  "23:30:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "23:30:04  NO-WORK [clock]"
  ],
  "agents": [
   {
@@ -477,30 +477,30 @@
    "last_action": "HEARTBEAT",
    "spend_today": 0.0,
    "rows": 519,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "author-seat",
-   "last_seen": "22:59:37",
+   "last_seen": "23:19:58",
    "last_action": "SEAT-BAD-REPLY",
    "spend_today": 0.0,
-   "rows": 67,
+   "rows": 69,
    "state": "ACTIVE"
   },
   {
    "agent": "clock",
-   "last_seen": "23:00:02",
+   "last_seen": "23:30:04",
    "last_action": "NO-WORK",
    "spend_today": 0.0,
-   "rows": 197,
+   "rows": 201,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "23:00:02",
+   "last_seen": "23:30:04",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 494,
+   "rows": 504,
    "state": "ACTIVE"
   }
  ]
