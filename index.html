@@ -176,12 +176,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-01 14:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-01 15:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-01 14:30 CDT",
+ "generated": "2026-10-01 15:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -380,13 +380,13 @@
   "needed": 3
  },
  "spend": {
-  "today": 50.85,
+  "today": 53.83,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $50.85 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $53.83 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "14:30:07",
+  "last_row": "15:00:06",
   "alive": true,
   "repair_stop": true
  },
@@ -421,18 +421,18 @@
   }
  ],
  "rows": [
-  "14:20:04 JARVIS SKIPPED-ALREADY-PROPOSED GAP-LOOP-LIVE [JARVIS]",
-  "14:20:04 JARVIS SKIPPED-ALREADY-PROPOSED BUILD-ROOM-CLOSES [JARVIS]",
-  "14:20:05 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
-  "14:20:05 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
-  "14:20:05 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
-  "14:20:05 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
-  "14:20:05 JARVIS PLANNER PROPOSED 0 [JARVIS]",
-  "14:20:05 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-10-01-8.md [JARVIS]",
   "14:20:05 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
   "14:20:05 JARVIS COST usd=0.0000 [JARVIS]",
   "14:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "14:30:07 GOAL-0640-LEARNING-EDGE START [clock]"
+  "14:30:07 GOAL-0640-LEARNING-EDGE START [clock]",
+  "14:30:09 ciq-command-center.html DASHBOARD generated=2026-10-01 14:30 CDT bytes=18715 [clock]",
+  "14:30:13 ciq-command-center.html PAGES pushed 088f59e to coveredgeiq/ciq-command-center [clock]",
+  "14:42:59 FIXTURE-CLEARED GOAL-0640-LEARNING-EDGE 0 files actor=clock [clock]",
+  "14:43:00 GOAL-0640-LEARNING-EDGE FAIL VERDICT: CHECK-FAILED rc=1 out=/Library/Developer/CommandLineTools/usr/bin/python3: can't  [clock]",
+  "14:43:00  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "14:49:28 RELAY HEARTBEAT hb-fresh-9s",
+  "15:00:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "15:00:06 GOAL-0641-PLAN-WALKER START [clock]"
  ],
  "agents": [
   {
@@ -441,14 +441,14 @@
    "last_action": "COST",
    "spend_today": 0.0,
    "rows": 216,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "14:11:25",
-   "last_action": "REPAIR-STOP-HELD",
+   "last_seen": "14:49:28",
+   "last_action": "HEARTBEAT",
    "spend_today": 0.0,
-   "rows": 89,
+   "rows": 91,
    "state": "ACTIVE"
   },
   {
@@ -469,10 +469,10 @@
   },
   {
    "agent": "clock",
-   "last_seen": "14:30:07",
+   "last_seen": "15:00:06",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 131,
+   "rows": 137,
    "state": "ACTIVE"
   },
   {
