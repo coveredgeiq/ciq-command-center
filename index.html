@@ -176,12 +176,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-01 15:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-01 16:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-01 15:30 CDT",
+ "generated": "2026-10-01 16:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -380,13 +380,13 @@
   "needed": 3
  },
  "spend": {
-  "today": 56.65,
+  "today": 58.1,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $56.65 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $58.10 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "15:30:09",
+  "last_row": "16:00:08",
   "alive": true,
   "repair_stop": true
  },
@@ -421,18 +421,18 @@
   }
  ],
  "rows": [
-  "15:20:07 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
-  "15:20:07 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
-  "15:20:07 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
-  "15:20:07 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
-  "15:20:07 JARVIS PLANNER PROPOSED 0 [JARVIS]",
-  "15:20:07 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-10-01-9.md [JARVIS]",
-  "15:20:07 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
-  "15:20:07 JARVIS COST usd=0.0000 [JARVIS]",
-  "15:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
   "15:30:06 GOAL-0720-COS-MINTS-WHEN-FOUNDER-ANSWERS-V2 SKIP-UNCHANGED [clock]",
   "15:30:06 GOAL-0721-THURSDAY-LIVE-READ-FIXES SKIP-UNCHANGED [clock]",
-  "15:30:09 GOAL-0719-AUTHOR-SEAT-KEEPS-ITS-REPLY START [clock]"
+  "15:30:09 GOAL-0719-AUTHOR-SEAT-KEEPS-ITS-REPLY START [clock]",
+  "15:30:11 ciq-command-center.html DASHBOARD generated=2026-10-01 15:30 CDT bytes=18724 [clock]",
+  "15:30:14 ciq-command-center.html PAGES pushed e1ddeac to coveredgeiq/ciq-command-center [clock]",
+  "15:36:06 GOAL-0719-AUTHOR-SEAT-KEEPS-ITS-REPLY FAIL VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not marked for crea [clock]",
+  "15:36:07  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "15:49:28 RELAY HEARTBEAT hb-fresh-6s",
+  "16:00:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "16:00:05 GOAL-0639-FAILURES-BECOME-OUTCOMES SKIP-UNCHANGED [clock]",
+  "16:00:06 GOAL-0640-LEARNING-EDGE SKIP-UNCHANGED [clock]",
+  "16:00:08 GOAL-0720-COS-MINTS-WHEN-FOUNDER-ANSWERS-V2 START [clock]"
  ],
  "agents": [
   {
@@ -441,14 +441,14 @@
    "last_action": "COST",
    "spend_today": 0.0,
    "rows": 243,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "15:12:20",
-   "last_action": "REPAIR-STOP-HELD",
+   "last_seen": "15:49:28",
+   "last_action": "HEARTBEAT",
    "spend_today": 0.0,
-   "rows": 92,
+   "rows": 94,
    "state": "ACTIVE"
   },
   {
@@ -469,10 +469,10 @@
   },
   {
    "agent": "clock",
-   "last_seen": "15:30:09",
+   "last_seen": "16:00:08",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 145,
+   "rows": 152,
    "state": "ACTIVE"
   },
   {
