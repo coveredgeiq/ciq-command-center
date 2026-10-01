@@ -176,24 +176,18 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-09-30 19:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-09-30 19:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-30 19:00 CDT",
+ "generated": "2026-09-30 19:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
   "ok": false
  },
  "calendar": [
-  {
-   "t": "3:30 PM",
-   "n": "Holland: cheer tryout clinic (day 2 of 2) (to 5:00)",
-   "s": "WED 9/30",
-   "past": false
-  },
   {
    "t": "6:00 PM",
    "n": "⛪ Church (to 8:00)",
@@ -307,6 +301,12 @@
    "n": "Meeting with Shelby at Norms",
    "s": "WED 10/7",
    "past": false
+  },
+  {
+   "t": "6:00 PM",
+   "n": "⛪ Church (to 8:00)",
+   "s": "WED 10/7",
+   "past": false
   }
  ],
  "todo": [
@@ -414,13 +414,13 @@
   "note": "goal sessions $12.81 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "19:00:04",
+  "last_row": "19:30:03",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
-  "ready": 0,
-  "running": 0,
+  "ready": 2,
+  "running": 2,
   "held": 19,
   "proposed": 10,
   "hold_lines": 118
@@ -449,58 +449,58 @@
   }
  ],
  "rows": [
-  "18:48:27 MERGE-SKIPPED x5",
-  "18:49:16 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0630.md",
-  "18:49:16 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0631.md",
-  "18:49:16 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0632.md",
-  "18:49:16 RELAY HEARTBEAT hb-fresh-5s",
-  "18:57:16 OUTCOME-REPAIR-CONTENT-HUNT-STEP-WINDOW SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
-  "18:59:18 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0630.md",
-  "18:59:18 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0631.md",
-  "18:59:18 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0632.md",
-  "19:00:04 MERGE-SKIPPED x5",
-  "19:00:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "19:00:04  NO-WORK [clock]"
+  "19:20:06 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
+  "19:20:06 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
+  "19:20:06 JARVIS PLANNER PROPOSED 0 [JARVIS]",
+  "19:20:06 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-09-30-13.md [JARVIS]",
+  "19:20:06 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
+  "19:20:06 JARVIS COST usd=0.0000 [JARVIS]",
+  "19:29:25 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0630.md",
+  "19:29:25 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0631.md",
+  "19:29:25 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0632.md",
+  "19:30:02 MERGE-SKIPPED x5",
+  "19:30:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "19:30:03 GOAL-0713-CIO-ONE-CARD-A-DAY START [clock]"
  ],
  "agents": [
   {
    "agent": "JARVIS",
-   "last_seen": "18:20:06",
+   "last_seen": "19:20:06",
    "last_action": "COST",
    "spend_today": 0.0,
-   "rows": 324,
-   "state": "IDLE"
+   "rows": 351,
+   "state": "ACTIVE"
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "18:59:18",
+   "last_seen": "19:29:25",
    "last_action": "VERDICT-SKIP-NO-POST-TS",
    "spend_today": 0.0,
-   "rows": 415,
+   "rows": 424,
    "state": "ACTIVE"
   },
   {
    "agent": "author-seat",
-   "last_seen": "18:57:16",
+   "last_seen": "19:17:32",
    "last_action": "SEAT-BAD-REPLY",
    "spend_today": 0.0,
-   "rows": 55,
+   "rows": 57,
    "state": "ACTIVE"
   },
   {
    "agent": "clock",
-   "last_seen": "19:00:04",
-   "last_action": "NO-WORK",
+   "last_seen": "19:30:03",
+   "last_action": "START",
    "spend_today": 0.0,
-   "rows": 161,
+   "rows": 165,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "19:00:04",
+   "last_seen": "19:30:02",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 406,
+   "rows": 419,
    "state": "ACTIVE"
   }
  ]
