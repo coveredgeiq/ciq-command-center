@@ -176,12 +176,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-01 10:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-01 11:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-01 10:30 CDT",
+ "generated": "2026-10-01 11:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -398,13 +398,13 @@
   "note": "goal sessions $19.92 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "10:30:01",
+  "last_row": "11:00:06",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
-  "ready": 0,
-  "running": 0,
+  "ready": 2,
+  "running": 2,
   "held": 19,
   "proposed": 10,
   "hold_lines": 118
@@ -433,18 +433,18 @@
   }
  ],
  "rows": [
-  "10:20:04 JARVIS SKIPPED-ALREADY-PROPOSED GAP-LOOP-LIVE [JARVIS]",
-  "10:20:04 JARVIS SKIPPED-ALREADY-PROPOSED BUILD-ROOM-CLOSES [JARVIS]",
-  "10:20:04 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
-  "10:20:05 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
-  "10:20:05 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
-  "10:20:05 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
-  "10:20:05 JARVIS PLANNER PROPOSED 0 [JARVIS]",
-  "10:20:05 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-10-01-4.md [JARVIS]",
   "10:20:05 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
   "10:20:05 JARVIS COST usd=0.0000 [JARVIS]",
   "10:30:01  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "10:30:01  NO-WORK [clock]"
+  "10:30:01  NO-WORK [clock]",
+  "10:30:02 ciq-command-center.html DASHBOARD generated=2026-10-01 10:30 CDT bytes=18713 [clock]",
+  "10:30:06 ciq-command-center.html PAGES pushed a6e540e to coveredgeiq/ciq-command-center [clock]",
+  "10:40:03 GOAL-0718-SIGNED-MEANS-THE-SCRIPT-RAN QUEUED [queue-gate]",
+  "10:40:03 GOAL-0719-AUTHOR-SEAT-KEEPS-ITS-REPLY QUEUED [queue-gate]",
+  "10:40:03 GOAL-0720-COS-MINTS-WHEN-FOUNDER-ANSWERS-V2 QUEUED [queue-gate]",
+  "10:49:25 RELAY HEARTBEAT hb-fresh-19s",
+  "11:00:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "11:00:06 GOAL-0718-SIGNED-MEANS-THE-SCRIPT-RAN START [clock]"
  ],
  "agents": [
   {
@@ -453,15 +453,15 @@
    "last_action": "COST",
    "spend_today": 0.0,
    "rows": 108,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "10:04:41",
-   "last_action": "REPAIR-STOP-HELD",
+   "last_seen": "10:49:25",
+   "last_action": "HEARTBEAT",
    "spend_today": 0.0,
-   "rows": 80,
-   "state": "IDLE"
+   "rows": 81,
+   "state": "ACTIVE"
   },
   {
    "agent": "author-seat",
@@ -473,18 +473,18 @@
   },
   {
    "agent": "clock",
-   "last_seen": "10:30:01",
-   "last_action": "NO-WORK",
+   "last_seen": "11:00:06",
+   "last_action": "START",
    "spend_today": 0.0,
-   "rows": 92,
+   "rows": 96,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "08:24:13",
+   "last_seen": "10:40:03",
    "last_action": "QUEUED",
    "spend_today": 0.0,
-   "rows": 187,
+   "rows": 190,
    "state": "IDLE"
   }
  ]
