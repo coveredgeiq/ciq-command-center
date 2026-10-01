@@ -176,12 +176,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-09-30 18:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-09-30 19:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-09-30 18:30 CDT",
+ "generated": "2026-09-30 19:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -408,13 +408,13 @@
   "needed": 3
  },
  "spend": {
-  "today": 12.14,
+  "today": 12.81,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $12.14 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $12.81 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "18:30:03",
+  "last_row": "19:00:04",
   "alive": true,
   "repair_stop": true
  },
@@ -449,18 +449,18 @@
   }
  ],
  "rows": [
-  "18:20:06 JARVIS PLANNER PROPOSED 0 [JARVIS]",
-  "18:20:06 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-09-30-12.md [JARVIS]",
-  "18:20:06 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
-  "18:20:06 JARVIS COST usd=0.0000 [JARVIS]",
-  "18:21:30 MERGE-SKIPPED x5",
-  "18:26:47 OUTCOME-FAILURES-BECOME-OUTCOMES SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
-  "18:29:10 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0630.md",
-  "18:29:10 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0631.md",
-  "18:29:10 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0632.md",
-  "18:30:03 MERGE-SKIPPED x5",
-  "18:30:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "18:30:03  NO-WORK [clock]"
+  "18:48:27 MERGE-SKIPPED x5",
+  "18:49:16 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0630.md",
+  "18:49:16 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0631.md",
+  "18:49:16 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0632.md",
+  "18:49:16 RELAY HEARTBEAT hb-fresh-5s",
+  "18:57:16 OUTCOME-REPAIR-CONTENT-HUNT-STEP-WINDOW SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
+  "18:59:18 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0630.md",
+  "18:59:18 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0631.md",
+  "18:59:18 CIO VERDICT-SKIP-NO-POST-TS SHIP/HELD/CIO/CIO-2026-09-28-0632.md",
+  "19:00:04 MERGE-SKIPPED x5",
+  "19:00:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "19:00:04  NO-WORK [clock]"
  ],
  "agents": [
   {
@@ -469,38 +469,38 @@
    "last_action": "COST",
    "spend_today": 0.0,
    "rows": 324,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "18:29:10",
+   "last_seen": "18:59:18",
    "last_action": "VERDICT-SKIP-NO-POST-TS",
    "spend_today": 0.0,
-   "rows": 405,
+   "rows": 415,
    "state": "ACTIVE"
   },
   {
    "agent": "author-seat",
-   "last_seen": "18:26:47",
+   "last_seen": "18:57:16",
    "last_action": "SEAT-BAD-REPLY",
    "spend_today": 0.0,
-   "rows": 52,
+   "rows": 55,
    "state": "ACTIVE"
   },
   {
    "agent": "clock",
-   "last_seen": "18:30:03",
+   "last_seen": "19:00:04",
    "last_action": "NO-WORK",
    "spend_today": 0.0,
-   "rows": 157,
+   "rows": 161,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "18:30:03",
+   "last_seen": "19:00:04",
    "last_action": "MERGE-SKIPPED",
    "spend_today": 0.0,
-   "rows": 396,
+   "rows": 406,
    "state": "ACTIVE"
   }
  ]
