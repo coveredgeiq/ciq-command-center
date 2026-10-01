@@ -176,12 +176,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-01 08:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-01 08:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-01 08:00 CDT",
+ "generated": "2026-10-01 08:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -398,18 +398,18 @@
   "needed": 3
  },
  "spend": {
-  "today": 2.11,
+  "today": 8.62,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $2.11 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $8.62 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "08:00:03",
+  "last_row": "08:30:07",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
-  "ready": 0,
+  "ready": 1,
   "running": 2,
   "held": 19,
   "proposed": 10,
@@ -439,34 +439,34 @@
   }
  ],
  "rows": [
-  "07:24:34 OUTCOME-SIGNED-MEANS-LIVE-v1.1 SEAT-BAD-REPLY (empty) attempt 1 [author-seat]",
-  "07:30:05 MERGE-SKIPPED x5",
-  "07:30:06  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "07:30:06  NO-WORK [clock]",
-  "07:30:07 ciq-command-center.html DASHBOARD generated=2026-10-01 07:30 CDT bytes=18777 [clock]",
-  "07:30:09 ciq-command-center.html PAGES pushed 260b638 to coveredgeiq/ciq-command-center [clock]",
-  "07:36:50 MERGE-SKIPPED x5",
-  "07:36:50 GOAL-0716-HELD-ITEMS-LOG-ONCE QUEUED [queue-gate]",
-  "07:49:23 RELAY HEARTBEAT hb-fresh-28s",
-  "08:00:02 MERGE-SKIPPED x10",
-  "08:00:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "08:00:03 GOAL-0716-HELD-ITEMS-LOG-ONCE START [clock]"
+  "08:20:05 JARVIS PLANNER PROPOSED 0 [JARVIS]",
+  "08:20:05 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-10-01-2.md [JARVIS]",
+  "08:20:05 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
+  "08:20:05 JARVIS COST usd=0.0000 [JARVIS]",
+  "08:22:08 GOAL-0716-HELD-ITEMS-LOG-ONCE FAIL VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not marked for crea [clock]",
+  "08:22:09  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "08:22:09 RETIRED-NEEDS-DECISION x15",
+  "08:24:13 MERGE-SKIPPED x5",
+  "08:24:13 GOAL-0717-COS-MINTS-WHEN-FOUNDER-ANSWERS QUEUED [queue-gate]",
+  "08:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "08:30:05 GOAL-0716-HELD-ITEMS-LOG-ONCE SKIP-UNCHANGED [clock]",
+  "08:30:07 GOAL-0717-COS-MINTS-WHEN-FOUNDER-ANSWERS START [clock]"
  ],
  "agents": [
   {
    "agent": "JARVIS",
-   "last_seen": "07:20:04",
+   "last_seen": "08:20:05",
    "last_action": "COST",
    "spend_today": 0.0,
-   "rows": 27,
-   "state": "IDLE"
+   "rows": 54,
+   "state": "ACTIVE"
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "07:49:23",
-   "last_action": "HEARTBEAT",
+   "last_seen": "08:22:09",
+   "last_action": "RETIRED-NEEDS-DECISION",
    "spend_today": 0.0,
-   "rows": 43,
+   "rows": 59,
    "state": "ACTIVE"
   },
   {
@@ -479,18 +479,18 @@
   },
   {
    "agent": "clock",
-   "last_seen": "08:00:03",
+   "last_seen": "08:30:07",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 66,
+   "rows": 72,
    "state": "ACTIVE"
   },
   {
    "agent": "queue-gate",
-   "last_seen": "08:00:02",
-   "last_action": "MERGE-SKIPPED",
+   "last_seen": "08:24:13",
+   "last_action": "QUEUED",
    "spend_today": 0.0,
-   "rows": 181,
+   "rows": 187,
    "state": "ACTIVE"
   }
  ]
