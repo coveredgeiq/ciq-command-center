@@ -176,12 +176,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-01 11:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-01 12:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-01 11:30 CDT",
+ "generated": "2026-10-01 12:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -392,13 +392,13 @@
   "needed": 3
  },
  "spend": {
-  "today": 24.18,
+  "today": 29.63,
   "day_stop": 60.0,
   "ceiling": 60.0,
-  "note": "goal sessions $24.18 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $29.63 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "11:30:06",
+  "last_row": "12:00:08",
   "alive": true,
   "repair_stop": true
  },
@@ -433,18 +433,18 @@
   }
  ],
  "rows": [
-  "11:20:03 JARVIS SKIPPED-ALREADY-PROPOSED GAP-LOOP-LIVE [JARVIS]",
-  "11:20:03 JARVIS SKIPPED-ALREADY-PROPOSED BUILD-ROOM-CLOSES [JARVIS]",
-  "11:20:03 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
-  "11:20:03 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
-  "11:20:03 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
-  "11:20:03 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
-  "11:20:03 JARVIS PLANNER PROPOSED 0 [JARVIS]",
-  "11:20:03 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-10-01-5.md [JARVIS]",
-  "11:20:03 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
   "11:20:03 JARVIS COST usd=0.0000 [JARVIS]",
   "11:30:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "11:30:06 GOAL-0719-AUTHOR-SEAT-KEEPS-ITS-REPLY START [clock]"
+  "11:30:06 GOAL-0719-AUTHOR-SEAT-KEEPS-ITS-REPLY START [clock]",
+  "11:30:07 ciq-command-center.html DASHBOARD generated=2026-10-01 11:30 CDT bytes=18757 [clock]",
+  "11:30:10 ciq-command-center.html PAGES pushed 4328a98 to coveredgeiq/ciq-command-center [clock]",
+  "11:33:41 QUEUE.log CORRECTION the bare line \"TEST-WRITE-CHECK\" immediately above this row was an accidental diagnostic w [builder-GOAL-0719]",
+  "11:40:08 OUTCOME-FIXTURE-BAD-REPLY SEAT-BAD-REPLY err=FIXTURE-INDUCED-EMPTY-REPLY stop_reason=FIXTURE num_turns=0 attempt 1 [author-seat]",
+  "11:47:38 GOAL-0719-AUTHOR-SEAT-KEEPS-ITS-REPLY FAIL VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not marked for crea [clock]",
+  "11:47:38  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "11:49:26 RELAY HEARTBEAT hb-fresh-17s",
+  "12:00:06  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "12:00:08 GOAL-0720-COS-MINTS-WHEN-FOUNDER-ANSWERS-V2 START [clock]"
  ],
  "agents": [
   {
@@ -453,30 +453,38 @@
    "last_action": "COST",
    "spend_today": 0.0,
    "rows": 135,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "11:19:36",
-   "last_action": "REPAIR-STOP-HELD",
+   "last_seen": "11:49:26",
+   "last_action": "HEARTBEAT",
    "spend_today": 0.0,
-   "rows": 82,
+   "rows": 84,
    "state": "ACTIVE"
   },
   {
    "agent": "author-seat",
-   "last_seen": "09:25:50",
+   "last_seen": "11:40:08",
    "last_action": "SEAT-BAD-REPLY",
    "spend_today": 0.0,
-   "rows": 30,
+   "rows": 31,
+   "state": "IDLE"
+  },
+  {
+   "agent": "builder-GOAL-0719",
+   "last_seen": "11:33:41",
+   "last_action": "CORRECTION",
+   "spend_today": 0.0,
+   "rows": 1,
    "state": "IDLE"
   },
   {
    "agent": "clock",
-   "last_seen": "11:30:06",
+   "last_seen": "12:00:08",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 102,
+   "rows": 107,
    "state": "ACTIVE"
   },
   {
