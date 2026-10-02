@@ -176,12 +176,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-02 06:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-02 07:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-02 06:30 CDT",
+ "generated": "2026-10-02 07:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -381,7 +381,7 @@
   "note": "goal sessions $25.51 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "06:30:06",
+  "last_row": "07:00:06",
   "alive": true,
   "repair_stop": true
  },
@@ -416,26 +416,26 @@
   }
  ],
  "rows": [
-  "05:49:35 RELAY HEARTBEAT hb-fresh-24s",
-  "05:55:00 CIO SKIPPED-CEILING today's spend $25.51 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
-  "06:00:01 GOAL-0135-CONTENT-EVERY-MORNING CONTENT SKIPPED today's spend $25.51 >= ceiling $25.00 (THROTTLE/logs/COST.log vs QUEUE/CEILING.txt)",
-  "06:00:01  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "06:00:01  CEILING-STOP spend=$25.51 ceiling=$25.00 [clock]",
-  "06:00:03 ciq-command-center.html DASHBOARD generated=2026-10-02 06:00 CDT bytes=18486 [clock]",
-  "06:00:06 ciq-command-center.html PAGES pushed f1d3b50 to coveredgeiq/ciq-command-center [clock]",
-  "06:05:00 CIO SKIPPED-CEILING today's spend $25.51 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
-  "06:15:01 CIO SKIPPED-CEILING today's spend $25.51 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
   "06:25:01 CIO SKIPPED-CEILING today's spend $25.51 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
   "06:30:06  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "06:30:06  CEILING-STOP spend=$25.51 ceiling=$25.00 [clock]"
+  "06:30:06  CEILING-STOP spend=$25.51 ceiling=$25.00 [clock]",
+  "06:30:07 ciq-command-center.html DASHBOARD generated=2026-10-02 06:30 CDT bytes=18486 [clock]",
+  "06:30:10 ciq-command-center.html PAGES pushed e09fa90 to coveredgeiq/ciq-command-center [clock]",
+  "06:35:01 CIO SKIPPED-CEILING today's spend $25.51 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
+  "06:45:01 CIO SKIPPED-CEILING today's spend $25.51 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
+  "06:49:35 RELAY HEARTBEAT hb-fresh-22s",
+  "06:55:01 CIO SKIPPED-CEILING today's spend $25.51 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
+  "07:00:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "07:00:05  CEILING-STOP spend=$25.51 ceiling=$25.00 [clock]",
+  "07:00:06 STATUS REGENERATED words=204"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "06:25:01",
-   "last_action": "SKIPPED-CEILING",
+   "last_seen": "07:00:06",
+   "last_action": "REGENERATED",
    "spend_today": 0.0,
-   "rows": 27,
+   "rows": 32,
    "state": "ACTIVE"
   },
   {
@@ -448,10 +448,10 @@
   },
   {
    "agent": "clock",
-   "last_seen": "06:30:06",
+   "last_seen": "07:00:05",
    "last_action": "CEILING-STOP",
    "spend_today": 0.0,
-   "rows": 94,
+   "rows": 98,
    "state": "ACTIVE"
   }
  ]
