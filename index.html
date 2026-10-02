@@ -176,12 +176,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-02 05:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-02 06:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-02 05:30 CDT",
+ "generated": "2026-10-02 06:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -381,7 +381,7 @@
   "note": "goal sessions $25.51 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "05:30:03",
+  "last_row": "06:00:01",
   "alive": true,
   "repair_stop": true
  },
@@ -398,8 +398,8 @@
   "last": "Oct 2, 00:36:02 .... GOAL-0642-REPAIR-CONTENT-HUNT-STEP-ALERT-POST"
  },
  "lane": {
-  "state": "RUNNING",
-  "detail": "started 06:00:03",
+  "state": "NO RUN",
+  "detail": "no CONTENT rows today",
   "cost": 0.0
  },
  "agenda": [
@@ -416,26 +416,26 @@
   }
  ],
  "rows": [
-  "05:00:06 GOAL-0640-LEARNING-EDGE SKIP-UNCHANGED [clock]",
-  "05:00:08 GOAL-0644-REPAIR-INTAKE-ROUTER-STEP-COLLECT-SLACK START [clock]",
-  "05:00:10 ciq-command-center.html DASHBOARD generated=2026-10-02 05:00 CDT bytes=18293 [clock]",
-  "05:00:13 ciq-command-center.html PAGES pushed b5957b2 to coveredgeiq/ciq-command-center [clock]",
-  "05:03:32 FIXTURE-CLEARED GOAL-0644-REPAIR-INTAKE-ROUTER-STEP-COLLECT-SLACK 0 files actor=clock [clock]",
-  "05:03:32 GOAL-0644-REPAIR-INTAKE-ROUTER-STEP-COLLECT-SLACK FAIL VERDICT: CHECK-FAILED rc=2 out=grep: ciq-cto-workspace/PROOFS/OUTCOME-REPAIR-INTAKE-ROUTER [clock]",
-  "05:03:33  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
-  "05:04:59 CIO SKIPPED-CEILING today's spend $25.51 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
-  "05:15:00 CIO SKIPPED-CEILING today's spend $25.51 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
   "05:25:00 CIO SKIPPED-CEILING today's spend $25.51 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
   "05:30:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "05:30:03  CEILING-STOP spend=$25.51 ceiling=$25.00 [clock]"
+  "05:30:03  CEILING-STOP spend=$25.51 ceiling=$25.00 [clock]",
+  "05:30:05 ciq-command-center.html DASHBOARD generated=2026-10-02 05:30 CDT bytes=18489 [clock]",
+  "05:30:07 ciq-command-center.html PAGES pushed 593cf0e to coveredgeiq/ciq-command-center [clock]",
+  "05:35:00 CIO SKIPPED-CEILING today's spend $25.51 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
+  "05:45:00 CIO SKIPPED-CEILING today's spend $25.51 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
+  "05:49:35 RELAY HEARTBEAT hb-fresh-24s",
+  "05:55:00 CIO SKIPPED-CEILING today's spend $25.51 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
+  "06:00:01 GOAL-0135-CONTENT-EVERY-MORNING CONTENT SKIPPED today's spend $25.51 >= ceiling $25.00 (THROTTLE/logs/COST.log vs QUEUE/CEILING.txt)",
+  "06:00:01  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "06:00:01  CEILING-STOP spend=$25.51 ceiling=$25.00 [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "05:25:00",
-   "last_action": "SKIPPED-CEILING",
+   "last_seen": "06:00:01",
+   "last_action": "CONTENT SKIPPED",
    "spend_today": 0.0,
-   "rows": 19,
+   "rows": 24,
    "state": "ACTIVE"
   },
   {
@@ -448,10 +448,10 @@
   },
   {
    "agent": "clock",
-   "last_seen": "05:30:03",
+   "last_seen": "06:00:01",
    "last_action": "CEILING-STOP",
    "spend_today": 0.0,
-   "rows": 86,
+   "rows": 90,
    "state": "ACTIVE"
   }
  ]
