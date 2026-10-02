@@ -176,12 +176,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-02 09:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-02 10:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-02 09:30 CDT",
+ "generated": "2026-10-02 10:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -375,18 +375,18 @@
   "needed": 3
  },
  "spend": {
-  "today": 27.21,
+  "today": 27.7,
   "day_stop": 60.0,
   "ceiling": 25.0,
-  "note": "goal sessions $27.21 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $27.70 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "09:30:04",
+  "last_row": "10:00:05",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
-  "ready": 4,
+  "ready": 7,
   "running": 0,
   "held": 19,
   "proposed": 10,
@@ -394,7 +394,7 @@
  },
  "signatures": {
   "total": 137,
-  "last7": 27,
+  "last7": 26,
   "last": "Oct 2, 09:11:41 .... GOAL-0719,GOAL-0721"
  },
  "lane": {
@@ -416,18 +416,18 @@
   }
  ],
  "rows": [
-  "09:20:05 JARVIS SKIPPED-ALREADY-PROPOSED BUILD-ROOM-CLOSES [JARVIS]",
-  "09:20:05 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
-  "09:20:05 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
-  "09:20:05 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
-  "09:20:05 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
-  "09:20:05 JARVIS PLANNER PROPOSED 0 [JARVIS]",
-  "09:20:06 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-10-02-3.md [JARVIS]",
-  "09:20:06 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
-  "09:20:06 JARVIS COST usd=0.0000 [JARVIS]",
-  "09:25:06 CIO SKIPPED-CEILING today's spend $27.14 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
-  "09:30:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "09:30:04  CEILING-STOP spend=$27.21 ceiling=$25.00 [clock]"
+  "09:30:04  CEILING-STOP spend=$27.21 ceiling=$25.00 [clock]",
+  "09:30:05 ciq-command-center.html DASHBOARD generated=2026-10-02 09:30 CDT bytes=18470 [clock]",
+  "09:30:08 ciq-command-center.html PAGES pushed 7b8b9a2 to coveredgeiq/ciq-command-center [clock]",
+  "09:35:07 CIO SKIPPED-CEILING today's spend $27.21 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
+  "09:37:40 GOAL-0724-DESK-POST-POSTS-AGAIN QUEUED [queue-gate]",
+  "09:37:40 GOAL-0722-LEDGER-WRITES-EVERY-VERDICT QUEUED [queue-gate]",
+  "09:37:40 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS QUEUED [queue-gate]",
+  "09:45:07 CIO SKIPPED-CEILING today's spend $27.70 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
+  "09:49:36 RELAY HEARTBEAT hb-fresh-14s",
+  "09:55:07 CIO SKIPPED-CEILING today's spend $27.70 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
+  "10:00:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "10:00:05  CEILING-STOP spend=$27.70 ceiling=$25.00 [clock]"
  ],
  "agents": [
   {
@@ -436,14 +436,14 @@
    "last_action": "COST",
    "spend_today": 0.0,
    "rows": 81,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "09:25:06",
+   "last_seen": "09:55:07",
    "last_action": "SKIPPED-CEILING",
    "spend_today": 0.0,
-   "rows": 50,
+   "rows": 54,
    "state": "ACTIVE"
   },
   {
@@ -456,10 +456,10 @@
   },
   {
    "agent": "clock",
-   "last_seen": "09:30:04",
+   "last_seen": "10:00:05",
    "last_action": "CEILING-STOP",
    "spend_today": 0.0,
-   "rows": 118,
+   "rows": 122,
    "state": "ACTIVE"
   },
   {
@@ -468,7 +468,15 @@
    "last_action": "HELD-BY-MOTHERSHIP",
    "spend_today": 0.0,
    "rows": 1,
-   "state": "ACTIVE"
+   "state": "IDLE"
+  },
+  {
+   "agent": "queue-gate",
+   "last_seen": "09:37:40",
+   "last_action": "QUEUED",
+   "spend_today": 0.0,
+   "rows": 3,
+   "state": "IDLE"
   }
  ]
 }
