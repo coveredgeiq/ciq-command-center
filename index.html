@@ -176,12 +176,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-02 03:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-02 04:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-02 03:30 CDT",
+ "generated": "2026-10-02 04:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -375,18 +375,18 @@
   "needed": 3
  },
  "spend": {
-  "today": 15.16,
+  "today": 22.56,
   "day_stop": 60.0,
   "ceiling": 25.0,
-  "note": "goal sessions $15.16 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $22.56 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "03:30:07",
+  "last_row": "04:00:06",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
-  "ready": 5,
+  "ready": 4,
   "running": 2,
   "held": 19,
   "proposed": 10,
@@ -416,26 +416,26 @@
   }
  ],
  "rows": [
-  "03:00:03 GOAL-0721-THURSDAY-LIVE-READ-FIXES SKIP-UNCHANGED [clock]",
-  "03:00:03 GOAL-0644-REPAIR-INTAKE-ROUTER-STEP-COLLECT-SLACK SKIP-UNCHANGED [clock]",
-  "03:00:04 GOAL-0643-REPAIR-CONTENT-HUNT-STEP-WINDOW SKIP-UNCHANGED [clock]",
-  "03:00:06 GOAL-0719-AUTHOR-SEAT-KEEPS-ITS-REPLY START [clock]",
-  "03:00:08 ciq-command-center.html DASHBOARD generated=2026-10-02 03:00 CDT bytes=18273 [clock]",
-  "03:00:12 ciq-command-center.html PAGES pushed 4fbde73 to coveredgeiq/ciq-command-center [clock]",
-  "03:10:26 GOAL-0719-AUTHOR-SEAT-KEEPS-ITS-REPLY RETIRED VERDICT: FAIL [clock]",
-  "03:10:26  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
   "03:30:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
   "03:30:04 GOAL-0639-FAILURES-BECOME-OUTCOMES SKIP-UNCHANGED [clock]",
   "03:30:04 GOAL-0640-LEARNING-EDGE SKIP-UNCHANGED [clock]",
-  "03:30:07 GOAL-0720-COS-MINTS-WHEN-FOUNDER-ANSWERS-V2 START [clock]"
+  "03:30:07 GOAL-0720-COS-MINTS-WHEN-FOUNDER-ANSWERS-V2 START [clock]",
+  "03:30:08 ciq-command-center.html DASHBOARD generated=2026-10-02 03:30 CDT bytes=18220 [clock]",
+  "03:30:11 ciq-command-center.html PAGES pushed 32726eb to coveredgeiq/ciq-command-center [clock]",
+  "03:49:33 RELAY HEARTBEAT hb-fresh-31s",
+  "03:53:48 FIXTURE-CLEARED GOAL-0720-COS-MINTS-WHEN-FOUNDER-ANSWERS-V2 2 files actor=clock [clock]",
+  "03:54:01 GOAL-0720-COS-MINTS-WHEN-FOUNDER-ANSWERS-V2 RETIRED VERDICT: CHECK-FAILED rc=1 out= proof=GOAL-0720-COS-MINTS-WHEN-FOUNDER-ANSWERS-V2.md.CHECK [clock]",
+  "03:54:03  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "04:00:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "04:00:06 GOAL-0721-THURSDAY-LIVE-READ-FIXES START [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "03:10:26",
+   "last_seen": "03:54:03",
    "last_action": "REPAIR-STOP-HELD",
    "spend_today": 0.0,
-   "rows": 10,
+   "rows": 12,
    "state": "ACTIVE"
   },
   {
@@ -448,10 +448,10 @@
   },
   {
    "agent": "clock",
-   "last_seen": "03:30:07",
+   "last_seen": "04:00:06",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 60,
+   "rows": 66,
    "state": "ACTIVE"
   }
  ]
