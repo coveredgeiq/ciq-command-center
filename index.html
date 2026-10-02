@@ -176,12 +176,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-02 02:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-02 03:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-02 02:30 CDT",
+ "generated": "2026-10-02 03:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -375,13 +375,13 @@
   "needed": 3
  },
  "spend": {
-  "today": 11.66,
+  "today": 12.98,
   "day_stop": 60.0,
   "ceiling": 25.0,
-  "note": "goal sessions $11.66 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $12.98 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "02:30:05",
+  "last_row": "03:00:06",
   "alive": true,
   "repair_stop": true
  },
@@ -416,26 +416,26 @@
   }
  ],
  "rows": [
-  "01:49:32 RELAY HEARTBEAT hb-fresh-35s",
-  "02:00:06  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "02:00:06 GOAL-0643-REPAIR-CONTENT-HUNT-STEP-WINDOW SKIP-UNCHANGED [clock]",
-  "02:00:07 GOAL-0719-AUTHOR-SEAT-KEEPS-ITS-REPLY SKIP-UNCHANGED [clock]",
-  "02:00:08 GOAL-0639-FAILURES-BECOME-OUTCOMES START [clock]",
-  "02:00:10 ciq-command-center.html DASHBOARD generated=2026-10-02 02:00 CDT bytes=18305 [clock]",
-  "02:00:13 ciq-command-center.html PAGES pushed 809b963 to coveredgeiq/ciq-command-center [clock]",
-  "02:15:44 FIXTURE-CLEARED GOAL-0639-FAILURES-BECOME-OUTCOMES 0 files actor=clock [clock]",
-  "02:15:45 GOAL-0639-FAILURES-BECOME-OUTCOMES FAIL VERDICT: CHECK-FAILED rc=1 out=/Library/Developer/CommandLineTools/usr/bin/python3: can't  [clock]",
-  "02:15:45  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
-  "02:30:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "02:30:05 GOAL-0640-LEARNING-EDGE START [clock]"
+  "02:30:06 ciq-command-center.html DASHBOARD generated=2026-10-02 02:30 CDT bytes=18310 [clock]",
+  "02:30:10 ciq-command-center.html PAGES pushed 81241b1 to coveredgeiq/ciq-command-center [clock]",
+  "02:35:31 FIXTURE-CLEARED GOAL-0640-LEARNING-EDGE 0 files actor=clock [clock]",
+  "02:35:32 GOAL-0640-LEARNING-EDGE FAIL VERDICT: CHECK-FAILED rc=1 out=/Library/Developer/CommandLineTools/usr/bin/python3: can't  [clock]",
+  "02:35:32  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "02:49:33 RELAY HEARTBEAT hb-fresh-33s",
+  "03:00:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "03:00:03 GOAL-0720-COS-MINTS-WHEN-FOUNDER-ANSWERS-V2 SKIP-UNCHANGED [clock]",
+  "03:00:03 GOAL-0721-THURSDAY-LIVE-READ-FIXES SKIP-UNCHANGED [clock]",
+  "03:00:03 GOAL-0644-REPAIR-INTAKE-ROUTER-STEP-COLLECT-SLACK SKIP-UNCHANGED [clock]",
+  "03:00:04 GOAL-0643-REPAIR-CONTENT-HUNT-STEP-WINDOW SKIP-UNCHANGED [clock]",
+  "03:00:06 GOAL-0719-AUTHOR-SEAT-KEEPS-ITS-REPLY START [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "02:15:45",
-   "last_action": "REPAIR-STOP-HELD",
+   "last_seen": "02:49:33",
+   "last_action": "HEARTBEAT",
    "spend_today": 0.0,
-   "rows": 7,
+   "rows": 9,
    "state": "ACTIVE"
   },
   {
@@ -448,10 +448,10 @@
   },
   {
    "agent": "clock",
-   "last_seen": "02:30:05",
+   "last_seen": "03:00:06",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 43,
+   "rows": 53,
    "state": "ACTIVE"
   }
  ]
