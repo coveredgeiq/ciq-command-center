@@ -176,12 +176,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-02 00:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-02 00:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-02 00:00 CDT",
+ "generated": "2026-10-02 00:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -375,18 +375,18 @@
   "needed": 3
  },
  "spend": {
-  "today": 0.0,
+  "today": 2.21,
   "day_stop": 60.0,
   "ceiling": 25.0,
-  "note": "goal sessions $0.00 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $2.21 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "00:00:02",
+  "last_row": "00:30:09",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
-  "ready": 4,
+  "ready": 6,
   "running": 2,
   "held": 19,
   "proposed": 10,
@@ -416,16 +416,42 @@
   }
  ],
  "rows": [
-  "00:00:00  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "00:00:02 GOAL-0721-THURSDAY-LIVE-READ-FIXES START [clock]"
+  "00:17:56 GOAL-0642-REPAIR-CONTENT-HUNT-STEP-ALERT-POST RELEASED copied to GOALS and QUEUE/READY [author-seat]",
+  "00:22:41 GOAL-0643-REPAIR-CONTENT-HUNT-STEP-WINDOW AUTHORED drafted from OUTCOME-REPAIR-CONTENT-HUNT-STEP-WINDOW.md, attempt 1 [author-seat]",
+  "00:22:41 GOAL-0643-REPAIR-CONTENT-HUNT-STEP-WINDOW GATED FINAL PASS pre-mint, attempt 1 [author-seat]",
+  "00:22:41 GOAL-0643-REPAIR-CONTENT-HUNT-STEP-WINDOW RELEASED copied to GOALS and QUEUE/READY [author-seat]",
+  "00:27:33 OUTCOME-REPAIR-INTAKE-ROUTER-STEP-COLLECT-SLACK GATED FINAL FAIL attempt 1: FINAL FAIL GATE-A39 [author-seat]",
+  "00:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "00:30:05 GOAL-0719-AUTHOR-SEAT-KEEPS-ITS-REPLY SKIP-UNCHANGED [clock]",
+  "00:30:06 GOAL-0639-FAILURES-BECOME-OUTCOMES SKIP-UNCHANGED [clock]",
+  "00:30:06 GOAL-0640-LEARNING-EDGE SKIP-UNCHANGED [clock]",
+  "00:30:07 GOAL-0720-COS-MINTS-WHEN-FOUNDER-ANSWERS-V2 SKIP-UNCHANGED [clock]",
+  "00:30:07 GOAL-0721-THURSDAY-LIVE-READ-FIXES SKIP-UNCHANGED [clock]",
+  "00:30:09 GOAL-0642-REPAIR-CONTENT-HUNT-STEP-ALERT-POST START [clock]"
  ],
  "agents": [
   {
+   "agent": "UNKNOWN",
+   "last_seen": "00:04:26",
+   "last_action": "REPAIR-STOP-HELD",
+   "spend_today": 0.0,
+   "rows": 1,
+   "state": "IDLE"
+  },
+  {
+   "agent": "author-seat",
+   "last_seen": "00:27:33",
+   "last_action": "GATED",
+   "spend_today": 0.0,
+   "rows": 7,
+   "state": "ACTIVE"
+  },
+  {
    "agent": "clock",
-   "last_seen": "00:00:02",
+   "last_seen": "00:30:09",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 2,
+   "rows": 12,
    "state": "ACTIVE"
   }
  ]
