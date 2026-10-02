@@ -176,24 +176,18 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-02 07:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-02 08:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-02 07:30 CDT",
+ "generated": "2026-10-02 08:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
   "ok": false
  },
  "calendar": [
-  {
-   "t": "all day",
-   "n": "Kurt’s Birthday",
-   "s": "THU 10/1",
-   "past": false
-  },
   {
    "t": "1:30 PM",
    "n": "Cory Keller (Kansas Commerce) .... walk the Commerce programs, deck + site feedback",
@@ -208,7 +202,7 @@
   },
   {
    "t": "all day",
-   "n": "Racquel’s Birthday",
+   "n": "Racquel's Birthday",
    "s": "SAT 10/3",
    "past": false
   },
@@ -288,6 +282,12 @@
    "t": "8:00 AM",
    "n": "CIQ: LinkedIn prep + post (to 9:00)",
    "s": "THU 10/8",
+   "past": false
+  },
+  {
+   "t": "all day",
+   "n": "No School — Teacher Workday",
+   "s": "FRI 10/9",
    "past": false
   }
  ],
@@ -381,7 +381,7 @@
   "note": "goal sessions $27.14 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "07:30:06",
+  "last_row": "08:00:05",
   "alive": true,
   "repair_stop": true
  },
@@ -416,18 +416,18 @@
   }
  ],
  "rows": [
-  "07:20:06 JARVIS SKIPPED-ALREADY-PROPOSED BUILD-ROOM-CLOSES [JARVIS]",
-  "07:20:06 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
-  "07:20:06 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
-  "07:20:06 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
-  "07:20:06 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
-  "07:20:06 JARVIS PLANNER PROPOSED 0 [JARVIS]",
-  "07:20:06 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-10-02.md [JARVIS]",
-  "07:20:06 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
   "07:20:06 JARVIS COST usd=0.0000 [JARVIS]",
   "07:25:02 CIO SKIPPED-CEILING today's spend $27.14 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
   "07:30:06  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "07:30:06  CEILING-STOP spend=$27.14 ceiling=$25.00 [clock]"
+  "07:30:06  CEILING-STOP spend=$27.14 ceiling=$25.00 [clock]",
+  "07:30:07 ciq-command-center.html DASHBOARD generated=2026-10-02 07:30 CDT bytes=18316 [clock]",
+  "07:30:09 ciq-command-center.html PAGES pushed 3d0b96a to coveredgeiq/ciq-command-center [clock]",
+  "07:35:05 CIO SKIPPED-CEILING today's spend $27.14 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
+  "07:45:05 CIO SKIPPED-CEILING today's spend $27.14 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
+  "07:49:35 RELAY HEARTBEAT hb-fresh-20s",
+  "07:55:05 CIO SKIPPED-CEILING today's spend $27.14 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
+  "08:00:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "08:00:05  CEILING-STOP spend=$27.14 ceiling=$25.00 [clock]"
  ],
  "agents": [
   {
@@ -436,14 +436,14 @@
    "last_action": "COST",
    "spend_today": 0.0,
    "rows": 27,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "07:25:02",
+   "last_seen": "07:55:05",
    "last_action": "SKIPPED-CEILING",
    "spend_today": 0.0,
-   "rows": 36,
+   "rows": 40,
    "state": "ACTIVE"
   },
   {
@@ -456,10 +456,10 @@
   },
   {
    "agent": "clock",
-   "last_seen": "07:30:06",
+   "last_seen": "08:00:05",
    "last_action": "CEILING-STOP",
    "spend_today": 0.0,
-   "rows": 102,
+   "rows": 106,
    "state": "ACTIVE"
   }
  ]
