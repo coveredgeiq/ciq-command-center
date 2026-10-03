@@ -176,12 +176,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-03 03:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-03 03:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-03 03:00 CDT",
+ "generated": "2026-10-03 03:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -369,18 +369,18 @@
   "needed": 3
  },
  "spend": {
-  "today": 18.82,
+  "today": 20.67,
   "day_stop": 60.0,
   "ceiling": 25.0,
-  "note": "goal sessions $18.82 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $20.67 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "03:00:10",
+  "last_row": "03:30:03",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
-  "ready": 4,
+  "ready": 3,
   "running": 2,
   "held": 20,
   "proposed": 10,
@@ -410,26 +410,26 @@
   }
  ],
  "rows": [
-  "02:30:08 ciq-command-center.html DASHBOARD generated=2026-10-03 02:30 CDT bytes=18172 [clock]",
-  "02:30:12 ciq-command-center.html PAGES pushed 1c94b73 to coveredgeiq/ciq-command-center [clock]",
-  "02:35:50 FIXTURE-CLEARED GOAL-0640-LEARNING-EDGE 0 files actor=clock [clock]",
-  "02:35:50 GOAL-0640-LEARNING-EDGE RETIRED VERDICT: CHECK-FAILED rc=1 out=/Library/Developer/CommandLineTools/usr/bin/python3: can't  [clock]",
-  "02:35:50  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
-  "02:49:44 RELAY HEARTBEAT hb-fresh-27s",
-  "03:00:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
   "03:00:06 GOAL-0644-REPAIR-INTAKE-ROUTER-STEP-COLLECT-SLACK SKIP-UNCHANGED [clock]",
   "03:00:06 GOAL-0722-LEDGER-WRITES-EVERY-VERDICT SKIP-UNCHANGED [clock]",
   "03:00:07 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
   "03:00:07 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
-  "03:00:10 GOAL-0643-REPAIR-CONTENT-HUNT-STEP-WINDOW START [clock]"
+  "03:00:10 GOAL-0643-REPAIR-CONTENT-HUNT-STEP-WINDOW START [clock]",
+  "03:00:11 ciq-command-center.html DASHBOARD generated=2026-10-03 03:00 CDT bytes=18112 [clock]",
+  "03:00:14 ciq-command-center.html PAGES pushed 9100812 to coveredgeiq/ciq-command-center [clock]",
+  "03:13:25 FIXTURE-CLEARED GOAL-0643-REPAIR-CONTENT-HUNT-STEP-WINDOW 0 files actor=clock [clock]",
+  "03:13:25 GOAL-0643-REPAIR-CONTENT-HUNT-STEP-WINDOW RETIRED VERDICT: CHECK-FAILED rc=1 out=/Library/Developer/CommandLineTools/usr/bin/python3: can't  [clock]",
+  "03:13:26  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "03:30:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "03:30:03 GOAL-0644-REPAIR-INTAKE-ROUTER-STEP-COLLECT-SLACK START [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "02:49:44",
-   "last_action": "HEARTBEAT",
+   "last_seen": "03:13:26",
+   "last_action": "REPAIR-STOP-HELD",
    "spend_today": 0.0,
-   "rows": 10,
+   "rows": 11,
    "state": "ACTIVE"
   },
   {
@@ -442,10 +442,10 @@
   },
   {
    "agent": "clock",
-   "last_seen": "03:00:10",
+   "last_seen": "03:30:03",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 71,
+   "rows": 77,
    "state": "ACTIVE"
   }
  ]
