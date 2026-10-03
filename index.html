@@ -176,12 +176,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-03 04:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-03 05:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-03 04:30 CDT",
+ "generated": "2026-10-03 05:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -369,27 +369,27 @@
   "needed": 3
  },
  "spend": {
-  "today": 24.23,
+  "today": 28.3,
   "day_stop": 60.0,
   "ceiling": 25.0,
-  "note": "goal sessions $24.23 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $28.30 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "04:30:05",
+  "last_row": "05:00:05",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
   "ready": 2,
-  "running": 2,
+  "running": 0,
   "held": 20,
   "proposed": 10,
   "hold_lines": 121
  },
  "signatures": {
-  "total": 142,
-  "last7": 25,
-  "last": "Oct 3, 04:06:22 .... CLOCK-PASS-FIXTURE"
+  "total": 158,
+  "last7": 40,
+  "last": "Oct 3, 04:45:35 .... GOAL-0722-LEDGER-WRITES-EVERY-VERDICT"
  },
  "lane": {
   "state": "NO RUN",
@@ -410,26 +410,26 @@
   }
  ],
  "rows": [
-  "04:00:10 ciq-command-center.html PAGES pushed 611d371 to coveredgeiq/ciq-command-center [clock]",
-  "04:06:22 CLOCK-DEMOTE-FIXTURE DEMOTED VERDICT: NO-CHECK-POWER the CHECK-CMD returns rc=0 against an empty state, so it cannot fa [clock]",
-  "04:06:22 FIXTURE-CLEARED CLOCK-PASS-FIXTURE 0 files actor=clock [clock]",
-  "04:06:22 CLOCK-PASS-FIXTURE DONE VERDICT: SIGNED-PASS CHECK-PASS rc=0 out= proof=CLOCK-PASS-FIXTURE.md.CHECK.20261003-04062 [clock]",
-  "04:06:23 CLOCK-DEMOTE-FIXTURE HELD demoted-twice VERDICT: NO-CHECK-POWER the CHECK-CMD returns rc=0 against an empty state, s [clock]",
-  "04:06:31 GOAL-0719-AUTHOR-SEAT-KEEPS-ITS-REPLY DEMOTED VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not marked for crea [clock]",
-  "04:06:31 GOAL-0721-THURSDAY-LIVE-READ-FIXES DEMOTED VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not marked for crea [clock]",
-  "04:12:36 GOAL-0722-LEDGER-WRITES-EVERY-VERDICT HELD same-fail-twice VERDICT: FAIL [clock]",
-  "04:12:36  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
-  "04:30:04 GOAL-0722-LEDGER-WRITES-EVERY-VERDICT RELEASED [queue-gate]",
-  "04:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "04:30:05 GOAL-0722-LEDGER-WRITES-EVERY-VERDICT START [clock]"
+  "04:42:23 GOAL-0719-AUTHOR-SEAT-KEEPS-ITS-REPLY DONE VERDICT: SIGNED-PASS CHECK-PASS rc=0 out= proof=GOAL-0719-AUTHOR-SEAT-KEEPS-ITS-REPLY.md.C [clock]",
+  "04:42:25 GOAL-0721-THURSDAY-LIVE-READ-FIXES DONE VERDICT: SIGNED-PASS CHECK-PASS rc=0 out= proof=GOAL-0721-THURSDAY-LIVE-READ-FIXES.md.CHEC [clock]",
+  "04:45:34 FIXTURE-CLEARED GOAL-0722-LEDGER-WRITES-EVERY-VERDICT 2 files actor=clock [clock]",
+  "04:45:34 GOAL-0719-AUTHOR-SEAT-KEEPS-ITS-REPLY DONE VERDICT: SIGNED-PASS CHECK-PASS rc=0 out= proof=GOAL-0719-AUTHOR-SEAT-KEEPS-ITS-REPLY.md.C [clock]",
+  "04:45:35 GOAL-0721-THURSDAY-LIVE-READ-FIXES DONE VERDICT: SIGNED-PASS CHECK-PASS rc=0 out= proof=GOAL-0721-THURSDAY-LIVE-READ-FIXES.md.CHEC [clock]",
+  "04:45:35 GOAL-0722-LEDGER-WRITES-EVERY-VERDICT DONE VERDICT: SIGNED-PASS CHECK-PASS rc=0 out= proof=GOAL-0722-LEDGER-WRITES-EVERY-VERDICT.md.C [clock]",
+  "04:45:36  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "04:46:18 CIO SKIPPED-CEILING today's spend $28.30 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
+  "04:49:45 RELAY HEARTBEAT hb-fresh-22s",
+  "04:56:19 CIO SKIPPED-CEILING today's spend $28.30 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
+  "05:00:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "05:00:05  CEILING-STOP spend=$28.30 ceiling=$25.00 [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "04:12:36",
-   "last_action": "REPAIR-STOP-HELD",
+   "last_seen": "04:56:19",
+   "last_action": "SKIPPED-CEILING",
    "spend_today": 0.0,
-   "rows": 14,
+   "rows": 18,
    "state": "ACTIVE"
   },
   {
@@ -442,10 +442,10 @@
   },
   {
    "agent": "clock",
-   "last_seen": "04:30:05",
-   "last_action": "START",
+   "last_seen": "05:00:05",
+   "last_action": "CEILING-STOP",
    "spend_today": 0.0,
-   "rows": 94,
+   "rows": 130,
    "state": "ACTIVE"
   },
   {
@@ -454,7 +454,7 @@
    "last_action": "RELEASED",
    "spend_today": 0.0,
    "rows": 1,
-   "state": "ACTIVE"
+   "state": "IDLE"
   }
  ]
 }
