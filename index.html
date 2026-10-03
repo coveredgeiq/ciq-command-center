@@ -176,12 +176,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-03 00:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-03 01:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-03 00:30 CDT",
+ "generated": "2026-10-03 01:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -369,18 +369,18 @@
   "needed": 3
  },
  "spend": {
-  "today": 5.47,
+  "today": 9.14,
   "day_stop": 60.0,
   "ceiling": 25.0,
-  "note": "goal sessions $5.47 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $9.14 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "00:30:04",
+  "last_row": "01:00:06",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
-  "ready": 6,
+  "ready": 7,
   "running": 2,
   "held": 20,
   "proposed": 10,
@@ -410,34 +410,42 @@
   }
  ],
  "rows": [
-  "00:14:11 GOAL-0719-AUTHOR-SEAT-KEEPS-ITS-REPLY DEMOTED VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not marked for crea [clock]",
-  "00:14:11 GOAL-0721-THURSDAY-LIVE-READ-FIXES DEMOTED VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not marked for crea [clock]",
-  "00:17:21 CLOCK-DEMOTE-FIXTURE HELD demoted-twice VERDICT: NO-CHECK-POWER the CHECK-CMD returns rc=0 against an empty state, s [clock]",
-  "00:18:51 FIXTURE-CLEARED CLOCK-PASS-FIXTURE 0 files actor=clock [clock]",
-  "00:18:51 CLOCK-PASS-FIXTURE DONE VERDICT: SIGNED-PASS CHECK-PASS rc=0 out= proof=CLOCK-PASS-FIXTURE.md.CHECK.20261003-00185 [clock]",
-  "00:18:55 CLOCK-DEMOTE-FIXTURE HELD demoted-twice VERDICT: NO-CHECK-POWER the CHECK-CMD returns rc=0 against an empty state, s [clock]",
-  "00:19:04 GOAL-0719-AUTHOR-SEAT-KEEPS-ITS-REPLY HELD demoted-twice VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not m [clock]",
-  "00:19:04 GOAL-0721-THURSDAY-LIVE-READ-FIXES HELD demoted-twice VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not m [clock]",
-  "00:20:40 GOAL-0722-LEDGER-WRITES-EVERY-VERDICT FAIL VERDICT: FAIL [clock]",
-  "00:20:40  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
-  "00:30:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "00:30:04 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS START [clock]"
+  "00:30:04 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS START [clock]",
+  "00:30:06 ciq-command-center.html DASHBOARD generated=2026-10-03 00:30 CDT bytes=18366 [clock]",
+  "00:30:09 ciq-command-center.html PAGES pushed 54a7fa0 to coveredgeiq/ciq-command-center [clock]",
+  "00:39:52 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS FAIL VERDICT: NO-VERDICT-EMITTED [clock]",
+  "00:39:53  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "00:46:58 OUTCOME-SIGNED-MEANS-LIVE-v1.1 GATED FINAL FAIL attempt 1: FINAL FAIL GATE-A39 [author-seat]",
+  "00:49:44 RELAY HEARTBEAT hb-fresh-34s",
+  "00:52:26 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 AUTHORED drafted from OUTCOME-SIGNED-MEANS-LIVE-v1.1.md, attempt 2 [author-seat]",
+  "00:52:26 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 GATED FINAL PASS pre-mint, attempt 2 [author-seat]",
+  "00:52:26 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 RELEASED copied to GOALS and QUEUE/READY [author-seat]",
+  "01:00:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "01:00:06 GOAL-0725-GATES-RUN-BEFORE-MONEY START [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "00:20:40",
-   "last_action": "REPAIR-STOP-HELD",
+   "last_seen": "00:49:44",
+   "last_action": "HEARTBEAT",
    "spend_today": 0.0,
-   "rows": 1,
+   "rows": 3,
+   "state": "ACTIVE"
+  },
+  {
+   "agent": "author-seat",
+   "last_seen": "00:52:26",
+   "last_action": "RELEASED",
+   "spend_today": 0.0,
+   "rows": 4,
    "state": "ACTIVE"
   },
   {
    "agent": "clock",
-   "last_seen": "00:30:04",
+   "last_seen": "01:00:06",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 23,
+   "rows": 28,
    "state": "ACTIVE"
   }
  ]
