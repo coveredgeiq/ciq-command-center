@@ -176,12 +176,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-03 00:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-03 00:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-03 00:00 CDT",
+ "generated": "2026-10-03 00:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -369,13 +369,13 @@
   "needed": 3
  },
  "spend": {
-  "today": 0.0,
+  "today": 5.47,
   "day_stop": 60.0,
   "ceiling": 25.0,
-  "note": "goal sessions $0.00 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $5.47 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "00:00:06",
+  "last_row": "00:30:04",
   "alive": true,
   "repair_stop": true
  },
@@ -387,9 +387,9 @@
   "hold_lines": 121
  },
  "signatures": {
-  "total": 137,
-  "last7": 25,
-  "last": "Oct 2, 09:11:41 .... GOAL-0719,GOAL-0721"
+  "total": 139,
+  "last7": 26,
+  "last": "Oct 3, 00:18:51 .... CLOCK-PASS-FIXTURE"
  },
  "lane": {
   "state": "NO RUN",
@@ -410,20 +410,34 @@
   }
  ],
  "rows": [
-  "00:00:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "00:00:03 GOAL-0643-REPAIR-CONTENT-HUNT-STEP-WINDOW SKIP-UNCHANGED [clock]",
-  "00:00:04 GOAL-0639-FAILURES-BECOME-OUTCOMES SKIP-UNCHANGED [clock]",
-  "00:00:04 GOAL-0640-LEARNING-EDGE SKIP-UNCHANGED [clock]",
-  "00:00:04 GOAL-0644-REPAIR-INTAKE-ROUTER-STEP-COLLECT-SLACK SKIP-UNCHANGED [clock]",
-  "00:00:06 GOAL-0722-LEDGER-WRITES-EVERY-VERDICT START [clock]"
+  "00:14:11 GOAL-0719-AUTHOR-SEAT-KEEPS-ITS-REPLY DEMOTED VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not marked for crea [clock]",
+  "00:14:11 GOAL-0721-THURSDAY-LIVE-READ-FIXES DEMOTED VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not marked for crea [clock]",
+  "00:17:21 CLOCK-DEMOTE-FIXTURE HELD demoted-twice VERDICT: NO-CHECK-POWER the CHECK-CMD returns rc=0 against an empty state, s [clock]",
+  "00:18:51 FIXTURE-CLEARED CLOCK-PASS-FIXTURE 0 files actor=clock [clock]",
+  "00:18:51 CLOCK-PASS-FIXTURE DONE VERDICT: SIGNED-PASS CHECK-PASS rc=0 out= proof=CLOCK-PASS-FIXTURE.md.CHECK.20261003-00185 [clock]",
+  "00:18:55 CLOCK-DEMOTE-FIXTURE HELD demoted-twice VERDICT: NO-CHECK-POWER the CHECK-CMD returns rc=0 against an empty state, s [clock]",
+  "00:19:04 GOAL-0719-AUTHOR-SEAT-KEEPS-ITS-REPLY HELD demoted-twice VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not m [clock]",
+  "00:19:04 GOAL-0721-THURSDAY-LIVE-READ-FIXES HELD demoted-twice VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not m [clock]",
+  "00:20:40 GOAL-0722-LEDGER-WRITES-EVERY-VERDICT FAIL VERDICT: FAIL [clock]",
+  "00:20:40  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "00:30:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "00:30:04 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS START [clock]"
  ],
  "agents": [
   {
+   "agent": "UNKNOWN",
+   "last_seen": "00:20:40",
+   "last_action": "REPAIR-STOP-HELD",
+   "spend_today": 0.0,
+   "rows": 1,
+   "state": "ACTIVE"
+  },
+  {
    "agent": "clock",
-   "last_seen": "00:00:06",
+   "last_seen": "00:30:04",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 6,
+   "rows": 23,
    "state": "ACTIVE"
   }
  ]
