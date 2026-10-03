@@ -105,6 +105,31 @@
 
   <div class="grid">
 
+    <!-- hand fix 2026-10-03: scoreboard first (BOOT law 11) -->
+    <div class="p span8">
+      <div class="ph">### Scoreboard<span class="own">POSTS.log, SIGNUPS.log</span></div>
+      <div class="kv"><span>Posts shipped this week</span><b id="sc_posted"></b></div>
+      <div class="kv"><span>Posts kept</span><b id="sc_kept"></b></div>
+      <div class="kv"><span>Click reads at 48 hours</span><b id="sc_clicks"></b></div>
+      <div class="kv"><span>Signups</span><b id="sc_signups"></b></div>
+      <div class="msub" id="sc_sub"></div>
+    </div>
+
+    <div class="p span4">
+      <div class="ph">### What is coming<span class="own">Idea bank routing table</span></div>
+      <ul class="list" id="coming"></ul>
+    </div>
+
+    <div class="p span8">
+      <div class="ph">### Desk post<span class="own" id="deskfile"></span></div>
+      <pre id="desk" style="white-space:pre-wrap"></pre>
+    </div>
+
+    <div class="p span4">
+      <div class="ph">### Goals<span class="own">Held and signed, QUEUE.log</span></div>
+      <ul class="list" id="goals"></ul>
+    </div>
+
     <div class="p span4">
       <div class="ph"><h3>Today</h3><span class="own">Calendar</span></div>
       <ul class="list" id="cal"></ul>
@@ -176,12 +201,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-03 09:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-03 09:13 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-03 09:00 CDT",
+ "generated": "2026-10-03 09:13 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -375,7 +400,7 @@
   "note": "goal sessions $31.12 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "09:00:03",
+  "last_row": "09:06:22",
   "alive": true,
   "repair_stop": true
  },
@@ -410,9 +435,6 @@
   }
  ],
  "rows": [
-  "08:20:06 JARVIS COST usd=0.0000 [JARVIS]",
-  "08:26:22 CIO SKIPPED-CEILING today's spend $31.12 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
-  "08:30:06  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
   "08:30:06  CEILING-STOP spend=$31.12 ceiling=$25.00 [clock]",
   "08:30:07 ciq-command-center.html DASHBOARD generated=2026-10-03 08:30 CDT bytes=18310 [clock]",
   "08:30:09 ciq-command-center.html PAGES pushed c216bcc to coveredgeiq/ciq-command-center [clock]",
@@ -421,7 +443,10 @@
   "08:49:47 RELAY HEARTBEAT hb-fresh-12s",
   "08:56:22 CIO SKIPPED-CEILING today's spend $31.12 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
   "09:00:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "09:00:03  CEILING-STOP spend=$31.12 ceiling=$25.00 [clock]"
+  "09:00:03  CEILING-STOP spend=$31.12 ceiling=$25.00 [clock]",
+  "09:00:04 ciq-command-center.html DASHBOARD generated=2026-10-03 09:00 CDT bytes=18520 [clock]",
+  "09:00:08 ciq-command-center.html PAGES pushed f71d3e6 to coveredgeiq/ciq-command-center [clock]",
+  "09:06:22 CIO SKIPPED-CEILING today's spend $31.12 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j"
  ],
  "agents": [
   {
@@ -434,10 +459,10 @@
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "08:56:22",
+   "last_seen": "09:06:22",
    "last_action": "SKIPPED-CEILING",
    "spend_today": 0.0,
-   "rows": 49,
+   "rows": 50,
    "state": "ACTIVE"
   },
   {
@@ -450,10 +475,10 @@
   },
   {
    "agent": "clock",
-   "last_seen": "09:00:03",
-   "last_action": "CEILING-STOP",
+   "last_seen": "09:00:08",
+   "last_action": "PAGES",
    "spend_today": 0.0,
-   "rows": 162,
+   "rows": 164,
    "state": "ACTIVE"
   },
   {
@@ -463,6 +488,164 @@
    "spend_today": 0.0,
    "rows": 1,
    "state": "IDLE"
+  }
+ ],
+ "score": {
+  "posted_week": 0,
+  "posted_total": 0,
+  "kept": 0,
+  "clicks": 0,
+  "signups": 0,
+  "posts_log": false,
+  "signups_log": false,
+  "decision": "Founding-member decision: no card answered on disk."
+ },
+ "goals": [
+  {
+   "n": "AMD-0146-A-REPAIR-RETIRED-GOAL-FOUNDER-GATE",
+   "s": "QUEUE/HELD",
+   "tag": "blk"
+  },
+  {
+   "n": "AMD-0147-A-REPAIR-WRITE-SCOPE-FOUNDER-GATE",
+   "s": "QUEUE/HELD",
+   "tag": "blk"
+  },
+  {
+   "n": "AMD-0148-A-REPAIR-STATUS-MD-COUNTER",
+   "s": "QUEUE/HELD",
+   "tag": "blk"
+  },
+  {
+   "n": "GOAL-0148-ONE-SPEND-NUMBER",
+   "s": "QUEUE/HELD",
+   "tag": "blk"
+  },
+  {
+   "n": "GOAL-0158-RELAY-KEEPALIVE",
+   "s": "QUEUE/HELD",
+   "tag": "blk"
+  },
+  {
+   "n": "GOAL-0159-NIGHTLY-PACKET-REVIEW",
+   "s": "QUEUE/HELD",
+   "tag": "blk"
+  },
+  {
+   "n": "GOAL-0163-CHECK-GATE-PROOF",
+   "s": "QUEUE/HELD",
+   "tag": "blk"
+  },
+  {
+   "n": "GOAL-0164-CHECK-GATE-LIVE",
+   "s": "QUEUE/HELD",
+   "tag": "blk"
+  },
+  {
+   "n": "GOAL-0722-LEDGER-WRITES-EVERY-VERDICT",
+   "s": "signed 2026-10-03 04:45",
+   "tag": "done"
+  },
+  {
+   "n": "GOAL-0721-THURSDAY-LIVE-READ-FIXES",
+   "s": "signed 2026-10-03 04:45",
+   "tag": "done"
+  },
+  {
+   "n": "GOAL-0719-AUTHOR-SEAT-KEEPS-ITS-REPLY",
+   "s": "signed 2026-10-03 04:45",
+   "tag": "done"
+  },
+  {
+   "n": "GOAL-0721-THURSDAY-LIVE-READ-FIXES",
+   "s": "signed 2026-10-03 04:42",
+   "tag": "done"
+  },
+  {
+   "n": "GOAL-0719-AUTHOR-SEAT-KEEPS-ITS-REPLY",
+   "s": "signed 2026-10-03 04:42",
+   "tag": "done"
+  },
+  {
+   "n": "CLOCK-PASS-FIXTURE",
+   "s": "signed 2026-10-03 04:42",
+   "tag": "done"
+  }
+ ],
+ "desk": {
+  "file": "DESK-POST-2026-10-02.md",
+  "text": "Scoreboard: posted=0 kept=0 clicks=0 signups=0\n\nYOUR DESK .... Friday October 2, 5:30 PM CT: 0 decisions waiting for your word. <@U0BDGAL2FTM>\n\nDONE TODAY: 1 finished: repair content hunt step alert post.\n\nWAITING ON YOU (0):\nnothing waits on your word right now.\n\nCALENDAR (next days):\nFRI 10/2   4:00 PM  IDEA BANK: open Mothership and say \"idea bank\" (10 min)\nSAT 10/3  all day  Racquel's Birthday\nSAT 10/3   9:00 AM  Holland: cheer tryout results emailed this morning\nMON 10/5   8:00 AM  Personal: Weekly Forward-Look Review (to 9:00)\nMON 10/5   9:00 AM  Drive\nMON 10/5   9:00 AM  CIQ: policyholder signal read, first attended run (Mothership + Jason) (to 9:45)\nMON 10/5   9:30 AM  Appt with Mike Howe (to 10:30)\nMON 10/5  10:30 AM  Drive\nTUE 10/6  all day  Suzy's birhday\nTUE 10/6   8:00 AM  CIQ: LinkedIn prep + post (to 9:00)\nTUE 10/6  11:00 AM  Appt with Tracy (to 12:00)\nWED 10/7  11:30 AM  Headshot appointment at The Collective (to 1:30)\nWED 10/7   1:30 PM  Meeting with Shelby at Norms\nWED 10/7   6:00 PM  ⛪ Church (to 8:00)\nTHU 10/8   8:00 AM  CIQ: LinkedIn prep + post (to 9:00)\nFRI 10/9  all day  No School — Teacher Workday\n\nSPENT TODAY: $27.80 of the $25 day brake (build $13.32, verify $8.13, intake-mint $3.20, constraints-writer $1.63).\n\nThe welcome email is HELD until Friday's sender decision (DECISION-0001).\n\nJONGIE: last posted Friday October 2, 12:57 PM CT, answered no, https://ciq-corp.slack.com/archives/C0C2J3QV7L3/p1790963852035309"
+ },
+ "coming": [
+  {
+   "n": "Identity labels, series names, demeanor (4a)",
+   "s": "Writer doctrine (CMO lane) .... first draft after confirmation",
+   "tag": ""
+  },
+  {
+   "n": "Power-word bank (4b)",
+   "s": "CIO study job .... Mon 10/12 first run",
+   "tag": ""
+  },
+  {
+   "n": "Brand world, seven elements (4c)",
+   "s": "Brand chat .... Mon 10/5 with the brand sheet",
+   "tag": ""
+  },
+  {
+   "n": "Anchor terms (4e)",
+   "s": "Writer doctrine .... with 4a",
+   "tag": ""
+  },
+  {
+   "n": "Dark-post hook test (4h)",
+   "s": "Founder decision card .... November, first kept post",
+   "tag": ""
+  },
+  {
+   "n": "Money line, hero, three steps (5)",
+   "s": "Mothership writes, founder grades .... Mon 10/5 9:00",
+   "tag": ""
+  },
+  {
+   "n": "Brand sheet and deck reskin (5)",
+   "s": "Mothership builds, Brand chat holds .... Mon 10/5",
+   "tag": ""
+  },
+  {
+   "n": "Deck: ChatGPT or here (5)",
+   "s": "Founder decides after the three slides .... Mon 10/5",
+   "tag": ""
+  },
+  {
+   "n": "Intern project: DOI complaint recoveries in one table",
+   "s": "Mothership drafts, founder posts (outbound gate) .... Mon 10/5 draft",
+   "tag": ""
+  },
+  {
+   "n": "Angel tax credit 2026 window",
+   "s": "Mothership checks Commerce page .... Mon 10/5",
+   "tag": ""
+  },
+  {
+   "n": "Marla Canfield intro",
+   "s": "Founder email, Mothership drafts .... when a $50K spend is near",
+   "tag": ""
+  },
+  {
+   "n": "Cory November demo",
+   "s": "Calendar hold .... November",
+   "tag": ""
+  },
+  {
+   "n": "ACV case card (6)",
+   "s": "Content lane, product doctrine .... Mon 10/5 Teach post",
+   "tag": ""
+  },
+  {
+   "n": "Jongie Packet 4",
+   "s": "#jongie-desk .... due Wed 10/7",
+   "tag": ""
   }
  ]
 }
@@ -544,6 +727,19 @@
   }).join('');
 
   $('rows').textContent = S.rows.join('\n');
+
+  if (S.score){
+    $('sc_posted').textContent = S.score.posted_week;
+    $('sc_kept').textContent = S.score.kept;
+    $('sc_clicks').textContent = S.score.clicks;
+    $('sc_signups').textContent = S.score.signups;
+    $('sc_sub').textContent = (S.score.posts_log ? '' : 'POSTS.log not on disk, read as zero. ')
+      + (S.score.signups_log ? '' : 'SIGNUPS.log not on disk, read as zero. ') + S.score.decision;
+    $('coming').innerHTML = taglist(S.coming);
+    $('goals').innerHTML = taglist(S.goals);
+    $('deskfile').textContent = S.desk.file;
+    $('desk').textContent = S.desk.text;
+  }
 
   $('foot').textContent = 'Generated ' + S.generated + ' .... ' + S.source
     + '. Every machine number comes from the ledger or a directory listing. Nothing is inferred. '
