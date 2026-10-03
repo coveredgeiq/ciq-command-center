@@ -176,12 +176,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-03 04:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-03 04:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-03 04:00 CDT",
+ "generated": "2026-10-03 04:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -369,13 +369,13 @@
   "needed": 3
  },
  "spend": {
-  "today": 22.03,
+  "today": 24.23,
   "day_stop": 60.0,
   "ceiling": 25.0,
-  "note": "goal sessions $22.03 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $24.23 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "04:00:06",
+  "last_row": "04:30:05",
   "alive": true,
   "repair_stop": true
  },
@@ -387,9 +387,9 @@
   "hold_lines": 121
  },
  "signatures": {
-  "total": 141,
-  "last7": 24,
-  "last": "Oct 3, 01:10:38 .... GOAL-0725-GATES-RUN-BEFORE-MONEY"
+  "total": 142,
+  "last7": 25,
+  "last": "Oct 3, 04:06:22 .... CLOCK-PASS-FIXTURE"
  },
  "lane": {
   "state": "NO RUN",
@@ -410,26 +410,26 @@
   }
  ],
  "rows": [
-  "03:13:25 GOAL-0643-REPAIR-CONTENT-HUNT-STEP-WINDOW RETIRED VERDICT: CHECK-FAILED rc=1 out=/Library/Developer/CommandLineTools/usr/bin/python3: can't  [clock]",
-  "03:13:26  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
-  "03:30:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "03:30:03 GOAL-0644-REPAIR-INTAKE-ROUTER-STEP-COLLECT-SLACK START [clock]",
-  "03:30:05 ciq-command-center.html DASHBOARD generated=2026-10-03 03:30 CDT bytes=18190 [clock]",
-  "03:30:08 ciq-command-center.html PAGES pushed 9b11338 to coveredgeiq/ciq-command-center [clock]",
-  "03:34:54 FIXTURE-CLEARED GOAL-0644-REPAIR-INTAKE-ROUTER-STEP-COLLECT-SLACK 0 files actor=clock [clock]",
-  "03:34:54 GOAL-0644-REPAIR-INTAKE-ROUTER-STEP-COLLECT-SLACK RETIRED VERDICT: CHECK-FAILED rc=2 out=grep: ciq-cto-workspace/PROOFS/OUTCOME-REPAIR-INTAKE-ROUTER [clock]",
-  "03:34:55  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
-  "03:49:45 RELAY HEARTBEAT hb-fresh-25s",
-  "04:00:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "04:00:06 GOAL-0722-LEDGER-WRITES-EVERY-VERDICT START [clock]"
+  "04:00:10 ciq-command-center.html PAGES pushed 611d371 to coveredgeiq/ciq-command-center [clock]",
+  "04:06:22 CLOCK-DEMOTE-FIXTURE DEMOTED VERDICT: NO-CHECK-POWER the CHECK-CMD returns rc=0 against an empty state, so it cannot fa [clock]",
+  "04:06:22 FIXTURE-CLEARED CLOCK-PASS-FIXTURE 0 files actor=clock [clock]",
+  "04:06:22 CLOCK-PASS-FIXTURE DONE VERDICT: SIGNED-PASS CHECK-PASS rc=0 out= proof=CLOCK-PASS-FIXTURE.md.CHECK.20261003-04062 [clock]",
+  "04:06:23 CLOCK-DEMOTE-FIXTURE HELD demoted-twice VERDICT: NO-CHECK-POWER the CHECK-CMD returns rc=0 against an empty state, s [clock]",
+  "04:06:31 GOAL-0719-AUTHOR-SEAT-KEEPS-ITS-REPLY DEMOTED VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not marked for crea [clock]",
+  "04:06:31 GOAL-0721-THURSDAY-LIVE-READ-FIXES DEMOTED VERDICT: NO-SUCH-PATH a D line names a path that is not on disk and is not marked for crea [clock]",
+  "04:12:36 GOAL-0722-LEDGER-WRITES-EVERY-VERDICT HELD same-fail-twice VERDICT: FAIL [clock]",
+  "04:12:36  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "04:30:04 GOAL-0722-LEDGER-WRITES-EVERY-VERDICT RELEASED [queue-gate]",
+  "04:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "04:30:05 GOAL-0722-LEDGER-WRITES-EVERY-VERDICT START [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "03:49:45",
-   "last_action": "HEARTBEAT",
+   "last_seen": "04:12:36",
+   "last_action": "REPAIR-STOP-HELD",
    "spend_today": 0.0,
-   "rows": 13,
+   "rows": 14,
    "state": "ACTIVE"
   },
   {
@@ -442,10 +442,18 @@
   },
   {
    "agent": "clock",
-   "last_seen": "04:00:06",
+   "last_seen": "04:30:05",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 83,
+   "rows": 94,
+   "state": "ACTIVE"
+  },
+  {
+   "agent": "queue-gate",
+   "last_seen": "04:30:04",
+   "last_action": "RELEASED",
+   "spend_today": 0.0,
+   "rows": 1,
    "state": "ACTIVE"
   }
  ]
