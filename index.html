@@ -176,12 +176,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-03 05:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-03 06:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-03 05:30 CDT",
+ "generated": "2026-10-03 06:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -375,7 +375,7 @@
   "note": "goal sessions $28.30 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "05:30:04",
+  "last_row": "06:00:02",
   "alive": true,
   "repair_stop": true
  },
@@ -410,26 +410,26 @@
   }
  ],
  "rows": [
-  "04:46:18 CIO SKIPPED-CEILING today's spend $28.30 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
-  "04:49:45 RELAY HEARTBEAT hb-fresh-22s",
-  "04:56:19 CIO SKIPPED-CEILING today's spend $28.30 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
-  "05:00:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "05:00:05  CEILING-STOP spend=$28.30 ceiling=$25.00 [clock]",
-  "05:00:06 ciq-command-center.html DASHBOARD generated=2026-10-03 05:00 CDT bytes=18658 [clock]",
-  "05:00:09 ciq-command-center.html PAGES pushed ac39f3e to coveredgeiq/ciq-command-center [clock]",
-  "05:06:19 CIO SKIPPED-CEILING today's spend $28.30 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
-  "05:16:19 CIO SKIPPED-CEILING today's spend $28.30 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
   "05:26:19 CIO SKIPPED-CEILING today's spend $28.30 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
   "05:30:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "05:30:04  CEILING-STOP spend=$28.30 ceiling=$25.00 [clock]"
+  "05:30:04  CEILING-STOP spend=$28.30 ceiling=$25.00 [clock]",
+  "05:30:05 ciq-command-center.html DASHBOARD generated=2026-10-03 05:30 CDT bytes=18456 [clock]",
+  "05:30:07 ciq-command-center.html PAGES pushed 4ab7e37 to coveredgeiq/ciq-command-center [clock]",
+  "05:36:19 CIO SKIPPED-CEILING today's spend $28.30 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
+  "05:46:19 CIO SKIPPED-CEILING today's spend $28.30 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
+  "05:49:46 RELAY HEARTBEAT hb-fresh-19s",
+  "05:56:20 CIO SKIPPED-CEILING today's spend $28.30 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
+  "06:00:01 GOAL-0135-CONTENT-EVERY-MORNING CONTENT SKIPPED today's spend $28.30 >= ceiling $25.00 (THROTTLE/logs/COST.log vs QUEUE/CEILING.txt)",
+  "06:00:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "06:00:02  CEILING-STOP spend=$28.30 ceiling=$25.00 [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "05:26:19",
-   "last_action": "SKIPPED-CEILING",
+   "last_seen": "06:00:01",
+   "last_action": "CONTENT SKIPPED",
    "spend_today": 0.0,
-   "rows": 21,
+   "rows": 26,
    "state": "ACTIVE"
   },
   {
@@ -442,10 +442,10 @@
   },
   {
    "agent": "clock",
-   "last_seen": "05:30:04",
+   "last_seen": "06:00:02",
    "last_action": "CEILING-STOP",
    "spend_today": 0.0,
-   "rows": 134,
+   "rows": 138,
    "state": "ACTIVE"
   },
   {
