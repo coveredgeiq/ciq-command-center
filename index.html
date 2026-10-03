@@ -176,12 +176,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-03 03:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-03 04:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-03 03:30 CDT",
+ "generated": "2026-10-03 04:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -369,18 +369,18 @@
   "needed": 3
  },
  "spend": {
-  "today": 20.67,
+  "today": 22.03,
   "day_stop": 60.0,
   "ceiling": 25.0,
-  "note": "goal sessions $20.67 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $22.03 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "03:30:03",
+  "last_row": "04:00:06",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
-  "ready": 3,
+  "ready": 2,
   "running": 2,
   "held": 20,
   "proposed": 10,
@@ -388,7 +388,7 @@
  },
  "signatures": {
   "total": 141,
-  "last7": 25,
+  "last7": 24,
   "last": "Oct 3, 01:10:38 .... GOAL-0725-GATES-RUN-BEFORE-MONEY"
  },
  "lane": {
@@ -410,26 +410,26 @@
   }
  ],
  "rows": [
-  "03:00:06 GOAL-0644-REPAIR-INTAKE-ROUTER-STEP-COLLECT-SLACK SKIP-UNCHANGED [clock]",
-  "03:00:06 GOAL-0722-LEDGER-WRITES-EVERY-VERDICT SKIP-UNCHANGED [clock]",
-  "03:00:07 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
-  "03:00:07 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
-  "03:00:10 GOAL-0643-REPAIR-CONTENT-HUNT-STEP-WINDOW START [clock]",
-  "03:00:11 ciq-command-center.html DASHBOARD generated=2026-10-03 03:00 CDT bytes=18112 [clock]",
-  "03:00:14 ciq-command-center.html PAGES pushed 9100812 to coveredgeiq/ciq-command-center [clock]",
-  "03:13:25 FIXTURE-CLEARED GOAL-0643-REPAIR-CONTENT-HUNT-STEP-WINDOW 0 files actor=clock [clock]",
   "03:13:25 GOAL-0643-REPAIR-CONTENT-HUNT-STEP-WINDOW RETIRED VERDICT: CHECK-FAILED rc=1 out=/Library/Developer/CommandLineTools/usr/bin/python3: can't  [clock]",
   "03:13:26  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
   "03:30:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "03:30:03 GOAL-0644-REPAIR-INTAKE-ROUTER-STEP-COLLECT-SLACK START [clock]"
+  "03:30:03 GOAL-0644-REPAIR-INTAKE-ROUTER-STEP-COLLECT-SLACK START [clock]",
+  "03:30:05 ciq-command-center.html DASHBOARD generated=2026-10-03 03:30 CDT bytes=18190 [clock]",
+  "03:30:08 ciq-command-center.html PAGES pushed 9b11338 to coveredgeiq/ciq-command-center [clock]",
+  "03:34:54 FIXTURE-CLEARED GOAL-0644-REPAIR-INTAKE-ROUTER-STEP-COLLECT-SLACK 0 files actor=clock [clock]",
+  "03:34:54 GOAL-0644-REPAIR-INTAKE-ROUTER-STEP-COLLECT-SLACK RETIRED VERDICT: CHECK-FAILED rc=2 out=grep: ciq-cto-workspace/PROOFS/OUTCOME-REPAIR-INTAKE-ROUTER [clock]",
+  "03:34:55  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "03:49:45 RELAY HEARTBEAT hb-fresh-25s",
+  "04:00:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "04:00:06 GOAL-0722-LEDGER-WRITES-EVERY-VERDICT START [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "03:13:26",
-   "last_action": "REPAIR-STOP-HELD",
+   "last_seen": "03:49:45",
+   "last_action": "HEARTBEAT",
    "spend_today": 0.0,
-   "rows": 11,
+   "rows": 13,
    "state": "ACTIVE"
   },
   {
@@ -442,10 +442,10 @@
   },
   {
    "agent": "clock",
-   "last_seen": "03:30:03",
+   "last_seen": "04:00:06",
    "last_action": "START",
    "spend_today": 0.0,
-   "rows": 77,
+   "rows": 83,
    "state": "ACTIVE"
   }
  ]
