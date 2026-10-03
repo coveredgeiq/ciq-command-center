@@ -107,7 +107,7 @@
 
     <!-- hand fix 2026-10-03: scoreboard first (BOOT law 11) -->
     <div class="p span8">
-      <div class="ph">### Scoreboard<span class="own">POSTS.log, SIGNUPS.log</span></div>
+      <div class="ph"><h3>Scoreboard</h3><span class="own">POSTS.log, SIGNUPS.log</span></div>
       <div class="kv"><span>Posts shipped this week</span><b id="sc_posted"></b></div>
       <div class="kv"><span>Posts kept</span><b id="sc_kept"></b></div>
       <div class="kv"><span>Click reads at 48 hours</span><b id="sc_clicks"></b></div>
@@ -116,17 +116,17 @@
     </div>
 
     <div class="p span4">
-      <div class="ph">### What is coming<span class="own">Idea bank routing table</span></div>
+      <div class="ph"><h3>What is coming</h3><span class="own">Idea bank routing table</span></div>
       <ul class="list" id="coming"></ul>
     </div>
 
     <div class="p span8">
-      <div class="ph">### Desk post<span class="own" id="deskfile"></span></div>
+      <div class="ph"><h3>Desk post</h3><span class="own" id="deskfile"></span></div>
       <pre id="desk" style="white-space:pre-wrap"></pre>
     </div>
 
     <div class="p span4">
-      <div class="ph">### Goals<span class="own">Held and signed, QUEUE.log</span></div>
+      <div class="ph"><h3>Goals</h3><span class="own">Held and signed, QUEUE.log</span></div>
       <ul class="list" id="goals"></ul>
     </div>
 
@@ -201,12 +201,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-03 09:13 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-03 09:14 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-03 09:13 CDT",
+ "generated": "2026-10-03 09:14 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -400,7 +400,7 @@
   "note": "goal sessions $31.12 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "09:06:22",
+  "last_row": "09:13:45",
   "alive": true,
   "repair_stop": true
  },
@@ -435,8 +435,6 @@
   }
  ],
  "rows": [
-  "08:30:06  CEILING-STOP spend=$31.12 ceiling=$25.00 [clock]",
-  "08:30:07 ciq-command-center.html DASHBOARD generated=2026-10-03 08:30 CDT bytes=18310 [clock]",
   "08:30:09 ciq-command-center.html PAGES pushed c216bcc to coveredgeiq/ciq-command-center [clock]",
   "08:36:22 CIO SKIPPED-CEILING today's spend $31.12 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
   "08:46:22 CIO SKIPPED-CEILING today's spend $31.12 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
@@ -446,7 +444,9 @@
   "09:00:03  CEILING-STOP spend=$31.12 ceiling=$25.00 [clock]",
   "09:00:04 ciq-command-center.html DASHBOARD generated=2026-10-03 09:00 CDT bytes=18520 [clock]",
   "09:00:08 ciq-command-center.html PAGES pushed f71d3e6 to coveredgeiq/ciq-command-center [clock]",
-  "09:06:22 CIO SKIPPED-CEILING today's spend $31.12 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j"
+  "09:06:22 CIO SKIPPED-CEILING today's spend $31.12 >= ceiling $25.00 (/Users/aiagents/Library/CloudStorage/GoogleDrive-j",
+  "09:13:40 ciq-command-center.html DASHBOARD generated=2026-10-03 09:13 CDT bytes=25061 [clock]",
+  "09:13:45 ciq-command-center.html PAGES pushed b096c25 to coveredgeiq/ciq-command-center [clock]"
  ],
  "agents": [
   {
@@ -475,10 +475,10 @@
   },
   {
    "agent": "clock",
-   "last_seen": "09:00:08",
+   "last_seen": "09:13:45",
    "last_action": "PAGES",
    "spend_today": 0.0,
-   "rows": 164,
+   "rows": 166,
    "state": "ACTIVE"
   },
   {
