@@ -201,12 +201,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-04 05:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-04 06:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-04 05:30 CDT",
+ "generated": "2026-10-04 06:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -394,7 +394,7 @@
   "note": "goal sessions $3.59 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "05:30:05",
+  "last_row": "06:00:06",
   "alive": true,
   "repair_stop": true
  },
@@ -411,8 +411,8 @@
   "last": "Oct 3, 09:16:04 .... ciq-dashboard.py"
  },
  "lane": {
-  "state": "NO RUN",
-  "detail": "no CONTENT rows today",
+  "state": "RUNNING",
+  "detail": "started 06:00:05",
   "cost": 0.0
  },
  "agenda": [
@@ -429,27 +429,27 @@
   }
  ],
  "rows": [
-  "04:30:06 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
-  "04:30:07 ciq-command-center.html DASHBOARD generated=2026-10-04 04:30 CDT bytes=24479 [clock]",
-  "04:30:10 ciq-command-center.html PAGES pushed 9e03e19 to coveredgeiq/ciq-command-center [clock]",
-  "04:49:59 RELAY HEARTBEAT hb-fresh-16s",
-  "05:00:06  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "05:00:06 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
-  "05:00:06 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
-  "05:00:08 ciq-command-center.html DASHBOARD generated=2026-10-04 05:00 CDT bytes=24481 [clock]",
-  "05:00:10 ciq-command-center.html PAGES pushed 61dd5a5 to coveredgeiq/ciq-command-center [clock]",
   "05:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
   "05:30:05 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
-  "05:30:05 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]"
+  "05:30:05 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
+  "05:30:07 ciq-command-center.html DASHBOARD generated=2026-10-04 05:30 CDT bytes=24479 [clock]",
+  "05:30:09 ciq-command-center.html PAGES pushed 7589cf3 to coveredgeiq/ciq-command-center [clock]",
+  "05:50:00 RELAY HEARTBEAT hb-fresh-14s",
+  "06:00:05 GOAL-0135-CONTENT-EVERY-MORNING CONTENT START day=2026-10-04",
+  "06:00:05 GOAL-0135-CONTENT-EVERY-MORNING CONTENT NO-UNUSED-CASE NO-UNUSED-CASE: no unused case found in ciq-cto-workspace/DOCS/CASES and the news-allowed",
+  "06:00:05 GOAL-0135-CONTENT-EVERY-MORNING CONTENT COST usd=0.00 (no session spawned; blocked before any draft)",
+  "06:00:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "06:00:06 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
+  "06:00:06 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "04:49:59",
-   "last_action": "HEARTBEAT",
+   "last_seen": "06:00:05",
+   "last_action": "CONTENT COST",
    "spend_today": 0.0,
-   "rows": 7,
-   "state": "IDLE"
+   "rows": 11,
+   "state": "ACTIVE"
   },
   {
    "agent": "author-seat",
@@ -461,10 +461,10 @@
   },
   {
    "agent": "clock",
-   "last_seen": "05:30:05",
+   "last_seen": "06:00:06",
    "last_action": "SKIP-UNCHANGED",
    "spend_today": 0.0,
-   "rows": 55,
+   "rows": 60,
    "state": "ACTIVE"
   }
  ],
