@@ -201,12 +201,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-04 01:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-04 02:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-04 01:30 CDT",
+ "generated": "2026-10-04 02:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -394,7 +394,7 @@
   "note": "goal sessions $3.59 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "01:30:06",
+  "last_row": "02:00:07",
   "alive": true,
   "repair_stop": true
  },
@@ -429,27 +429,27 @@
   }
  ],
  "rows": [
-  "00:30:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "00:35:38 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 FAIL VERDICT: FAIL [clock]",
-  "00:35:38  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
-  "00:49:57 RELAY HEARTBEAT hb-fresh-30s",
-  "01:00:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "01:00:05 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
   "01:00:05 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
   "01:00:07 ciq-command-center.html DASHBOARD generated=2026-10-04 01:00 CDT bytes=24502 [clock]",
   "01:00:09 ciq-command-center.html PAGES pushed 76b2e52 to coveredgeiq/ciq-command-center [clock]",
   "01:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
   "01:30:05 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
-  "01:30:06 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]"
+  "01:30:06 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
+  "01:30:07 ciq-command-center.html DASHBOARD generated=2026-10-04 01:30 CDT bytes=24502 [clock]",
+  "01:30:10 ciq-command-center.html PAGES pushed 557105c to coveredgeiq/ciq-command-center [clock]",
+  "01:49:58 RELAY HEARTBEAT hb-fresh-26s",
+  "02:00:06  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "02:00:06 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
+  "02:00:07 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "00:49:57",
+   "last_seen": "01:49:58",
    "last_action": "HEARTBEAT",
    "spend_today": 0.0,
-   "rows": 3,
-   "state": "IDLE"
+   "rows": 4,
+   "state": "ACTIVE"
   },
   {
    "agent": "author-seat",
@@ -461,10 +461,10 @@
   },
   {
    "agent": "clock",
-   "last_seen": "01:30:06",
+   "last_seen": "02:00:07",
    "last_action": "SKIP-UNCHANGED",
    "spend_today": 0.0,
-   "rows": 15,
+   "rows": 20,
    "state": "ACTIVE"
   }
  ],
