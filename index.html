@@ -201,12 +201,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-06 09:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-06 10:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-06 09:30 CDT",
+ "generated": "2026-10-06 10:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -215,7 +215,7 @@
  "calendar": [
   {
    "t": "",
-   "n": "calendar unavailable since 2026-10-06 09:30 CDT",
+   "n": "calendar unavailable since 2026-10-06 10:00 CDT",
    "s": "no CALENDAR-*.md file in the drop folder",
    "past": false
   }
@@ -304,26 +304,26 @@
   "needed": 3
  },
  "spend": {
-  "today": 0.0,
+  "today": 1.44,
   "day_stop": 60.0,
   "ceiling": 25.0,
-  "note": "goal sessions $0.00 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $1.44 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "09:30:05",
+  "last_row": "10:00:04",
   "alive": true,
   "repair_stop": true
  },
  "queue": {
-  "ready": 2,
-  "running": 2,
+  "ready": 3,
+  "running": 0,
   "held": 20,
   "proposed": 10,
   "hold_lines": 121
  },
  "signatures": {
   "total": 159,
-  "last7": 35,
+  "last7": 34,
   "last": "Oct 3, 09:16:04 .... ciq-dashboard.py"
  },
  "lane": {
@@ -345,34 +345,34 @@
   }
  ],
  "rows": [
-  "09:13:40 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
-  "09:13:40 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
-  "09:15:40 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK START [clock]",
-  "09:15 CD  HAND BUILDS/ciq-ea-digest.py lines 23-26: brain root to /Users/aiagents/brain (cause: Monday de [mothership]",
-  "09:15:52 ciq-command-center.html DASHBOARD generated=2026-10-06 09:15 CDT bytes=20779 [clock]",
-  "09:15:54 ciq-command-center.html PAGES pushed 462104a to coveredgeiq/ciq-command-center [clock]",
-  "09:17 CD  HAND relay plist and BUILDS/ciq-relay-start.sh re-pointed to /Users/aiagents/w, relay restarted [mothership]",
-  "09:17:07 RELAY HEARTBEAT hb-stale-3942s",
-  "09:17:11 RELAY RELAY-UP pid=67413",
-  "09:20:51 CIO SKIPPED-BLOCKED-CHANNELS BLOCKED: missing marker(s) CIO-INTAKE-CHANNEL, CIO-HELD-QUEUE-CHANNEL; searched ciq-cio-wo",
-  "09:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2-SKIP docket not found: /Users/aiagents/ciq-co [clock]",
-  "09:30:05 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK,GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK.entered SKIP-BUSY [clock]"
+  "09:30:17 ciq-command-center.html DASHBOARD generated=2026-10-06 09:30 CDT bytes=20575 [clock]",
+  "09:30:19 ciq-command-center.html PAGES pushed 5745dd2 to coveredgeiq/ciq-command-center [clock]",
+  "09:30:51 CIO SKIPPED-BLOCKED-CHANNELS BLOCKED: missing marker(s) CIO-INTAKE-CHANNEL, CIO-HELD-QUEUE-CHANNEL; searched ciq-cio-wo",
+  "09:33:54 FIXTURE-CLEARED GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK 0 files actor=clock [clock]",
+  "09:33:54 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK FAIL VERDICT: CHECK-FAILED rc=1 out=/Library/Developer/CommandLineTools/usr/bin/python3: can't  [clock]",
+  "09:33:55  REPAIR-STOP-HELD repair tick halted at main entry, before mint, remint or place",
+  "09:40:51 CIO SKIPPED-BLOCKED-CHANNELS BLOCKED: missing marker(s) CIO-INTAKE-CHANNEL, CIO-HELD-QUEUE-CHANNEL; searched ciq-cio-wo",
+  "09:50:51 CIO SKIPPED-BLOCKED-CHANNELS BLOCKED: missing marker(s) CIO-INTAKE-CHANNEL, CIO-HELD-QUEUE-CHANNEL; searched ciq-cio-wo",
+  "10:00:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2-SKIP docket not found: /Users/aiagents/ciq-co [clock]",
+  "10:00:03 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
+  "10:00:04 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
+  "10:00:04 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "09:20:51",
+   "last_seen": "09:50:51",
    "last_action": "SKIPPED-BLOCKED-CHANNELS",
    "spend_today": 0.0,
-   "rows": 14,
+   "rows": 18,
    "state": "ACTIVE"
   },
   {
    "agent": "clock",
-   "last_seen": "09:30:05",
-   "last_action": "SKIP-BUSY",
+   "last_seen": "10:00:04",
+   "last_action": "SKIP-UNCHANGED",
    "spend_today": 0.0,
-   "rows": 8,
+   "rows": 16,
    "state": "ACTIVE"
   },
   {
