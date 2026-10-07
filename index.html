@@ -201,12 +201,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-07 18:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-07 18:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-07 18:00 CDT",
+ "generated": "2026-10-07 18:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -369,7 +369,7 @@
   "note": "goal sessions $0.40 from THROTTLE/logs/COST.log plus content lane $12.99 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "18:00:02",
+  "last_row": "18:30:02",
   "alive": true,
   "repair_stop": true
  },
@@ -387,7 +387,7 @@
  },
  "lane": {
   "state": "SHIPPED",
-  "detail": "posted to C0BQ8GSBUDA at 16:18:08 DRAFT-2026-10-07-POINT-SALE-REBUILD.md",
+  "detail": "posted to C0BQ8GSBUDA at 18:03:48 DRAFT-2026-10-07-ANTI-CONCURRENT-CAUSATION-2.md",
   "cost": 2.9508
  },
  "agenda": [
@@ -404,27 +404,27 @@
   }
  ],
  "rows": [
-  "17:30:01 EA DIGEST-POSTED 1791412201.361469",
-  "17:30:01 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]",
-  "17:30:02 ciq-command-center.html DASHBOARD generated=2026-10-07 17:30 CDT bytes=24287 [clock]",
-  "17:30:05 ciq-command-center.html PAGES pushed 0afebcb to coveredgeiq/ciq-command-center [clock]",
-  "17:30:07 DESK-POST delivered https://ciq-corp.slack.com/archives/C0C06P3QP7X/p1791412206987729",
-  "17:52:26 GOAL-0135-CONTENT-EVERY-MORNING CONTENT CANON-CHECK cited=2 candidates=2",
-  "17:52:26 GOAL-0135-CONTENT-EVERY-MORNING CONTENT DRAFT-ONLY writer audit and post-hoc reviewer both graded FAIL (last: writer spawn failed on attempt",
-  "17:52:26 GOAL-0135-CONTENT-EVERY-MORNING CONTENT COST usd=2.9508",
-  "18:00:01  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "18:00:01 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
-  "18:00:01 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
-  "18:00:02 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]"
+  "18:20:08 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
+  "18:20:08 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
+  "18:20:08 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
+  "18:20:08 JARVIS PLANNER PROPOSED 0 [JARVIS]",
+  "18:20:08 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-10-07-12.md [JARVIS]",
+  "18:20:08 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
+  "18:20:08 JARVIS COST usd=0.0000 [JARVIS]",
+  "18:20:46  HAND SHIP/ship.py: posted verdict now equals the writer audit VERDICT (audit_verdict helper; he [buildroom]",
+  "18:30:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "18:30:02 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
+  "18:30:02 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
+  "18:30:02 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]"
  ],
  "agents": [
   {
    "agent": "JARVIS",
-   "last_seen": "17:20:13",
+   "last_seen": "18:20:08",
    "last_action": "COST",
    "spend_today": 0.0,
-   "rows": 298,
-   "state": "IDLE"
+   "rows": 325,
+   "state": "ACTIVE"
   },
   {
    "agent": "UNKNOWN",
@@ -432,22 +432,22 @@
    "last_action": "CONTENT COST",
    "spend_today": 12.9911,
    "rows": 63,
-   "state": "ACTIVE"
-  },
-  {
-   "agent": "buildroom",
-   "last_seen": "17:25:30",
-   "last_action": "HAND",
-   "spend_today": 0.0,
-   "rows": 18,
    "state": "IDLE"
   },
   {
+   "agent": "buildroom",
+   "last_seen": "18:20:46",
+   "last_action": "HAND",
+   "spend_today": 0.0,
+   "rows": 19,
+   "state": "ACTIVE"
+  },
+  {
    "agent": "clock",
-   "last_seen": "18:00:02",
+   "last_seen": "18:30:02",
    "last_action": "SKIP-UNCHANGED",
    "spend_today": 0.0,
-   "rows": 184,
+   "rows": 190,
    "state": "ACTIVE"
   },
   {
