@@ -201,12 +201,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-07 12:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-07 13:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-07 12:30 CDT",
+ "generated": "2026-10-07 13:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -375,7 +375,7 @@
   "note": "goal sessions $0.40 from THROTTLE/logs/COST.log plus content lane $9.55 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "12:30:03",
+  "last_row": "13:00:04",
   "alive": true,
   "repair_stop": true
  },
@@ -410,18 +410,18 @@
   }
  ],
  "rows": [
-  "12:20:09 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
-  "12:20:09 JARVIS PLANNER PROPOSED 0 [JARVIS]",
-  "12:20:09 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-10-07-6.md [JARVIS]",
-  "12:20:09 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
-  "12:20:09 JARVIS COST usd=0.0000 [JARVIS]",
-  "12:21:30 GOAL-0135-CONTENT-EVERY-MORNING CONTENT CANON-CHECK cited=3 candidates=6",
-  "12:22 CD  HAND W2 step 3 pre-write canon grep: new BUILDS/ciq-canon-grep.py (fixture PASS on disk 12:18:5 [buildroom]",
   "12:28:55 JARVIS PLANNER HELD HOLD.txt names jarvis-planner; no model call for GOAL-FX.md [JARVIS]",
   "12:30:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
   "12:30:03 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
   "12:30:03 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
-  "12:30:03 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]"
+  "12:30:03 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]",
+  "12:30:04 ciq-command-center.html DASHBOARD generated=2026-10-07 12:30 CDT bytes=24253 [clock]",
+  "12:30:06 ciq-command-center.html PAGES pushed f7587cc to coveredgeiq/ciq-command-center [clock]",
+  "12:30 CD  HAND W0 step 5b jarvis-planner brake: planner_brake() + guard before the one paid call (author_ [buildroom]",
+  "13:00:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "13:00:03 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
+  "13:00:03 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
+  "13:00:04 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]"
  ],
  "agents": [
   {
@@ -430,7 +430,7 @@
    "last_action": "PLANNER HELD",
    "spend_today": 0.0,
    "rows": 163,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "UNKNOWN",
@@ -438,22 +438,22 @@
    "last_action": "CONTENT CANON-CHECK",
    "spend_today": 9.5477,
    "rows": 55,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "buildroom",
-   "last_seen": "12:22 CD",
+   "last_seen": "12:30 CD",
    "last_action": "HAND",
    "spend_today": 0.0,
-   "rows": 10,
+   "rows": 11,
    "state": "IDLE"
   },
   {
    "agent": "clock",
-   "last_seen": "12:30:03",
+   "last_seen": "13:00:04",
    "last_action": "SKIP-UNCHANGED",
    "spend_today": 0.0,
-   "rows": 118,
+   "rows": 124,
    "state": "ACTIVE"
   },
   {
