@@ -201,12 +201,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-07 17:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-07 18:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-07 17:30 CDT",
+ "generated": "2026-10-07 18:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -363,13 +363,13 @@
   "needed": 3
  },
  "spend": {
-  "today": 10.44,
+  "today": 13.39,
   "day_stop": 60.0,
   "ceiling": 25.0,
-  "note": "goal sessions $0.40 from THROTTLE/logs/COST.log plus content lane $10.04 from CONTENT COST rows"
+  "note": "goal sessions $0.40 from THROTTLE/logs/COST.log plus content lane $12.99 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "17:30:01",
+  "last_row": "18:00:02",
   "alive": true,
   "repair_stop": true
  },
@@ -388,7 +388,7 @@
  "lane": {
   "state": "SHIPPED",
   "detail": "posted to C0BQ8GSBUDA at 16:18:08 DRAFT-2026-10-07-POINT-SALE-REBUILD.md",
-  "cost": 0.1394
+  "cost": 2.9508
  },
  "agenda": [
   {
@@ -404,18 +404,18 @@
   }
  ],
  "rows": [
-  "17:20:13 JARVIS PLANNER PROPOSED 0 [JARVIS]",
-  "17:20:13 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-10-07-11.md [JARVIS]",
-  "17:20:13 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
-  "17:20:13 JARVIS COST usd=0.0000 [JARVIS]",
-  "17:21:16 GOAL-0135-CONTENT-EVERY-MORNING CONTENT COST usd=0.1394 (fixture audit on planted six-rules draft, run 2, model=opus, actor=buildroom)",
-  "17:23:26 GOAL-0135-CONTENT-EVERY-MORNING CONTENT START day=2026-10-07",
-  "17:25:30  HAND QUEUE/HOLD.txt: content-morning line removed for one capped live run (launchctl kickstart  [buildroom]",
-  "17:30:00  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "17:30:00 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
-  "17:30:00 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
   "17:30:01 EA DIGEST-POSTED 1791412201.361469",
-  "17:30:01 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]"
+  "17:30:01 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]",
+  "17:30:02 ciq-command-center.html DASHBOARD generated=2026-10-07 17:30 CDT bytes=24287 [clock]",
+  "17:30:05 ciq-command-center.html PAGES pushed 0afebcb to coveredgeiq/ciq-command-center [clock]",
+  "17:30:07 DESK-POST delivered https://ciq-corp.slack.com/archives/C0C06P3QP7X/p1791412206987729",
+  "17:52:26 GOAL-0135-CONTENT-EVERY-MORNING CONTENT CANON-CHECK cited=2 candidates=2",
+  "17:52:26 GOAL-0135-CONTENT-EVERY-MORNING CONTENT DRAFT-ONLY writer audit and post-hoc reviewer both graded FAIL (last: writer spawn failed on attempt",
+  "17:52:26 GOAL-0135-CONTENT-EVERY-MORNING CONTENT COST usd=2.9508",
+  "18:00:01  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "18:00:01 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
+  "18:00:01 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
+  "18:00:02 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]"
  ],
  "agents": [
   {
@@ -424,14 +424,14 @@
    "last_action": "COST",
    "spend_today": 0.0,
    "rows": 298,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "17:30:01",
-   "last_action": "DIGEST-POSTED",
-   "spend_today": 10.0403,
-   "rows": 59,
+   "last_seen": "17:52:26",
+   "last_action": "CONTENT COST",
+   "spend_today": 12.9911,
+   "rows": 63,
    "state": "ACTIVE"
   },
   {
@@ -440,14 +440,14 @@
    "last_action": "HAND",
    "spend_today": 0.0,
    "rows": 18,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "clock",
-   "last_seen": "17:30:01",
+   "last_seen": "18:00:02",
    "last_action": "SKIP-UNCHANGED",
    "spend_today": 0.0,
-   "rows": 178,
+   "rows": 184,
    "state": "ACTIVE"
   },
   {
@@ -558,8 +558,8 @@
   }
  ],
  "desk": {
-  "file": "DESK-POST-2026-10-06.md",
-  "text": "Scoreboard: posted=0 kept=0 clicks=0 signups=0\n\nYOUR DESK .... Tuesday October 6, 5:30 PM CT: 0 decisions waiting for your word. <@U0BDGAL2FTM>\n\nDONE TODAY: nothing yet.\n\nWAITING ON YOU (0):\nnothing waits on your word right now.\n\nUNANSWERED (1):\n1. https://ciq-corp.slack.com/archives/C0C06P3QP7X/p1791312453481119\n\nCALENDAR: no calendar file in the drop folder yet.\n\nSPENT TODAY: $2.94 of the $25 day brake (constraints-writer $1.51, build $1.14, verify $0.30).\n\nThe welcome email is HELD until Friday's sender decision (DECISION-0001).\n\nJONGIE: last posted Tuesday October 6, 10:02 AM CT, answered yes, https://ciq-corp.slack.com/archives/C0C2J3QV7L3/p1791298958861499"
+  "file": "DESK-POST-2026-10-07.md",
+  "text": "Scoreboard: posted=0 kept=0 clicks=0 signups=0\n\nYOUR DESK .... Wednesday October 7, 5:30 PM CT: 0 decisions waiting for your word. <@U0BDGAL2FTM>\n\nDONE TODAY: nothing yet.\n\nWAITING ON YOU (0):\nnothing waits on your word right now.\n\nCALENDAR (next days):\nWED 10/7   6:00 PM  ⛪ Church (to 8:00)\nTHU 10/8   8:00 AM  CIQ: LinkedIn prep + post (to 9:00)\nFRI 10/9  all day  No School — Teacher Workday\nFRI 10/9   4:00 PM  IDEA BANK: open Mothership and say \"idea bank\" (10 min)\nMON 10/12   8:00 AM  Personal: Weekly Forward-Look Review (to 9:00)\nTUE 10/13   8:00 AM  CIQ: LinkedIn prep + post (to 9:00)\nTUE 10/13   5:00 PM  Girls Haircuts - Nora and Holland (to 6:30)\nWED 10/14  all day  Girls Early Release — Pickup 1:10 PM\nWED 10/14  all day  Lindi Lanie’s Birthday\nWED 10/14   1:10 PM  Pick up girls — Early Release 1:10 PM\n\nSPENT TODAY: $0.40 of the $25 day brake (founder-intake $0.35, constraints-writer $0.05).\n\nThe welcome email is HELD until Friday's sender decision (DECISION-0001).\n\nJONGIE: last posted Tuesday October 6, 10:02 AM CT, answered yes, https://ciq-corp.slack.com/archives/C0C2J3QV7L3/p1791298958861499"
  },
  "coming": [
   {
