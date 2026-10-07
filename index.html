@@ -201,12 +201,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-07 15:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-07 16:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-07 15:30 CDT",
+ "generated": "2026-10-07 16:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -381,7 +381,7 @@
   "note": "goal sessions $0.40 from THROTTLE/logs/COST.log plus content lane $9.55 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "15:30:04",
+  "last_row": "16:00:02",
   "alive": true,
   "repair_stop": true
  },
@@ -416,18 +416,18 @@
   }
  ],
  "rows": [
-  "15:20:13 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
-  "15:20:13 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
-  "15:20:13 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
-  "15:20:13 JARVIS PLANNER PROPOSED 0 [JARVIS]",
-  "15:20:13 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-10-07-9.md [JARVIS]",
-  "15:20:13 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
-  "15:20:13 JARVIS COST usd=0.0000 [JARVIS]",
   "15:25:20  HAND HAND-DOWN 11 watchdog: new BUILDS/ciq-buildroom-watchdog.py (md5 399458db) + ~/Library/Lau [buildroom]",
   "15:30:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
   "15:30:04 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
   "15:30:04 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
-  "15:30:04 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]"
+  "15:30:04 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]",
+  "15:30:05 ciq-command-center.html DASHBOARD generated=2026-10-07 15:30 CDT bytes=24312 [clock]",
+  "15:30:07 ciq-command-center.html PAGES pushed 0e01fb6 to coveredgeiq/ciq-command-center [clock]",
+  "15:50:03  BUILDROOM-OK first check today with a Build Room post in the last 90 min; last post 15:39 [watchdog]",
+  "16:00:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "16:00:02 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
+  "16:00:02 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
+  "16:00:02 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]"
  ],
  "agents": [
   {
@@ -436,7 +436,7 @@
    "last_action": "COST",
    "spend_today": 0.0,
    "rows": 244,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "UNKNOWN",
@@ -452,14 +452,14 @@
    "last_action": "HAND",
    "spend_today": 0.0,
    "rows": 15,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "clock",
-   "last_seen": "15:30:04",
+   "last_seen": "16:00:02",
    "last_action": "SKIP-UNCHANGED",
    "spend_today": 0.0,
-   "rows": 154,
+   "rows": 160,
    "state": "ACTIVE"
   },
   {
@@ -477,6 +477,14 @@
    "spend_today": 0.0,
    "rows": 1,
    "state": "IDLE"
+  },
+  {
+   "agent": "watchdog",
+   "last_seen": "15:50:03",
+   "last_action": "BUILDROOM-OK",
+   "spend_today": 0.0,
+   "rows": 1,
+   "state": "ACTIVE"
   }
  ],
  "score": {
