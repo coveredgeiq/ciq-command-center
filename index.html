@@ -203,12 +203,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-08 18:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-08 18:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-08 18:00 CDT",
+ "generated": "2026-10-08 18:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -404,7 +404,7 @@
   "note": "goal sessions $0.65 from THROTTLE/logs/COST.log plus content lane $9.53 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "18:00:04",
+  "last_row": "18:30:06",
   "alive": true,
   "repair_stop": true
  },
@@ -439,27 +439,27 @@
   }
  ],
  "rows": [
-  "17:30:00  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "17:30:00 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
-  "17:30:01 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
-  "17:30:01 EA DIGEST-POSTED 1791498601.215679",
-  "17:30:01 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]",
-  "17:30:02 ciq-command-center.html DASHBOARD generated=2026-10-08 17:30 CDT bytes=27356 [clock]",
-  "17:30:03 DESK-POST delivered https://ciq-corp.slack.com/archives/C0C06P3QP7X/p1791498603440919",
-  "17:30:03 ciq-command-center.html PAGES pushed 0d1ba65 to coveredgeiq/ciq-command-center [clock]",
-  "18:00:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "18:00:02 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
-  "18:00:03 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
-  "18:00:04 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]"
+  "18:20:15 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
+  "18:20:15 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
+  "18:20:15 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
+  "18:20:15 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
+  "18:20:15 JARVIS PLANNER PROPOSED 0 [JARVIS]",
+  "18:20:15 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-10-08-12.md [JARVIS]",
+  "18:20:15 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
+  "18:20:15 JARVIS COST usd=0.0000 [JARVIS]",
+  "18:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "18:30:06 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
+  "18:30:06 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
+  "18:30:06 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]"
  ],
  "agents": [
   {
    "agent": "JARVIS",
-   "last_seen": "17:20:09",
+   "last_seen": "18:20:15",
    "last_action": "COST",
    "spend_today": 0.0,
-   "rows": 297,
-   "state": "IDLE"
+   "rows": 324,
+   "state": "ACTIVE"
   },
   {
    "agent": "UNKNOWN",
@@ -479,10 +479,10 @@
   },
   {
    "agent": "clock",
-   "last_seen": "18:00:04",
+   "last_seen": "18:30:06",
    "last_action": "SKIP-UNCHANGED",
    "spend_today": 0.0,
-   "rows": 226,
+   "rows": 232,
    "state": "ACTIVE"
   },
   {
