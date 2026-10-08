@@ -201,12 +201,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-08 11:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-08 12:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-08 11:30 CDT",
+ "generated": "2026-10-08 12:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -215,7 +215,7 @@
  "calendar": [
   {
    "t": "",
-   "n": "calendar unavailable since 2026-10-08 11:30 CDT",
+   "n": "calendar unavailable since 2026-10-08 12:00 CDT",
    "s": "calendar file present but no parseable rows: CALENDAR-WIDE-2026-10-08.md",
    "past": false
   }
@@ -330,7 +330,7 @@
   "note": "goal sessions $0.65 from THROTTLE/logs/COST.log plus content lane $9.53 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "11:30:02",
+  "last_row": "12:00:02",
   "alive": true,
   "repair_stop": true
  },
@@ -365,18 +365,18 @@
   }
  ],
  "rows": [
-  "11:20:07 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
-  "11:20:07 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
-  "11:20:07 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
-  "11:20:07 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
-  "11:20:07 JARVIS PLANNER PROPOSED 0 [JARVIS]",
-  "11:20:07 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-10-08-5.md [JARVIS]",
-  "11:20:07 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
-  "11:20:07 JARVIS COST usd=0.0000 [JARVIS]",
-  "11:30:01  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "11:30:01 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
   "11:30:02 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
-  "11:30:02 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]"
+  "11:30:02 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]",
+  "11:30:03 ciq-command-center.html DASHBOARD generated=2026-10-08 11:30 CDT bytes=24346 [clock]",
+  "11:30:04 ciq-command-center.html PAGES pushed 6ed4acc to coveredgeiq/ciq-command-center [clock]",
+  "11:31:09  HAND playbook v1.1 on the Mac: CANON/LANGUAGE-CANON/LINKEDIN-PLAYBOOK/LINKEDIN-MASTER-v1.1.md b [buildroom]",
+  "11:31:09  HAND BUILDS/ciq-content-morning.py (md5 5889089d to 846e01ae, backup ARCHIVE/ciq-content-mornin [buildroom]",
+  "11:35:05  BUILDROOM-MISSED no Build Room post in #ciq-cos for 90 min at 11:35 [watchdog]",
+  "11:42:41 CONTENT COST AUDIT-BACKTEST-117K writer audit rebuilt on master v1.1 s3+s7, verdict CLEAN on his 117K post [buildroom]",
+  "12:00:01  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "12:00:01 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
+  "12:00:02 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
+  "12:00:02 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]"
  ],
  "agents": [
   {
@@ -385,7 +385,7 @@
    "last_action": "COST",
    "spend_today": 0.0,
    "rows": 135,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "UNKNOWN",
@@ -397,18 +397,18 @@
   },
   {
    "agent": "buildroom",
-   "last_seen": "09:53:39",
-   "last_action": "HAND",
+   "last_seen": "11:42:41",
+   "last_action": "AUDIT-BACKTEST-117K",
    "spend_today": 0.0,
-   "rows": 4,
-   "state": "IDLE"
+   "rows": 7,
+   "state": "ACTIVE"
   },
   {
    "agent": "clock",
-   "last_seen": "11:30:02",
+   "last_seen": "12:00:02",
    "last_action": "SKIP-UNCHANGED",
    "spend_today": 0.0,
-   "rows": 142,
+   "rows": 148,
    "state": "ACTIVE"
   },
   {
@@ -429,10 +429,10 @@
   },
   {
    "agent": "watchdog",
-   "last_seen": "09:50:05",
+   "last_seen": "11:35:05",
    "last_action": "BUILDROOM-MISSED",
    "spend_today": 0.0,
-   "rows": 3,
+   "rows": 4,
    "state": "IDLE"
   }
  ],
