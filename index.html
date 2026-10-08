@@ -201,12 +201,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-08 09:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-08 09:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-08 09:00 CDT",
+ "generated": "2026-10-08 09:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -215,7 +215,7 @@
  "calendar": [
   {
    "t": "",
-   "n": "calendar unavailable since 2026-10-08 09:00 CDT",
+   "n": "calendar unavailable since 2026-10-08 09:30 CDT",
    "s": "calendar file present but no parseable rows: CALENDAR-WIDE-2026-10-08.md",
    "past": false
   }
@@ -330,7 +330,7 @@
   "note": "goal sessions $0.36 from THROTTLE/logs/COST.log plus content lane $9.53 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "09:00:02",
+  "last_row": "09:30:06",
   "alive": true,
   "repair_stop": true
  },
@@ -343,7 +343,7 @@
  },
  "signatures": {
   "total": 159,
-  "last7": 27,
+  "last7": 26,
   "last": "Oct 3, 09:16:04 .... ciq-dashboard.py"
  },
  "lane": {
@@ -365,27 +365,27 @@
   }
  ],
  "rows": [
-  "08:20:07 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
-  "08:20:07 JARVIS COST usd=0.0000 [JARVIS]",
-  "08:30:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "08:30:03 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
-  "08:30:04 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
-  "08:30:04 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]",
-  "08:30:05 ciq-command-center.html DASHBOARD generated=2026-10-08 08:30 CDT bytes=24342 [clock]",
-  "08:30:07 ciq-command-center.html PAGES pushed d2fd8d6 to coveredgeiq/ciq-command-center [clock]",
-  "09:00:01  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "09:00:01 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
-  "09:00:02 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
-  "09:00:02 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]"
+  "09:20:08 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
+  "09:20:08 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
+  "09:20:08 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
+  "09:20:08 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
+  "09:20:08 JARVIS PLANNER PROPOSED 0 [JARVIS]",
+  "09:20:08 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-10-08-3.md [JARVIS]",
+  "09:20:08 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
+  "09:20:08 JARVIS COST usd=0.0000 [JARVIS]",
+  "09:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "09:30:05 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
+  "09:30:05 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
+  "09:30:06 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]"
  ],
  "agents": [
   {
    "agent": "JARVIS",
-   "last_seen": "08:20:07",
+   "last_seen": "09:20:08",
    "last_action": "COST",
    "spend_today": 0.0,
-   "rows": 54,
-   "state": "IDLE"
+   "rows": 81,
+   "state": "ACTIVE"
   },
   {
    "agent": "UNKNOWN",
@@ -405,10 +405,10 @@
   },
   {
    "agent": "clock",
-   "last_seen": "09:00:02",
+   "last_seen": "09:30:06",
    "last_action": "SKIP-UNCHANGED",
    "spend_today": 0.0,
-   "rows": 112,
+   "rows": 118,
    "state": "ACTIVE"
   },
   {
