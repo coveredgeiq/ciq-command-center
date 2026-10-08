@@ -201,12 +201,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-08 07:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-08 08:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-08 07:30 CDT",
+ "generated": "2026-10-08 08:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -215,7 +215,7 @@
  "calendar": [
   {
    "t": "",
-   "n": "calendar unavailable since 2026-10-08 07:30 CDT",
+   "n": "calendar unavailable since 2026-10-08 08:00 CDT",
    "s": "calendar file present but no parseable rows: CALENDAR-WIDE-2026-10-08.md",
    "past": false
   }
@@ -330,7 +330,7 @@
   "note": "goal sessions $0.36 from THROTTLE/logs/COST.log plus content lane $5.50 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "07:30:01",
+  "last_row": "08:00:04",
   "alive": true,
   "repair_stop": true
  },
@@ -365,18 +365,18 @@
   }
  ],
  "rows": [
-  "07:20:09 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
-  "07:20:09 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
-  "07:20:09 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
-  "07:20:09 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
-  "07:20:09 JARVIS PLANNER PROPOSED 0 [JARVIS]",
-  "07:20:09 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-10-08.md [JARVIS]",
-  "07:20:09 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
-  "07:20:09 JARVIS COST usd=0.0000 [JARVIS]",
-  "07:30:00  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "07:30:00 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
-  "07:30:00 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
-  "07:30:01 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]"
+  "07:30:01 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]",
+  "07:30:01 ciq-command-center.html DASHBOARD generated=2026-10-08 07:30 CDT bytes=24044 [clock]",
+  "07:30:03 ciq-command-center.html PAGES pushed 6b84eca to coveredgeiq/ciq-command-center [clock]",
+  "07:46:19  HAND BUILDS/ciq-content-morning.py: THE SHAPE YOU WRITE TO (117K post body from BRIEFS/POST-117 [buildroom]",
+  "07:46:19 GOAL-0135-CONTENT-EVERY-MORNING CONTENT START day=2026-10-08",
+  "07:50:27  HAND BUILDS/ciq-cio-loop.py: DAILY-LINE and live-test labels #jason-ea to #ciq-cos (cards post  [buildroom]",
+  "08:00:02  CYCLE-HELD HELD: QUEUE/HOLD.txt names content-cycle [content-cycle]",
+  "08:00:02  CYCLE-HELD HELD: QUEUE/HOLD.txt names content-cycle [content-cycle]",
+  "08:00:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "08:00:03 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
+  "08:00:03 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
+  "08:00:04 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]"
  ],
  "agents": [
   {
@@ -385,22 +385,38 @@
    "last_action": "COST",
    "spend_today": 0.0,
    "rows": 27,
-   "state": "ACTIVE"
-  },
-  {
-   "agent": "UNKNOWN",
-   "last_seen": "07:01:38",
-   "last_action": "REPAIR-STOP-HELD",
-   "spend_today": 5.5046,
-   "rows": 6,
    "state": "IDLE"
   },
   {
+   "agent": "UNKNOWN",
+   "last_seen": "07:46:19",
+   "last_action": "CONTENT START",
+   "spend_today": 5.5046,
+   "rows": 7,
+   "state": "ACTIVE"
+  },
+  {
+   "agent": "buildroom",
+   "last_seen": "07:50:27",
+   "last_action": "HAND",
+   "spend_today": 0.0,
+   "rows": 2,
+   "state": "ACTIVE"
+  },
+  {
    "agent": "clock",
-   "last_seen": "07:30:01",
+   "last_seen": "08:00:04",
    "last_action": "SKIP-UNCHANGED",
    "spend_today": 0.0,
-   "rows": 94,
+   "rows": 100,
+   "state": "ACTIVE"
+  },
+  {
+   "agent": "content-cycle",
+   "last_seen": "08:00:02",
+   "last_action": "CYCLE-HELD",
+   "spend_today": 0.0,
+   "rows": 2,
    "state": "ACTIVE"
   },
   {
@@ -417,7 +433,7 @@
    "last_action": "BUILDROOM-OK",
    "spend_today": 0.0,
    "rows": 2,
-   "state": "ACTIVE"
+   "state": "IDLE"
   }
  ],
  "score": {
