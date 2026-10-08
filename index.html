@@ -203,12 +203,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-08 17:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-08 17:26 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-08 17:00 CDT",
+ "generated": "2026-10-08 17:26 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -404,7 +404,7 @@
   "note": "goal sessions $0.65 from THROTTLE/logs/COST.log plus content lane $9.53 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "17:00:06",
+  "last_row": "17:20:09",
   "alive": true,
   "repair_stop": true
  },
@@ -421,8 +421,8 @@
   "last": "Oct 3, 09:16:04 .... ciq-dashboard.py"
  },
  "lane": {
-  "state": "SHIPPED",
-  "detail": "posted to C0BQ8GSBUDA at 08:16:13 DRAFT-2026-10-08-WHO-WROTE-CLAIMS.md",
+  "state": "DRAFT",
+  "detail": "draft to C0BQ8GSBUDA at 08:16:13 DRAFT-2026-10-08-WHO-WROTE-CLAIMS.md",
   "cost": 4.0274
  },
  "agenda": [
@@ -439,27 +439,27 @@
   }
  ],
  "rows": [
-  "16:20:08 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
-  "16:20:08 JARVIS COST usd=0.0000 [JARVIS]",
-  "16:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "16:30:05 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
-  "16:30:05 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
-  "16:30:05 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]",
-  "16:30:06 ciq-command-center.html DASHBOARD generated=2026-10-08 16:30 CDT bytes=26699 [clock]",
-  "16:30:08 ciq-command-center.html PAGES pushed 1fa5edb to coveredgeiq/ciq-command-center [clock]",
-  "17:00:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "17:00:05 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
-  "17:00:05 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
-  "17:00:06 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]"
+  "17:20:08 JARVIS SKIPPED-ALREADY-PROPOSED COS-OWNS-THE-DESK [JARVIS]",
+  "17:20:08 JARVIS SKIPPED-ALREADY-PROPOSED COS-ASKS-CTO-BUILDS [JARVIS]",
+  "17:20:08 JARVIS SKIPPED-ALREADY-PROPOSED GAP-LOOP-LIVE [JARVIS]",
+  "17:20:08 JARVIS SKIPPED-ALREADY-PROPOSED BUILD-ROOM-CLOSES [JARVIS]",
+  "17:20:08 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
+  "17:20:08 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
+  "17:20:08 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
+  "17:20:08 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
+  "17:20:08 JARVIS PLANNER PROPOSED 0 [JARVIS]",
+  "17:20:09 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-10-08-11.md [JARVIS]",
+  "17:20:09 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
+  "17:20:09 JARVIS COST usd=0.0000 [JARVIS]"
  ],
  "agents": [
   {
    "agent": "JARVIS",
-   "last_seen": "16:20:08",
+   "last_seen": "17:20:09",
    "last_action": "COST",
    "spend_today": 0.0,
-   "rows": 270,
-   "state": "IDLE"
+   "rows": 297,
+   "state": "ACTIVE"
   },
   {
    "agent": "UNKNOWN",
@@ -479,11 +479,11 @@
   },
   {
    "agent": "clock",
-   "last_seen": "17:00:06",
-   "last_action": "SKIP-UNCHANGED",
+   "last_seen": "17:00:08",
+   "last_action": "PAGES",
    "spend_today": 0.0,
-   "rows": 212,
-   "state": "ACTIVE"
+   "rows": 214,
+   "state": "IDLE"
   },
   {
    "agent": "content-cycle",
@@ -511,21 +511,26 @@
   },
   {
    "agent": "watchdog",
-   "last_seen": "15:05:00",
+   "last_seen": "17:20:06",
    "last_action": "BUILDROOM-MISSED",
    "spend_today": 0.0,
-   "rows": 6,
-   "state": "IDLE"
+   "rows": 7,
+   "state": "ACTIVE"
   }
  ],
  "score": {
-  "posted_week": 0,
-  "posted_total": 0,
+  "posted_week": 3,
+  "posted_total": 3,
   "kept": 0,
   "clicks": 0,
   "signups": 0,
-  "posts_log": false,
+  "posts_log": true,
   "signups_log": false,
+  "rows": [
+   "POSTED 2026-10-06 | post=adjuster-pipeline-95000-fewer-jobs | page=personal | url=owed | impressions=~42000@48h (founder report) | source=founder",
+   "POSTED 2026-10-08 | post=liability-ask-the-room | page=personal | url=owed | numbers owed at 72h | source=founder",
+   "POSTED 2026-10-08 | post=california-15-day-adjuster-status-companion | page=company | url=owed | numbers owed at 72h | source=founder"
+  ],
   "decision": "Founding-member decision: no card answered on disk."
  },
  "rocks": {
@@ -771,7 +776,7 @@ if (S.score){
     $('sc_clicks').textContent = S.score.clicks;
     $('sc_signups').textContent = S.score.signups;
     $('sc_sub').textContent = (S.score.posts_log ? '' : 'POSTS.log not on disk, read as zero. ')
-      + (S.score.signups_log ? '' : 'SIGNUPS.log not on disk, read as zero. ') + S.score.decision;
+      + (S.score.signups_log ? '' : 'SIGNUPS.log not on disk, read as zero. ') + S.score.decision + ((S.score.rows || []).length ? '  POSTS ON RECORD: ' + S.score.rows.filter(function(x){return x.indexOf('POSTED')===0;}).join('  /  ') : '');
     $('coming').innerHTML = taglist(S.coming);
     $('goals').innerHTML = taglist(S.goals);
     $('deskfile').textContent = S.desk.file;
