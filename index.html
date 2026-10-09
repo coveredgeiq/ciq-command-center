@@ -203,12 +203,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-09 05:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-09 06:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-09 05:30 CDT",
+ "generated": "2026-10-09 06:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -404,7 +404,7 @@
   "note": "goal sessions $0.00 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "05:30:04",
+  "last_row": "06:00:02",
   "alive": true,
   "repair_stop": true
  },
@@ -421,9 +421,9 @@
   "last": "Oct 3, 09:16:04 .... ciq-dashboard.py"
  },
  "lane": {
-  "state": "DRAFT",
-  "detail": "draft to C0BQ8GSBUDA at 08:16:13 DRAFT-2026-10-08-WHO-WROTE-CLAIMS.md",
-  "cost": 4.0274
+  "state": "DRAFT ONLY",
+  "detail": "NO-NUMBER-IN-SOURCE: the chosen angle block carries no digit, so no draft could put a source number in line one or two; no writer spawned",
+  "cost": 0.0
  },
  "agenda": [
   {
@@ -439,26 +439,34 @@
   }
  ],
  "rows": [
-  "04:30:04 ciq-command-center.html DASHBOARD generated=2026-10-09 04:30 CDT bytes=26829 [clock]",
-  "04:30:05 ciq-command-center.html PAGES pushed d58a9ac to coveredgeiq/ciq-command-center [clock]",
-  "05:00:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "05:00:05 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
-  "05:00:06 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
-  "05:00:06 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]",
-  "05:00:06 ciq-command-center.html DASHBOARD generated=2026-10-09 05:00 CDT bytes=26829 [clock]",
-  "05:00:08 ciq-command-center.html PAGES pushed 67c3010 to coveredgeiq/ciq-command-center [clock]",
-  "05:30:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
   "05:30:04 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
   "05:30:04 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
-  "05:30:04 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]"
+  "05:30:04 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]",
+  "05:30:05 ciq-command-center.html DASHBOARD generated=2026-10-09 05:30 CDT bytes=26829 [clock]",
+  "05:30:06 ciq-command-center.html PAGES pushed a091107 to coveredgeiq/ciq-command-center [clock]",
+  "06:00:02 GOAL-0135-CONTENT-EVERY-MORNING CONTENT START day=2026-10-09",
+  "06:00:02 GOAL-0135-CONTENT-EVERY-MORNING CONTENT DRAFT-ONLY NO-NUMBER-IN-SOURCE: the chosen angle block carries no digit, so no draft could put a sour",
+  "06:00:02 GOAL-0135-CONTENT-EVERY-MORNING CONTENT COST usd=0.00 (no session spawned; source carried no number)",
+  "06:00:02  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "06:00:02 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
+  "06:00:02 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
+  "06:00:02 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]"
  ],
  "agents": [
   {
+   "agent": "UNKNOWN",
+   "last_seen": "06:00:02",
+   "last_action": "CONTENT COST",
+   "spend_today": 0.0,
+   "rows": 3,
+   "state": "ACTIVE"
+  },
+  {
    "agent": "clock",
-   "last_seen": "05:30:04",
+   "last_seen": "06:00:02",
    "last_action": "SKIP-UNCHANGED",
    "spend_today": 0.0,
-   "rows": 70,
+   "rows": 76,
    "state": "ACTIVE"
   },
   {
