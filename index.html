@@ -203,12 +203,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-09 07:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-09 08:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-09 07:30 CDT",
+ "generated": "2026-10-09 08:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -217,7 +217,7 @@
  "calendar": [
   {
    "t": "",
-   "n": "calendar unavailable since 2026-10-09 07:30 CDT",
+   "n": "calendar unavailable since 2026-10-09 08:00 CDT",
    "s": "calendar file present but no parseable rows: CALENDAR-WIDE-2026-10-09.md",
    "past": false
   }
@@ -326,13 +326,13 @@
   "needed": 3
  },
  "spend": {
-  "today": 0.17,
+  "today": 0.64,
   "day_stop": 60.0,
   "ceiling": 25.0,
-  "note": "goal sessions $0.17 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $0.64 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "07:30:05",
+  "last_row": "08:00:04",
   "alive": true,
   "repair_stop": true
  },
@@ -349,8 +349,8 @@
   "last": "Oct 3, 09:16:04 .... ciq-dashboard.py"
  },
  "lane": {
-  "state": "DRAFT ONLY",
-  "detail": "NO-NUMBER-IN-SOURCE: the chosen angle block carries no digit, so no draft could put a source number in line one or two; no writer spawned",
+  "state": "RUNNING",
+  "detail": "started 07:43:20",
   "cost": 0.0
  },
  "agenda": [
@@ -367,18 +367,18 @@
   }
  ],
  "rows": [
-  "07:20:08 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
-  "07:20:08 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
-  "07:20:08 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
-  "07:20:08 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
-  "07:20:08 JARVIS PLANNER PROPOSED 0 [JARVIS]",
-  "07:20:08 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-10-09.md [JARVIS]",
-  "07:20:08 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
-  "07:20:08 JARVIS COST usd=0.0000 [JARVIS]",
-  "07:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
   "07:30:05 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
   "07:30:05 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
-  "07:30:05 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]"
+  "07:30:05 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]",
+  "07:30:06 ciq-command-center.html DASHBOARD generated=2026-10-09 07:30 CDT bytes=25775 [clock]",
+  "07:30:08 ciq-command-center.html PAGES pushed f8d80fc to coveredgeiq/ciq-command-center [clock]",
+  "07:43:20 GOAL-0135-CONTENT-EVERY-MORNING CONTENT START day=2026-10-09",
+  "07:43 CD  HAND BUILDS/ciq-content-morning.py pick_angle_source: angles with a hard number rank first and  [buildroom]",
+  "08:00:04  CYCLE-HELD HELD: QUEUE/HOLD.txt names content-cycle [content-cycle]",
+  "08:00:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "08:00:04 GOAL-0645-SIGNED-MEANS-LIVE-v1.1 SKIP-UNCHANGED [clock]",
+  "08:00:04 GOAL-0723-AUTHOR-SEAT-CAP-COUNTS-GOALS SKIP-UNCHANGED [clock]",
+  "08:00:04 GOAL-0646-REPAIR-CALENDAR-MIRROR-REFRESH-STEP-LOCK SKIP-UNCHANGED [clock]"
  ],
  "agents": [
   {
@@ -387,22 +387,38 @@
    "last_action": "COST",
    "spend_today": 0.0,
    "rows": 27,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "07:01:38",
-   "last_action": "REPAIR-STOP-HELD",
+   "last_seen": "07:43:20",
+   "last_action": "CONTENT START",
    "spend_today": 0.0,
-   "rows": 5,
+   "rows": 6,
+   "state": "ACTIVE"
+  },
+  {
+   "agent": "buildroom",
+   "last_seen": "07:43 CD",
+   "last_action": "HAND",
+   "spend_today": 0.0,
+   "rows": 1,
    "state": "IDLE"
   },
   {
    "agent": "clock",
-   "last_seen": "07:30:05",
+   "last_seen": "08:00:04",
    "last_action": "SKIP-UNCHANGED",
    "spend_today": 0.0,
-   "rows": 94,
+   "rows": 100,
+   "state": "ACTIVE"
+  },
+  {
+   "agent": "content-cycle",
+   "last_seen": "08:00:04",
+   "last_action": "CYCLE-HELD",
+   "spend_today": 0.0,
+   "rows": 1,
    "state": "ACTIVE"
   },
   {
