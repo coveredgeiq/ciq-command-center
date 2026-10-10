@@ -203,12 +203,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-10 05:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-10 06:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-10 05:30 CDT",
+ "generated": "2026-10-10 06:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -486,7 +486,7 @@
   "note": "goal sessions $0.00 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "05:30:03",
+  "last_row": "06:00:04",
   "alive": true,
   "repair_stop": true
  },
@@ -503,9 +503,9 @@
   "last": "Oct 3, 09:16:04 .... ciq-dashboard.py"
  },
  "lane": {
-  "state": "DRAFT",
-  "detail": "draft to C0BFZD024A1 at 08:40:17 DRAFT-2026-10-09-POINT-SALE-ESTIMATE.md",
-  "cost": 6.4058
+  "state": "NO RUN",
+  "detail": "no CONTENT rows today",
+  "cost": 0.0
  },
  "agenda": [
   {
@@ -521,34 +521,34 @@
   }
  ],
  "rows": [
-  "04:34:12 CIO SKIPPED-CEILING today's spend $0.00 >= ceiling $0.00 (/Users/aiagents/w/QUEUE/CEILING.txt vs /Users/aiagen",
-  "04:44:12 CIO SKIPPED-CEILING today's spend $0.00 >= ceiling $0.00 (/Users/aiagents/w/QUEUE/CEILING.txt vs /Users/aiagen",
-  "04:54:12 CIO SKIPPED-CEILING today's spend $0.00 >= ceiling $0.00 (/Users/aiagents/w/QUEUE/CEILING.txt vs /Users/aiagen",
-  "05:00:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "05:00:04  CEILING-STOP spend=$0.00 ceiling=$0.00 [clock]",
-  "05:00:05 ciq-command-center.html DASHBOARD generated=2026-10-10 05:00 CDT bytes=29034 [clock]",
-  "05:00:07 ciq-command-center.html PAGES pushed 5560b34 to coveredgeiq/ciq-command-center [clock]",
-  "05:04:12 CIO SKIPPED-CEILING today's spend $0.00 >= ceiling $0.00 (/Users/aiagents/w/QUEUE/CEILING.txt vs /Users/aiagen",
   "05:14:13 CIO SKIPPED-CEILING today's spend $0.00 >= ceiling $0.00 (/Users/aiagents/w/QUEUE/CEILING.txt vs /Users/aiagen",
   "05:24:13 CIO SKIPPED-CEILING today's spend $0.00 >= ceiling $0.00 (/Users/aiagents/w/QUEUE/CEILING.txt vs /Users/aiagen",
   "05:30:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "05:30:03  CEILING-STOP spend=$0.00 ceiling=$0.00 [clock]"
+  "05:30:03  CEILING-STOP spend=$0.00 ceiling=$0.00 [clock]",
+  "05:30:04 ciq-command-center.html DASHBOARD generated=2026-10-10 05:30 CDT bytes=29034 [clock]",
+  "05:30:05 ciq-command-center.html PAGES pushed 9e97d94 to coveredgeiq/ciq-command-center [clock]",
+  "05:34:13 CIO SKIPPED-CEILING today's spend $0.00 >= ceiling $0.00 (/Users/aiagents/w/QUEUE/CEILING.txt vs /Users/aiagen",
+  "05:44:13 CIO SKIPPED-CEILING today's spend $0.00 >= ceiling $0.00 (/Users/aiagents/w/QUEUE/CEILING.txt vs /Users/aiagen",
+  "05:54:13 CIO SKIPPED-CEILING today's spend $0.00 >= ceiling $0.00 (/Users/aiagents/w/QUEUE/CEILING.txt vs /Users/aiagen",
+  "06:00:04 GOAL-0135-CONTENT-EVERY-MORNING CONTENT SKIPPED today's spend $0.00 >= ceiling $0.00 (THROTTLE/logs/COST.log vs QUEUE/CEILING.txt)",
+  "06:00:04  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "06:00:04  CEILING-STOP spend=$0.00 ceiling=$0.00 [clock]"
  ],
  "agents": [
   {
    "agent": "UNKNOWN",
-   "last_seen": "05:24:13",
-   "last_action": "SKIPPED-CEILING",
+   "last_seen": "06:00:04",
+   "last_action": "CONTENT SKIPPED",
    "spend_today": 0.0,
-   "rows": 33,
+   "rows": 37,
    "state": "ACTIVE"
   },
   {
    "agent": "clock",
-   "last_seen": "05:30:03",
+   "last_seen": "06:00:04",
    "last_action": "CEILING-STOP",
    "spend_today": 0.0,
-   "rows": 46,
+   "rows": 50,
    "state": "ACTIVE"
   },
   {
