@@ -203,12 +203,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-19 07:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-19 08:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-19 07:30 CDT",
+ "generated": "2026-10-19 08:00 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -490,6 +490,26 @@
    "n": "Decide: one-line company description for private LinkedIn DMs",
    "s": "",
    "done": false
+  },
+  {
+   "n": "Re-call J2, J3, and J4 rock status against their milestones, closing M-J4-1 and M-J4-2 if R-073 and R-074 count as evidence",
+   "s": "2026-10-19 09:30",
+   "done": false
+  },
+  {
+   "n": "Cut the review view down to 3 to-dos and 3 decisions per R-186",
+   "s": "2026-10-19 09:30",
+   "done": false
+  },
+  {
+   "n": "Add closed dates and evidence to milestones so Done is measurable, per R-184 and R-185",
+   "s": "2026-10-19 09:30",
+   "done": false
+  },
+  {
+   "n": "Prepare S2 conversations, S3 signups, and a rating to report at the weekly review",
+   "s": "2026-10-19 09:30",
+   "done": false
   }
  ],
  "next": [
@@ -504,13 +524,13 @@
   "needed": 3
  },
  "spend": {
-  "today": 0.08,
+  "today": 0.3,
   "day_stop": 60.0,
   "ceiling": 0.0,
-  "note": "goal sessions $0.08 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
+  "note": "goal sessions $0.30 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "07:30:03",
+  "last_row": "08:00:05",
   "alive": true,
   "repair_stop": true
  },
@@ -545,18 +565,18 @@
   }
  ],
  "rows": [
-  "07:20:09 JARVIS SKIPPED-ALREADY-PROPOSED BUILD-ROOM-CLOSES [JARVIS]",
-  "07:20:09 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
-  "07:20:09 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
-  "07:20:09 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
-  "07:20:09 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
-  "07:20:09 JARVIS PLANNER PROPOSED 0 [JARVIS]",
-  "07:20:09 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-10-19.md [JARVIS]",
-  "07:20:09 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
   "07:20:09 JARVIS COST usd=0.0000 [JARVIS]",
   "07:27:01 CIO SKIPPED-CEILING today's spend $0.08 >= ceiling $0.00 (/Users/aiagents/w/QUEUE/CEILING.txt vs /Users/aiagen",
   "07:30:03  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "07:30:03  CEILING-STOP spend=$0.08 ceiling=$0.00 [clock]"
+  "07:30:03  CEILING-STOP spend=$0.08 ceiling=$0.00 [clock]",
+  "07:30:04 ciq-command-center.html DASHBOARD generated=2026-10-19 07:30 CDT bytes=29157 [clock]",
+  "07:30:06 ciq-command-center.html PAGES pushed ad3bdcf to coveredgeiq/ciq-command-center [clock]",
+  "07:37:01 CIO SKIPPED-CEILING today's spend $0.20 >= ceiling $0.00 (/Users/aiagents/w/QUEUE/CEILING.txt vs /Users/aiagen",
+  "07:47:01 CIO SKIPPED-CEILING today's spend $0.30 >= ceiling $0.00 (/Users/aiagents/w/QUEUE/CEILING.txt vs /Users/aiagen",
+  "07:57:01 CIO SKIPPED-CEILING today's spend $0.30 >= ceiling $0.00 (/Users/aiagents/w/QUEUE/CEILING.txt vs /Users/aiagen",
+  "08:00:05  CYCLE-HELD HELD: QUEUE/HOLD.txt names content-cycle [content-cycle]",
+  "08:00:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "08:00:05  CEILING-STOP spend=$0.30 ceiling=$0.00 [clock]"
  ],
  "agents": [
   {
@@ -565,22 +585,30 @@
    "last_action": "COST",
    "spend_today": 0.0,
    "rows": 27,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "07:27:01",
+   "last_seen": "07:57:01",
    "last_action": "SKIPPED-CEILING",
    "spend_today": 0.0,
-   "rows": 48,
+   "rows": 51,
    "state": "ACTIVE"
   },
   {
    "agent": "clock",
-   "last_seen": "07:30:03",
+   "last_seen": "08:00:05",
    "last_action": "CEILING-STOP",
    "spend_today": 0.0,
-   "rows": 62,
+   "rows": 66,
+   "state": "ACTIVE"
+  },
+  {
+   "agent": "content-cycle",
+   "last_seen": "08:00:05",
+   "last_action": "CYCLE-HELD",
+   "spend_today": 0.0,
+   "rows": 1,
    "state": "ACTIVE"
   },
   {
@@ -589,7 +617,7 @@
    "last_action": "STOPPED",
    "spend_today": 0.0,
    "rows": 1,
-   "state": "ACTIVE"
+   "state": "IDLE"
   },
   {
    "agent": "drive-pull",
