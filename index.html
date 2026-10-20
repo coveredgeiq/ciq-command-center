@@ -203,12 +203,12 @@
   </div>
 
 <!-- CIQ-STATE-BEGIN .... the fleet rewrites ONLY the JSON and the CIQ-FOOT text between these two markers -->
-  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-19 20:00 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
+  <footer id="foot"><!-- CIQ-FOOT-BEGIN -->Generated 2026-10-19 20:30 CDT .... ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh. Every machine number comes from the ledger or a directory listing. Nothing is inferred. The fleet regenerates this page by replacing only the JSON between the CIQ-STATE markers.<!-- CIQ-FOOT-END --></footer>
 </div>
 
 <script id="ciq-state" type="application/json">
 {
- "generated": "2026-10-19 20:00 CDT",
+ "generated": "2026-10-19 20:30 CDT",
  "source": "ciq-dashboard.py .... HEARTBEAT/logs/QUEUE.log .... directory listing .... bin/inspect.sh",
  "system": {
   "word": "HELD, WORKING",
@@ -530,7 +530,7 @@
   "note": "goal sessions $0.57 from THROTTLE/logs/COST.log plus content lane $0.00 from CONTENT COST rows"
  },
  "clock": {
-  "last_row": "20:00:05",
+  "last_row": "20:30:05",
   "alive": true,
   "repair_stop": true
  },
@@ -565,42 +565,42 @@
   }
  ],
  "rows": [
-  "19:20:10 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
-  "19:20:10 JARVIS COST usd=0.0000 [JARVIS]",
-  "19:27:10 CIO SKIPPED-CEILING today's spend $0.57 >= ceiling $0.00 (/Users/aiagents/w/QUEUE/CEILING.txt vs /Users/aiagen",
-  "19:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "19:30:05  CEILING-STOP spend=$0.57 ceiling=$0.00 [clock]",
-  "19:30:05 ciq-command-center.html DASHBOARD generated=2026-10-19 19:30 CDT bytes=29954 [clock]",
-  "19:30:10 ciq-command-center.html PAGES pushed f6cd59d to coveredgeiq/ciq-command-center [clock]",
-  "19:37:11 CIO SKIPPED-CEILING today's spend $0.57 >= ceiling $0.00 (/Users/aiagents/w/QUEUE/CEILING.txt vs /Users/aiagen",
-  "19:47:11 CIO SKIPPED-CEILING today's spend $0.57 >= ceiling $0.00 (/Users/aiagents/w/QUEUE/CEILING.txt vs /Users/aiagen",
-  "19:57:11 CIO SKIPPED-CEILING today's spend $0.57 >= ceiling $0.00 (/Users/aiagents/w/QUEUE/CEILING.txt vs /Users/aiagen",
-  "20:00:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
-  "20:00:05  CEILING-STOP spend=$0.57 ceiling=$0.00 [clock]"
+  "20:20:09 JARVIS SKIPPED-ALREADY-PROPOSED BUILD-ROOM-CLOSES [JARVIS]",
+  "20:20:09 JARVIS SKIPPED-ALREADY-PROPOSED EA-FORM-FILLER [JARVIS]",
+  "20:20:09 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES [JARVIS]",
+  "20:20:09 JARVIS SKIPPED-ALREADY-PROPOSED DOCS-WRITE-PATH [JARVIS]",
+  "20:20:09 JARVIS SKIPPED-ALREADY-PROPOSED SAMPLE-POLICIES-AUTO [JARVIS]",
+  "20:20:09 JARVIS PLANNER PROPOSED 0 [JARVIS]",
+  "20:20:09 JARVIS TRIAGE BRIEFS/HELD-TRIAGE-2026-10-19-14.md [JARVIS]",
+  "20:20:09 JARVIS POST-SKIPPED-GOAL-0608-D3 planner no longer posts to the founder channel directly [JARVIS]",
+  "20:20:09 JARVIS COST usd=0.0000 [JARVIS]",
+  "20:27:11 CIO SKIPPED-CEILING today's spend $0.57 >= ceiling $0.00 (/Users/aiagents/w/QUEUE/CEILING.txt vs /Users/aiagen",
+  "20:30:05  MINT-PASS trigger=queue-clock-tick rc=0 DOCKET-MINT-V2 total_new=0 minted=0 needs_founder=0 not_a_go [clock]",
+  "20:30:05  CEILING-STOP spend=$0.57 ceiling=$0.00 [clock]"
  ],
  "agents": [
   {
    "agent": "JARVIS",
-   "last_seen": "19:20:10",
+   "last_seen": "20:20:09",
    "last_action": "COST",
    "spend_today": 0.0,
-   "rows": 351,
-   "state": "IDLE"
+   "rows": 378,
+   "state": "ACTIVE"
   },
   {
    "agent": "UNKNOWN",
-   "last_seen": "19:57:11",
+   "last_seen": "20:27:11",
    "last_action": "SKIPPED-CEILING",
    "spend_today": 0.0,
-   "rows": 125,
+   "rows": 128,
    "state": "ACTIVE"
   },
   {
    "agent": "clock",
-   "last_seen": "20:00:05",
+   "last_seen": "20:30:05",
    "last_action": "CEILING-STOP",
    "spend_today": 0.0,
-   "rows": 162,
+   "rows": 166,
    "state": "ACTIVE"
   },
   {
@@ -629,10 +629,10 @@
   },
   {
    "agent": "watchdog",
-   "last_seen": "19:05:05",
+   "last_seen": "20:05:05",
    "last_action": "BUILDROOM-MISSED",
    "spend_today": 0.0,
-   "rows": 13,
+   "rows": 14,
    "state": "IDLE"
   }
  ],
